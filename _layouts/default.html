@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <!-- CSS هدر و فوتر مشترک -->
+  <link rel="stylesheet" href="/assets/css/header-footer.css">
+</head>
+<body>
+
+  <!-- هدر مشترک -->
+  {% include header.html %}
+
+  <!-- محتوای صفحه -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- فوتر مشترک -->
+  {% include footer.html %}
+
+</body>
+</html>
