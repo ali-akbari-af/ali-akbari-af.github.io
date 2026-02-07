@@ -1,0 +1,19 @@
+.main-header {
+  background-color: #1a202c;
+  padding: 1rem;
+}
+.main-header .main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.main-header .main-nav a {
+  color: white;
+  text-decoration: none;
+}
+.main-footer {
+  background-color: #2d3748;
+  color: #cbd5e0;
+  text-align: center;
+  padding: 1rem;
+}
