@@ -1,0 +1,120 @@
+<header class="header" id="header">
+    <div class="site-top-banner">
+        <div class="top-accent" aria-hidden="false">
+            <div class="container">
+                <p class="top-text">قرطاسیه فروشی خدمات کامپیوتری و مطبعه علی اکبری</p>
+            </div>
+        </div>
+    </div>
+    <div class="container header-container">
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="منو" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="nav" id="nav" aria-label="منوی اصلی">
+            <ul class="nav-menu">
+                <!-- خانه -->
+                <li class="nav-item">
+                    <a href="{{ '/' | relative_url }}" class="nav-link">خانه</a>
+                </li>
+
+                <!-- کتاب‌فروشی -->
+                <li class="nav-item">
+                    <a href="{{ '/books/' | relative_url }}" class="nav-link">کتاب‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/books/school-books/' | relative_url }}" class="submenu-link">کتاب‌های درسی مکتب</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/english-books/' | relative_url }}" class="submenu-link">کتاب‌های انگلیسی</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/study-books/' | relative_url }}" class="submenu-link">کتاب‌های مطالعاتی</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/religious-books/' | relative_url }}" class="submenu-link">کتاب‌های دینی و مذهبی</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/children-books/' | relative_url }}" class="submenu-link">کتاب کودک و نوجوان</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/used-books/' | relative_url }}" class="submenu-link">کتاب‌های دسته‌دوم</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/ebooks/' | relative_url }}" class="submenu-link">کتاب‌های الکترونیکی</a></div>
+                        <div class="submenu-item"><a href="{{ '/books/konkoor-books/' | relative_url }}" class="submenu-link">کتاب‌های کانکوری</a></div>
+                    </div>
+                </li>
+
+                <!-- مطبعه -->
+                <li class="nav-item">
+                    <a href="{{ '/print/' | relative_url }}" class="nav-link">مطبعه <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/print/printing/' | relative_url }}" class="submenu-link">پرینت، کپی و اسکن</a></div>
+                        <div class="submenu-item"><a href="{{ '/print/quran-printing/' | relative_url }}" class="submenu-link">چاپ رقعه ختم قرآن و فاتحه</a></div>
+                        <div class="submenu-item"><a href="{{ '/print/wedding-cards/' | relative_url }}" class="submenu-link">چاپ کارت عروسی</a></div>
+                        <div class="submenu-item"><a href="{{ '/print/pvc-cards/' | relative_url }}" class="submenu-link">کاپی استخوانی (PVC Card)</a></div>
+                        <div class="submenu-item"><a href="{{ '/print/translation/' | relative_url }}" class="submenu-link">ترجمه اسناد</a></div>
+                        <div class="submenu-item"><a href="{{ '/print/lamination/' | relative_url }}" class="submenu-link">پوش یا لمینت اسناد</a></div>
+                        <div class="submenu-item"><a href="{{ '/print/online-registration/' | relative_url }}" class="submenu-link">ثبت‌نام خدمات آنلاین</a></div>
+                    </div>
+                </li>
+
+                <!-- عکاسی -->
+                <li class="nav-item">
+                    <a href="{{ '/photography/' | relative_url }}" class="nav-link">عکاسی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/photography/professional-photos/' | relative_url }}" class="submenu-link">تولید عکس‌های حرفه‌ای</a></div>
+                        <div class="submenu-item"><a href="{{ '/photography/photo-restoration/' | relative_url }}" class="submenu-link">بازسازی عکس‌های کهنه</a></div>
+                        <div class="submenu-item"><a href="{{ '/photography/photo-editing/' | relative_url }}" class="submenu-link">ادیت عکس مطابق سفارش</a></div>
+                    </div>
+                </li>
+
+                <!-- قرطاسیه‌فروشی -->
+                <li class="nav-item">
+                    <a href="{{ '/stationery/' | relative_url }}" class="nav-link">قرطاسیه‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/stationery/writing-materials/' | relative_url }}" class="submenu-link">لوازم تحریر</a></div>
+                        <div class="submenu-item"><a href="{{ '/stationery/office-supplies/' | relative_url }}" class="submenu-link">لوازم اداری</a></div>
+                        <div class="submenu-item"><a href="{{ '/stationery/art-supplies/' | relative_url }}" class="submenu-link">لوازم هنری</a></div>
+                    </div>
+                </li>
+
+                <!-- آموزش دیجیتال -->
+                <li class="nav-item">
+                    <a href="{{ '/education/' | relative_url }}" class="nav-link">آموزش دیجیتال <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/education/computer-courses/' | relative_url }}" class="submenu-link">آموزش کامپیوتر</a></div>
+                        <div class="submenu-item"><a href="{{ '/education/english-courses/' | relative_url }}" class="submenu-link">آموزش زبان انگلیسی</a></div>
+                        <div class="submenu-item"><a href="{{ '/education/sewing-courses/' | relative_url }}" class="submenu-link">آموزش خیاطی</a></div>
+                        <div class="submenu-item"><a href="{{ '/education/professional-courses/' | relative_url }}" class="submenu-link">آموزش‌های حرفه‌ای</a></div>
+                    </div>
+                </li>
+                
+                <!-- خدمات تخصصی -->
+                <li class="nav-item">
+                    <a href="{{ '/services-special/' | relative_url }}" class="nav-link">خدمات تخصصی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/services/#web-app' | relative_url }}" class="submenu-link">خدمات وبسایت، اپلیکیشن و نرم افزار</a></div>
+                        <div class="submenu-item"><a href="{{ '/services/#video-editing' | relative_url }}" class="submenu-link">خدمات ویرایش و بهسازی ویدئو و تصاویر</a></div>
+                        <div class="submenu-item"><a href="{{ '/services/#social-media' | relative_url }}" class="submenu-link">خدمات شبکه‌های اجتماعی و درآمدزایی آنلاین</a></div>
+                        <div class="submenu-item"><a href="{{ '/services/#digital-training' | relative_url }}" class="submenu-link">خدمات آموزشی و توانمندسازی دیجیتال</a></div>
+                        <div class="submenu-item"><a href="{{ '/services/#translation' | relative_url }}" class="submenu-link">خدمات ترجمه، تایپ و امور اسنادی</a></div>
+                    </div>
+                </li>
+                
+                <!-- فعالیت‌های خیریه -->
+                <li class="nav-item">
+                    <a href="{{ '/charity/' | relative_url }}" class="nav-link">فعالیت‌های خیریه <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <div class="submenu">
+                        <div class="submenu-item"><a href="{{ '/volunteer/' | relative_url }}" class="submenu-link">فعالیت‌های داوطلبانه</a></div>
+                    </div>
+                </li>
+
+                <!-- تماس -->
+                <li class="nav-item">
+                    <a href="{{ '/contact/' | relative_url }}" class="nav-link">تماس با ما</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+            <a href="tel:{{ site.phone_primary | default: '+93781821838' }}" class="contact-btn" aria-label="تماس تلفنی">
+                <i class="bi bi-telephone"></i>
+                <span class="contact-text">تماس</span>
+            </a>
+        </div>
+    </div>
+</header>

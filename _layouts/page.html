@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- ===== Breadcrumb ===== -->
+{% if page.breadcrumb %}
+<div class="breadcrumb">
+    <div class="breadcrumb-content">
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">خانه</a></li>
+            {% for crumb in page.breadcrumb %}
+            <li><a href="{{ crumb.link | relative_url }}">{{ crumb.title }}</a></li>
+            {% endfor %}
+            <li>{{ page.title }}</li>
+        </ul>
+    </div>
+</div>
+{% endif %}
+
+<!-- ===== محتوای اصلی ===== -->
+<main class="page-content">
+    {{ content }}
+</main>
