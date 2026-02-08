@@ -9,6 +9,25 @@ breadcrumb:
 ---
 
 <style>
+/* ===== CSS Variables ===== */
+:root {
+    --primary-old: #0ea5e9;
+    --primary-dark-old: #0284c7;
+    --primary-light-old: #38bdf8;
+    --secondary-old: #3b82f6;
+    --accent-old: #8b5cf6;
+    --dark-old: #1e293b;
+    --light-old: #f8fafc;
+    --gray-old: #64748b;
+    --gray-light-old: #e2e8f0;
+    --success-old: #10b981;
+    --shadow-old: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg-old: 0 10px 40px rgba(14, 165, 233, 0.15);
+    --shadow-hover: 0 20px 50px rgba(14, 165, 233, 0.25);
+    --radius-old: 18px;
+    --transition-old: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ===== محتوای صفحه ===== */
 .page-content {
     max-width: 1400px;
@@ -36,7 +55,7 @@ breadcrumb:
 
 .page-title {
     font-size: 3.2rem;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     margin-bottom: 1.5rem;
     font-weight: 900;
     line-height: 1.2;
@@ -52,13 +71,13 @@ breadcrumb:
     transform: translateX(50%);
     width: 150px;
     height: 5px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, var(--primary-old), var(--secondary-old));
     border-radius: 3px;
 }
 
 .service-badge {
     display: inline-block;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary-old), var(--secondary-old));
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -71,14 +90,14 @@ breadcrumb:
 
 .page-description {
     font-size: 1.3rem;
-    color: var(--dark);
+    color: var(--dark-old);
     line-height: 2;
     max-width: 1000px;
     margin: 3rem auto 0;
     padding: 3rem;
     background: white;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-old);
+    box-shadow: var(--shadow-old);
     border: 2px solid rgba(14, 165, 233, 0.1);
     position: relative;
     overflow: hidden;
@@ -91,11 +110,11 @@ breadcrumb:
     right: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, var(--primary-old), var(--secondary-old));
 }
 
 .page-description strong {
-    color: var(--primary);
+    color: var(--primary-old);
     font-weight: 800;
     position: relative;
     padding: 0 4px;
@@ -113,7 +132,7 @@ breadcrumb:
     border-radius: 2px;
 }
 
-/* بخش خدمات اصلی */
+/* بخش خدمات */
 .services-section {
     margin: 6rem 0;
 }
@@ -126,7 +145,7 @@ breadcrumb:
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     margin-bottom: 1.5rem;
     font-weight: 800;
     position: relative;
@@ -141,12 +160,12 @@ breadcrumb:
     transform: translateX(50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: linear-gradient(90deg, var(--primary-old), var(--accent-old));
     border-radius: 2px;
 }
 
 .section-title p {
-    color: var(--gray);
+    color: var(--gray-old);
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
@@ -163,10 +182,10 @@ breadcrumb:
 .service-card {
     background: white;
     padding: 3rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-old);
+    box-shadow: var(--shadow-old);
     text-align: center;
-    transition: var(--transition-base);
+    transition: var(--transition-old);
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
@@ -179,7 +198,7 @@ breadcrumb:
     right: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, var(--primary-old), var(--secondary-old));
     transform: translateX(-100%);
     transition: transform 0.6s ease;
 }
@@ -191,13 +210,13 @@ breadcrumb:
 .service-card:hover {
     transform: translateY(-15px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
+    border-color: var(--primary-light-old);
 }
 
 .service-icon {
     width: 90px;
     height: 90px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary-old), var(--accent-old));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -206,7 +225,7 @@ breadcrumb:
     color: white;
     font-size: 2.2rem;
     box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
-    transition: var(--transition-base);
+    transition: var(--transition-old);
 }
 
 .service-card:hover .service-icon {
@@ -215,13 +234,13 @@ breadcrumb:
 
 .service-title {
     font-size: 1.8rem;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     margin-bottom: 1.5rem;
     font-weight: 800;
 }
 
 .service-description {
-    color: var(--gray);
+    color: var(--gray-old);
     line-height: 1.7;
     font-size: 1.1rem;
     margin-bottom: 2rem;
@@ -237,12 +256,12 @@ breadcrumb:
     align-items: center;
     gap: 10px;
     margin-bottom: 0.8rem;
-    color: var(--dark);
+    color: var(--dark-old);
     font-size: 1rem;
 }
 
 .feature-item i {
-    color: var(--success);
+    color: var(--success-old);
     font-size: 0.9rem;
 }
 
@@ -250,7 +269,7 @@ breadcrumb:
 .features-section {
     background: linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(59, 130, 246, 0.05));
     padding: 5rem;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-old);
     margin: 6rem 0;
     position: relative;
     overflow: hidden;
@@ -267,23 +286,23 @@ breadcrumb:
 .feature-card {
     background: white;
     padding: 2.5rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-old);
+    box-shadow: var(--shadow-old);
     text-align: center;
-    transition: var(--transition-base);
+    transition: var(--transition-old);
     border: 2px solid transparent;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
+    border-color: var(--primary-light-old);
 }
 
 .feature-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary-old), var(--accent-old));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -296,13 +315,13 @@ breadcrumb:
 
 .feature-title {
     font-size: 1.4rem;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .feature-description {
-    color: var(--gray);
+    color: var(--gray-old);
     line-height: 1.6;
 }
 
@@ -322,33 +341,33 @@ breadcrumb:
     text-align: center;
     padding: 2rem;
     background: white;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-base);
+    border-radius: var(--radius-old);
+    box-shadow: var(--shadow-old);
+    transition: var(--transition-old);
     border: 2px solid transparent;
 }
 
 .format-item:hover {
     transform: translateY(-10px);
-    border-color: var(--primary);
+    border-color: var(--primary-old);
     box-shadow: var(--shadow-hover);
 }
 
 .format-icon {
     font-size: 3rem;
-    color: var(--primary);
+    color: var(--primary-old);
     margin-bottom: 1rem;
 }
 
 .format-name {
     font-size: 1.3rem;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .format-desc {
-    color: var(--gray);
+    color: var(--gray-old);
     font-size: 0.9rem;
 }
 
@@ -356,8 +375,8 @@ breadcrumb:
 .contact-info-section {
     background: white;
     padding: 5rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-old);
+    box-shadow: var(--shadow-lg-old);
     margin: 6rem 0;
     position: relative;
     overflow: hidden;
@@ -375,32 +394,32 @@ breadcrumb:
     text-align: center;
     padding: 3rem 2rem;
     background: linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(59, 130, 246, 0.05));
-    border-radius: var(--radius-lg);
-    transition: var(--transition-base);
+    border-radius: var(--radius-old);
+    transition: var(--transition-old);
     border: 2px solid transparent;
 }
 
 .method-card:hover {
     transform: translateY(-10px);
-    border-color: var(--primary);
+    border-color: var(--primary-old);
     box-shadow: var(--shadow-hover);
 }
 
 .method-icon {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    color: var(--primary);
+    color: var(--primary-old);
 }
 
 .method-title {
     font-size: 1.5rem;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .method-description {
-    color: var(--gray);
+    color: var(--gray-old);
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -408,18 +427,18 @@ breadcrumb:
 .method-btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background: var(--primary);
+    background: var(--primary-old);
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
-    transition: var(--transition-base);
-    border: 2px solid var(--primary);
+    transition: var(--transition-old);
+    border: 2px solid var(--primary-old);
 }
 
 .method-btn:hover {
     background: white;
-    color: var(--primary);
+    color: var(--primary-old);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
 }
@@ -436,10 +455,10 @@ breadcrumb:
 
 /* بخش تماس */
 .contact-section {
-    background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+    background: linear-gradient(135deg, var(--primary-dark-old), var(--secondary-old));
     color: white;
     padding: 5rem 2rem;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-old);
     margin: 6rem 0;
     text-align: center;
     position: relative;
@@ -482,7 +501,7 @@ breadcrumb:
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    transition: var(--transition-base);
+    transition: var(--transition-old);
     border: none;
     cursor: pointer;
     position: relative;
@@ -507,12 +526,12 @@ breadcrumb:
 
 .btn-primary {
     background: white;
-    color: var(--primary-dark);
+    color: var(--primary-dark-old);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
-    background: var(--light);
+    background: var(--light-old);
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
