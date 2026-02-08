@@ -2,16 +2,57 @@
 layout: page
 title: "کتاب‌های انگلیسی | فروشگاه علی اکبری - کابل"
 description: "کتاب‌های زبان انگلیسی برای مکاتب و مراکز آموزشی – عمده و پرچون با بالاترین کیفیت و پایین‌ترین قیمت در کابل"
-permalink: /books/english-books.html
+keywords: "کتاب انگلیسی, کتاب زبان انگلیسی, کتاب‌های آموزشی انگلیسی, مکاتب کابل, مراکز آموزشی, کتاب‌فروشی علی اکبری"
 breadcrumb:
-  - title: "خانه"
-    link: "/"
   - title: "کتاب‌فروشی"
-    link: "/books/"
+    link: "/books"
 ---
 
 <style>
-/* ===== استایل‌های اختصاصی صفحه کتاب‌های انگلیسی ===== */
+/* ===== CSS Variables ===== */
+:root {
+    /* Colors (refreshed palette: teal + indigo + warm accent) */
+    --primary: #0ea5a4;
+    --primary-dark: #0b8f89;
+    --primary-light: #2dd4bf;
+    --secondary: #6366f1;
+    --accent: #f59e0b;
+    --dark: #0f1724;
+    --dark-light: #24303a;
+    --light: #f8fafc;
+    --gray: #6b7280;
+    --gray-light: #e6eef2;
+    --gray-lighter: #f7fafc;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== محتوای صفحه ===== */
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
 
 /* هیرو بخش */
 .page-hero {
@@ -82,7 +123,7 @@ breadcrumb:
     padding: 1.5rem;
     border-radius: var(--radius-lg);
     border-left: 4px solid var(--primary);
-    transition: var(--transition);
+    transition: var(--transition-base);
 }
 
 .series-item:hover {
@@ -139,7 +180,7 @@ breadcrumb:
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     text-align: center;
-    transition: var(--transition);
+    transition: var(--transition-base);
     border: 1px solid transparent;
 }
 
@@ -259,7 +300,7 @@ breadcrumb:
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: var(--transition);
+    transition: var(--transition-base);
     border: none;
     cursor: pointer;
 }
@@ -286,7 +327,7 @@ breadcrumb:
     transform: translateY(-3px);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for page content */
 @media (max-width: 992px) {
     .page-title {
         font-size: 2.2rem;
@@ -298,57 +339,23 @@ breadcrumb:
     
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
+        gap: 1.5rem;
     }
     
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .contact-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-    
     .series-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 767px) and (min-width: 576px) {
-    .page-title {
-        font-size: 1.8rem;
+@media (max-width: 768px) {
+    .page-content {
+        padding: 2rem 1.5rem;
     }
     
-    .page-description {
-        font-size: 1.1rem;
-    }
-    
-    .section-title h2 {
-        font-size: 1.8rem;
-    }
-    
-    .series-title {
-        font-size: 1.6rem;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-    }
-    
-    .series-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 575px) {
     .page-title {
         font-size: 1.8rem;
     }
@@ -391,10 +398,110 @@ breadcrumb:
     }
 }
 
-@media (max-width: 375px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.6rem;
     }
+    
+    .page-description {
+        font-size: 1rem;
+    }
+    
+    .series-section {
+        padding: 1.5rem;
+    }
+    
+    .contact-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .contact-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .series-item:hover {
+        transform: none;
+    }
+    
+    .feature-card:hover {
+        transform: none;
+    }
+    
+    .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+    }
+    
+    .gallery-item:hover .gallery-image {
+        transform: none;
+    }
+    
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: none;
+    }
+    
+    /* Add active states for touch devices */
+    .series-item:active {
+        transform: scale(0.98);
+    }
+    
+    .feature-card:active {
+        transform: scale(0.98);
+    }
+    
+    .btn:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .series-item:hover,
+    .feature-card:hover,
+    .gallery-item:hover .gallery-image,
+    .gallery-item:hover .gallery-overlay {
+        transform: none;
+    }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
 }
 </style>
 
@@ -638,9 +745,9 @@ breadcrumb:
     <p class="contact-description">با ما تماس بگیرید یا به فروشگاه ما مراجعه کنید</p>
     
     <div class="contact-buttons">
-        <a href="tel:+93781821838" class="btn btn-primary">
+        <a href="tel:{{ site.phone_primary }}" class="btn btn-primary">
             <i class="fas fa-phone"></i>
-            تماس: ۰۷۸۱۸۲۱۸۳۸
+            تماس: {{ site.phone_primary }}
         </a>
         <a href="#footer" class="btn btn-secondary">
             <i class="fas fa-map-marker-alt"></i>
