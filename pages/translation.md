@@ -5,8 +5,6 @@ description: "ترجمه اسناد، مقالات و متون تخصصی با �
 keywords: "ترجمه تخصصی, ترجمه اسناد, ترجمه مقالات, مترجم حرفه‌ای, کابل, علی اکبری"
 breadcrumb:
   - title: "مطبعه"
-    link: "/print"
-    show_breadcrumb: false
 ---
 
 <style>
