@@ -1,0 +1,42 @@
+# تنظیمات برای GitHub Pages
+title: "فروشگاه علی اکبری - کابل"
+description: "قرطاسیه فروشی، خدمات کامپیوتری و مطبعه علی اکبری"
+baseurl: "https://ali-akbari-af.github.io" 
+url: "https://ali-akbari-af.github.io"  # یا دامنه شخصی شما
+
+# تنظیمات GitHub Pages
+theme: minima  # یا null اگر نمی‌خواهید از theme استفاده کنید
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# تنظیمات شخصی
+owner: "علی اکبری"
+phones:
+  primary: "۰۷۸۱۸۲۱۸۳۸"
+  secondary: "۰۷۷۴۵۳۰۳۷۲"
+email: "tarjman.online@gmail.com"
+address: "کابل، ناحیه ۶، شهرک ۱۲ امام"
+work_hours: "شنبه تا پنجشنبه: ۸ صبح تا ۸ شب | جمعه: ۹ صبح تا 6 بعدازظهر"
+
+# ناوبری
+navigation:
+  - name: "خانه"
+    link: "/"
+  - name: "مطبعه"
+    link: "/print/"
+  - name: "کتاب‌فروشی"
+    link: "/books/"
+  - name: "عکاسی"
+    link: "/photography/"
+  - name: "تماس"
+    link: "/contact/"
+
+# تنظیمات پیش‌فرض
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "علی اکبری"
