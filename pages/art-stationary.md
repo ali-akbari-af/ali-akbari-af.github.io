@@ -274,7 +274,7 @@ breadcrumb:
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(transparent, #0084ff);
     padding: 1.5rem;
     transform: translateY(100%);
     transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -285,14 +285,14 @@ breadcrumb:
 }
 
 .gallery-title {
-    color: #0084ff;
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .gallery-description {
-    color: #0084ff;
+    color: #fff;
     font-size: 0.9rem;
 }
 
