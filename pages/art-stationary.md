@@ -778,11 +778,11 @@ breadcrumb:
             </div>
         </a>
         
-        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/board.jpg" class="gallery-item" data-lightbox="gallery" data-title="تخته نقاشی و رسامی">
-            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/board.jpg" alt="تخته نقاشی و رسامی" class="gallery-img">
+        <a href="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="رنگ‌های هنری">
+            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="رنگ‌های هنری" class="gallery-img">
             <div class="gallery-overlay">
-                <h4 class="gallery-title">تخته نقاشی و رسامی</h4>
-                <p class="gallery-description">تحته های مخصوص رسامی و نقاشی حرفه ای</p>
+                <h4 class="gallery-title">رنگ‌های هنری</h4>
+                <p class="gallery-description">تنوع کامل رنگ‌های اکریلیک، روغن و آبرنگ</p>
             </div>
         </a>
     </div>
