@@ -754,35 +754,35 @@ breadcrumb:
     </div>
     
     <div class="gallery-grid">
-        <a href="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="رنگ‌های هنری">
-            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="رنگ‌های هنری" class="gallery-img">
+        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/brushes.jpg" class="gallery-item" data-lightbox="gallery" data-title="برس های نقاشی">
+            <img src="ali-akbari-af.github.io/assets/images/art-tools/brushes.jpg" alt="برس های نقاشی" class="gallery-img">
             <div class="gallery-overlay">
-                <h4 class="gallery-title">رنگ‌های هنری</h4>
-                <p class="gallery-description">تنوع کامل رنگ‌های اکریلیک، روغن و آبرنگ</p>
+                <h4 class="gallery-title">برس های نقاشی</h4>
+                <p class="gallery-description">انواع مختلف برس های نقاشی</p>
             </div>
         </a>
         
-        <a href="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="قلموهای نقاشی">
-            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="قلموهای نقاشی" class="gallery-img">
+        <a href="ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" class="gallery-item" data-lightbox="gallery" data-title="محو کننده">
+            <ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" alt="محو کننده" class="gallery-img">
             <div class="gallery-overlay">
-                <h4 class="gallery-title">قلموهای نقاشی</h4>
-                <p class="gallery-description">قلموهای ساخته شده از موی طبیعی و مصنوعی</p>
+                <h4 class="gallery-title">محو کننده</h4>
+                <p class="gallery-description">محو کننده ابزاری برای محو سازی</p>
             </div>
         </a>
         
-        <a href="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="کاغذ و مقوا">
-            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="کاغذ و مقوا" class="gallery-img">
+        <a href="ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" class="gallery-item" data-lightbox="gallery" data-title="کتابچه رسامی">
+            <img src="ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" alt="کتابچه رسامی" class="gallery-img">
             <div class="gallery-overlay">
-                <h4 class="gallery-title">کاغذ و مقوا</h4>
-                <p class="gallery-description">انواع کاغذ و مقوا برای تکنیک‌های مختلف</p>
+                <h4 class="gallery-title">کتابچه رسامی</h4>
+                <p class="gallery-description">کتابچه های مخصوص رسامی حرفه ای</p>
             </div>
         </a>
         
-        <a href="https://images.unsplash.com/photo-1618403088890-3d9ff6f4c8b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="لوازم طراحی">
-            <img src="https://images.unsplash.com/photo-1618403088890-3d9ff6f4c8b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="لوازم طراحی" class="gallery-img">
+        <a href="ali-akbari-af.github.io/assets/images/art-tools/board.jpg" class="gallery-item" data-lightbox="gallery" data-title="تخته نقاشی و رسامی">
+            <img src="ali-akbari-af.github.io/assets/images/art-tools/board.jpg" alt="تخته نقاشی و رسامی" class="gallery-img">
             <div class="gallery-overlay">
-                <h4 class="gallery-title">لوازم طراحی</h4>
-                <p class="gallery-description">مداد، پاستل، ذغال و ابزار طراحی حرفه‌ای</p>
+                <h4 class="gallery-title">تخته نقاشی و رسامی</h4>
+                <p class="gallery-description">تحته های مخصوص رسامی و نقاشی حرفه ای</p>
             </div>
         </a>
     </div>
