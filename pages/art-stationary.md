@@ -285,14 +285,14 @@ breadcrumb:
 }
 
 .gallery-title {
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .gallery-description {
-    color: #fff;
+    color: #000;
     font-size: 0.9rem;
 }
 
