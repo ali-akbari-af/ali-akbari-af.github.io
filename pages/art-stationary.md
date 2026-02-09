@@ -763,7 +763,7 @@ breadcrumb:
         </a>
         
         <a href="ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" class="gallery-item" data-lightbox="gallery" data-title="محو کننده">
-            <ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" alt="محو کننده" class="gallery-img">
+            <img src="ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" alt="محو کننده" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">محو کننده</h4>
                 <p class="gallery-description">محو کننده ابزاری برای محو سازی</p>
