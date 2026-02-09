@@ -755,31 +755,31 @@ breadcrumb:
     
     <div class="gallery-grid">
         <a href="https://ali-akbari-af.github.io/assets/images/art-tools/brushes.jpg" class="gallery-item" data-lightbox="gallery" data-title="برس های نقاشی">
-            <img src="ali-akbari-af.github.io/assets/images/art-tools/brushes.jpg" alt="برس های نقاشی" class="gallery-img">
+            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/brushes.jpg" alt="برس های نقاشی" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">برس های نقاشی</h4>
                 <p class="gallery-description">انواع مختلف برس های نقاشی</p>
             </div>
         </a>
         
-        <a href="ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" class="gallery-item" data-lightbox="gallery" data-title="محو کننده">
-            <img src="ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" alt="محو کننده" class="gallery-img">
+        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" class="gallery-item" data-lightbox="gallery" data-title="محو کننده">
+            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/blur-tool.jpg" alt="محو کننده" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">محو کننده</h4>
                 <p class="gallery-description">محو کننده ابزاری برای محو سازی</p>
             </div>
         </a>
         
-        <a href="ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" class="gallery-item" data-lightbox="gallery" data-title="کتابچه رسامی">
-            <img src="ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" alt="کتابچه رسامی" class="gallery-img">
+        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" class="gallery-item" data-lightbox="gallery" data-title="کتابچه رسامی">
+            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" alt="کتابچه رسامی" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">کتابچه رسامی</h4>
                 <p class="gallery-description">کتابچه های مخصوص رسامی حرفه ای</p>
             </div>
         </a>
         
-        <a href="ali-akbari-af.github.io/assets/images/art-tools/board.jpg" class="gallery-item" data-lightbox="gallery" data-title="تخته نقاشی و رسامی">
-            <img src="ali-akbari-af.github.io/assets/images/art-tools/board.jpg" alt="تخته نقاشی و رسامی" class="gallery-img">
+        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/board.jpg" class="gallery-item" data-lightbox="gallery" data-title="تخته نقاشی و رسامی">
+            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/board.jpg" alt="تخته نقاشی و رسامی" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">تخته نقاشی و رسامی</h4>
                 <p class="gallery-description">تحته های مخصوص رسامی و نقاشی حرفه ای</p>
