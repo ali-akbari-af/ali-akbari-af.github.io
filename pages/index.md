@@ -3,13 +3,6 @@ layout: default
 title: "فروشگاه علی اکبری | کتاب‌فروشی، مطبعه و خدمات کامپیوتری در کابل"
 description: "ارائه کلیه خدمات آموزشی، چاپ و دیجیتال در کابل - کتاب‌فروشی، مطبعه، عکاسی، قرطاسیه و آموزش دیجیتال"
 keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چاپ, عکاسی, کابل, علی اکبری"
-og_title: "فروشگاه علی اکبری - کتاب‌فروشی، مطبعه و خدمات کامپیوتری"
-og_description: "تمام خدمات آموزشی، چاپ و دیجیتال در یک‌جا | کابل، شهرک ۱۲ امام"
-og_type: "website"
-og_url: "https://ali-akbari-af.github.io/"
-canonical: "https://ali-akbari-af.github.io"
-robots: "index, follow"
-googlebot: "index, follow"
 ---
 
 <style>
@@ -78,392 +71,6 @@ googlebot: "index, follow"
     --container-lg: 1024px;
     --container-xl: 1280px;
     --container-2xl: 1536px;
-}
-
-/* ===== Reset & Base Styles ===== */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    line-height: 1.7;
-    color: var(--dark);
-    background-color: var(--light);
-    overflow-x: hidden;
-    min-height: 100vh;
-    -webkit-tap-highlight-color: transparent;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ===== Typography ===== */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-md);
-    color: var(--dark);
-}
-
-h1 {
-    font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
-    font-weight: 900;
-    letter-spacing: -0.025em;
-}
-
-h2 {
-    font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
-    font-weight: 800;
-}
-
-h3 {
-    font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-3xl));
-    font-weight: 700;
-}
-
-h4 {
-    font-size: clamp(var(--font-size-lg), 2.5vw, var(--font-size-2xl));
-    font-weight: 600;
-}
-
-p {
-    margin-bottom: var(--spacing-md);
-    color: var(--gray);
-    line-height: 1.8;
-}
-
-.lead {
-    font-size: clamp(var(--font-size-lg), 2vw, var(--font-size-xl));
-    font-weight: 400;
-    color: var(--dark-light);
-    line-height: 1.6;
-}
-
-/* ===== Container ===== */
-.container {
-    width: 100%;
-    max-width: var(--container-2xl);
-    margin: 0 auto;
-    padding: 0 var(--spacing-lg);
-}
-
-/* ===== Header ===== */
-.header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
-    padding: var(--spacing-sm) 0;
-    transition: all var(--transition-base);
-}
-
-/* Top banner */
-.site-top-banner {
-    width: 100%;
-    background: transparent;
-    display: block;
-    position: relative;
-}
-
-.site-top-banner .top-accent {
-    height: 4rem;
-    background: #0084ff;
-    width: 100%;
-    display: block;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.site-top-banner .top-accent .top-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: white;
-    font-weight: 800;
-    font-size: clamp(1rem, 2.4vw, 1.5rem);
-    line-height: 1;
-    white-space: nowrap;
-    text-align: center;
-    width: 100%;
-    padding: 0 var(--spacing-md);
-}
-
-.header.scrolled {
-    padding: var(--spacing-xs) 0;
-    box-shadow: var(--shadow-lg);
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-lg);
-    height: 60px;
-}
-
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    text-decoration: none;
-    flex-shrink: 0;
-    min-width: 120px;
-}
-
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 700;
-    font-size: var(--font-size-lg);
-    flex-shrink: 0;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-title {
-    font-size: var(--font-size-lg);
-    font-weight: 800;
-    color: var(--dark);
-    margin: 0;
-    line-height: 1.2;
-    white-space: nowrap;
-}
-
-.logo-subtitle {
-    font-size: var(--font-size-xs);
-    color: var(--gray);
-    margin: 0;
-    font-weight: 400;
-    white-space: nowrap;
-}
-
-/* Navigation */
-.nav {
-    flex: 1;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: var(--spacing-xs);
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-link {
-    display: inline-flex;
-    align-items: center;
-    padding: var(--spacing-sm) var(--spacing-md);
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: var(--font-size-sm);
-    border-radius: var(--radius-lg);
-    transition: all var(--transition-fast);
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-link .nav-caret {
-    margin-inline-start: var(--spacing-xs);
-    font-size: 1.2rem;
-    color: currentColor;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 1em;
-    line-height: 1;
-    transform-origin: center;
-    transition: transform var(--transition-fast);
-}
-
-.nav-item:hover .nav-caret {
-    transform: rotate(180deg);
-}
-
-.nav-link:hover,
-.nav-link.active {
-    background: rgba(37, 99, 235, 0.08);
-    color: var(--primary);
-}
-
-/* Submenu */
-.submenu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    min-width: 220px;
-    background: white;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-2xl);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all var(--transition-base);
-    z-index: 100;
-    padding: var(--spacing-sm);
-    border: 1px solid var(--gray-light);
-    max-height: 70vh;
-    overflow-y: auto;
-}
-
-.nav-item:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.submenu-item {
-    margin-bottom: var(--spacing-xs);
-}
-
-.submenu-item:last-child {
-    margin-bottom: 0;
-}
-
-.submenu-link {
-    display: block;
-    padding: var(--spacing-sm) var(--spacing-md);
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: var(--font-size-sm);
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
-    white-space: nowrap;
-}
-
-.submenu-link:hover {
-    background: rgba(37, 99, 235, 0.08);
-    color: var(--primary);
-    padding-right: var(--spacing-lg);
-}
-
-/* Mobile Menu Button */
-.mobile-menu-btn {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 1001;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.mobile-menu-btn span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: var(--primary);
-    border-radius: 2px;
-    transition: all var(--transition-base);
-    position: absolute;
-}
-
-.mobile-menu-btn span:nth-child(1) {
-    top: 12px;
-}
-
-.mobile-menu-btn span:nth-child(2) {
-    top: 19px;
-    opacity: 1;
-}
-
-.mobile-menu-btn span:nth-child(3) {
-    top: 26px;
-}
-
-.mobile-menu-btn.active span:nth-child(1) {
-    top: 19px;
-    transform: rotate(45deg);
-}
-
-.mobile-menu-btn.active span:nth-child(2) {
-    opacity: 0;
-    transform: translateX(-10px);
-}
-
-.mobile-menu-btn.active span:nth-child(3) {
-    top: 19px;
-    transform: rotate(-45deg);
-}
-
-/* Header Actions */
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    flex-shrink: 0;
-}
-
-.contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-md);
-    background: var(--primary);
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: var(--font-size-sm);
-    border-radius: var(--radius-lg);
-    transition: all var(--transition-base);
-    white-space: nowrap;
-    min-width: 44px;
-    min-height: 44px;
-    justify-content: center;
-}
-
-.contact-btn:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
 }
 
 /* ===== Hero Slider ===== */
@@ -917,177 +524,10 @@ p {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* ===== Footer ===== */
-.footer {
-    background: var(--dark);
-    color: white;
-    padding-top: var(--spacing-2xl);
-    position: relative;
-    margin-top: var(--spacing-2xl);
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 4px;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-xl);
-    margin-bottom: var(--spacing-xl);
-    padding: 0 var(--spacing-md);
-}
-
-.footer-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-logo {
-    margin-bottom: var(--spacing-lg);
-}
-
-.footer-logo .logo-title {
-    color: white;
-}
-
-.footer-logo .logo-subtitle {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-description {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: var(--spacing-lg);
-    font-size: var(--font-size-sm);
-}
-
-.footer-title {
-    font-size: var(--font-size-lg);
-    color: white;
-    margin-bottom: var(--spacing-lg);
-    position: relative;
-    padding-bottom: var(--spacing-sm);
-}
-
-.footer-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 40px;
-    height: 3px;
-    background: var(--accent);
-    border-radius: 2px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: var(--spacing-xs);
-}
-
-.footer-link {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    transition: all var(--transition-fast);
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-sm);
-    padding: var(--spacing-xs) 0;
-}
-
-.footer-link:hover {
-    color: white;
-    padding-right: var(--spacing-sm);
-}
-
-.footer-link i {
-    font-size: var(--font-size-xs);
-    opacity: 0.7;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-sm);
-    color: rgba(255, 255, 255, 0.7);
-    font-size: var(--font-size-sm);
-}
-
-.contact-icon {
-    color: var(--accent);
-    font-size: var(--font-size-base);
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.social-links {
-    display: flex;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-lg);
-}
-
-.social-link {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    transition: all var(--transition-fast);
-    font-size: var(--font-size-base);
-}
-
-.social-link:hover {
-    background: var(--primary);
-    transform: translateY(-3px);
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: var(--spacing-lg) 0;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: var(--font-size-xs);
-    padding: 0 var(--spacing-md);
-}
-
-.footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
-}
-
 /* ===== Responsive Design ===== */
 
 /* Large Desktop (≥1400px) */
 @media (min-width: 1400px) {
-    .container {
-        max-width: var(--container-2xl);
-    }
-    
     .hero-slider {
         margin-right: auto;
         margin-left: auto;
@@ -1103,15 +543,6 @@ p {
 
 /* Desktop (≥1200px) */
 @media (min-width: 1200px) {
-    .nav-menu {
-        gap: var(--spacing-sm);
-    }
-    
-    .nav-link {
-        padding: var(--spacing-sm) var(--spacing-lg);
-        font-size: var(--font-size-base);
-    }
-    
     .slide-content {
         right: var(--spacing-2xl);
         max-width: 650px;
@@ -1120,19 +551,6 @@ p {
 
 /* Tablet Landscape (992px - 1199px) */
 @media (max-width: 1199px) and (min-width: 992px) {
-    .header-container {
-        gap: var(--spacing-md);
-    }
-    
-    .nav-menu {
-        gap: 4px;
-    }
-    
-    .nav-link {
-        padding: var(--spacing-xs) var(--spacing-sm);
-        font-size: var(--font-size-xs);
-    }
-    
     .hero-slider {
         height: 70vh;
         min-height: 450px;
@@ -1150,82 +568,6 @@ p {
 
 /* Tablet Portrait (768px - 991px) */
 @media (max-width: 991px) {
-    .mobile-menu-btn {
-        display: flex;
-    }
-    
-    .nav {
-        position: fixed;
-        top: 100px;
-        right: -100%;
-        width: 320px;
-        height: calc(100vh - 100px);
-        background: white;
-        transition: right var(--transition-base);
-        overflow-y: auto;
-        padding: var(--spacing-lg);
-        box-shadow: var(--shadow-2xl);
-        border-top: 1px solid var(--gray-light);
-        z-index: 999;
-    }
-    
-    .nav.active {
-        right: 0;
-    }
-    
-    .nav-menu {
-        flex-direction: column;
-        gap: var(--spacing-xs);
-        align-items: stretch;
-    }
-    
-    .nav-item {
-        width: 100%;
-    }
-    
-    .nav-link {
-        width: 100%;
-        justify-content: space-between;
-        padding: var(--spacing-md) var(--spacing-lg);
-        font-size: var(--font-size-base);
-        border: 1px solid var(--gray-light);
-    }
-    
-    .nav-caret {
-        transition: transform var(--transition-base);
-    }
-    
-    .nav-item.active .nav-caret {
-        transform: rotate(180deg);
-    }
-    
-    .submenu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        border: none;
-        background: var(--gray-lighter);
-        margin-top: var(--spacing-xs);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height var(--transition-base);
-        padding: 0;
-        width: 100%;
-    }
-    
-    .nav-item.active .submenu {
-        max-height: 500px;
-        padding: var(--spacing-sm) 0;
-        margin-top: var(--spacing-xs);
-    }
-    
-    .submenu-link {
-        padding: var(--spacing-sm) var(--spacing-xl);
-        font-size: var(--font-size-sm);
-    }
-    
     .hero-slider {
         height: 60vh;
         min-height: 400px;
@@ -1280,28 +622,10 @@ p {
         width: 100%;
         max-width: 300px;
     }
-    
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footer-bottom-content {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--spacing-sm);
-    }
 }
 
 /* Mobile Landscape (576px - 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
-    .container {
-        padding: 0 var(--spacing-md);
-    }
-    
-    .logo-text {
-        display: none;
-    }
-    
     .hero-slider {
         height: 50vh;
         min-height: 350px;
@@ -1344,61 +668,10 @@ p {
         margin: 0 var(--spacing-md);
         border-radius: var(--radius-xl);
     }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
-    }
 }
 
 /* Mobile Portrait (≤575px) */
 @media (max-width: 575px) {
-    .container {
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .site-top-banner .top-accent {
-        height: 3.5rem;
-    }
-    
-    .site-top-banner .top-accent .top-text {
-        font-size: 0.9rem;
-        white-space: normal;
-        text-align: center;
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .header-container {
-        height: 50px;
-        gap: var(--spacing-sm);
-    }
-    
-    .logo-icon {
-        width: 36px;
-        height: 36px;
-        font-size: var(--font-size-base);
-    }
-    
-    .logo-title {
-        font-size: var(--font-size-base);
-    }
-    
-    .mobile-menu-btn {
-        width: 36px;
-        height: 36px;
-    }
-    
-    .mobile-menu-btn span {
-        width: 20px;
-    }
-    
-    .nav {
-        top: 90px;
-        width: 100%;
-        height: calc(100vh - 90px);
-        padding: var(--spacing-md);
-    }
-    
     .hero-slider {
         height: 40vh;
         min-height: 300px;
@@ -1549,44 +822,6 @@ p {
         font-size: var(--font-size-xs);
         width: 100%;
     }
-    
-    .footer {
-        padding-top: var(--spacing-xl);
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .footer-title {
-        font-size: var(--font-size-base);
-        margin-bottom: var(--spacing-md);
-    }
-    
-    .footer-description {
-        font-size: var(--font-size-xs);
-    }
-    
-    .footer-link {
-        font-size: var(--font-size-xs);
-    }
-    
-    .contact-item {
-        font-size: var(--font-size-xs);
-    }
-    
-    .social-link {
-        width: 36px;
-        height: 36px;
-        font-size: var(--font-size-sm);
-    }
-    
-    .footer-bottom {
-        padding: var(--spacing-md) var(--spacing-sm);
-        font-size: 0.7rem;
-    }
 }
 
 /* Small Mobile (≤375px) */
@@ -1627,21 +862,6 @@ p {
 
 /* Extra Small Mobile (≤320px) */
 @media (max-width: 320px) {
-    .nav {
-        width: 100%;
-        padding: var(--spacing-sm);
-    }
-    
-    .nav-link {
-        padding: var(--spacing-sm);
-        font-size: var(--font-size-sm);
-    }
-    
-    .submenu-link {
-        padding: var(--spacing-xs) var(--spacing-lg);
-        font-size: var(--font-size-xs);
-    }
-    
     .hero-slider {
         margin-top: 85px;
         height: 30vh;
@@ -1667,20 +887,6 @@ p {
 
 /* Touch Device Optimizations */
 @media (hover: none) and (pointer: coarse) {
-    .nav-link:hover {
-        background: transparent;
-    }
-    
-    .nav-item:hover .submenu {
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    .nav-item.active .submenu {
-        opacity: 1;
-        visibility: visible;
-    }
-    
     .service-card:hover {
         transform: none;
     }
@@ -1701,15 +907,6 @@ p {
         transform: none;
     }
     
-    .social-link:hover {
-        transform: none;
-    }
-    
-    /* Add active states for touch devices */
-    .nav-link:active {
-        background: rgba(37, 99, 235, 0.08);
-    }
-    
     .service-card:active {
         transform: scale(0.98);
     }
@@ -1719,41 +916,8 @@ p {
     }
 }
 
-/* High Contrast Mode Support */
-@media (prefers-contrast: high) {
-    .header {
-        background: white;
-        border-bottom: 2px solid black;
-    }
-    
-    .nav-link {
-        border: 1px solid black;
-    }
-    
-    .service-card {
-        border: 2px solid black;
-    }
-    
-    .trust-item {
-        border: 2px solid white;
-    }
-    
-    .cta-btn {
-        border: 2px solid currentColor;
-    }
-}
-
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-    
     .slide {
         transition: none;
     }
@@ -1764,35 +928,6 @@ p {
     .gallery-item:hover .gallery-overlay {
         transform: none;
     }
-}
-
-/* ===== Utilities ===== */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.mb-0 {
-    margin-bottom: 0 !important;
-}
-
-.mt-0 {
-    margin-top: 0 !important;
-}
-
-.w-100 {
-    width: 100%;
 }
 
 /* ===== Animations ===== */
@@ -1848,164 +983,7 @@ p {
         transform: translateX(100%);
     }
 }
-
-/* Print Styles */
-@media print {
-    .header,
-    .hero-slider,
-    .slider-controls,
-    .slider-nav,
-    .footer::before,
-    .social-links,
-    .cta-section::before {
-        display: none !important;
-    }
-    
-    body {
-        color: black;
-        background: white;
-    }
-    
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-    
-    .services-section,
-    .gallery-section,
-    .trust-section,
-    .cta-section,
-    .footer {
-        padding: 1rem 0;
-        margin: 0;
-        background: white !important;
-        color: black !important;
-    }
-    
-    .service-card,
-    .trust-item {
-        box-shadow: none !important;
-        border: 1px solid #ddd !important;
-        break-inside: avoid;
-    }
-    
-    a {
-        color: black;
-        text-decoration: underline;
-    }
-    
-    .cta-btn {
-        border: 1px solid black;
-        color: black;
-    }
-}
 </style>
-
-<!-- ===== Header ===== -->
-<header class="header" id="header">
-    <div class="site-top-banner">
-        <div class="top-accent" aria-hidden="false">
-            <div class="container">
-                <p class="top-text">قرطاسیه فروشی خدمات کامپیوتری و مطبعه علی اکبری</p>
-            </div>
-        </div>
-    </div>
-    <div class="container header-container">
-
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="منو" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Navigation -->
-        <nav class="nav" id="nav" aria-label="منوی اصلی">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="books.html" class="nav-link">کتاب‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="books.html#school-books" class="submenu-link">کتاب‌های درسی مکتب</a></div>
-                        <div class="submenu-item"><a href="books.html#english-books" class="submenu-link">کتاب‌های انگلیسی</a></div>
-                        <div class="submenu-item"><a href="books.html#study-books" class="submenu-link">کتاب‌های مطالعاتی</a></div>
-                        <div class="submenu-item"><a href="books.html#religious-books" class="submenu-link">کتاب‌های دینی و مذهبی</a></div>
-                        <div class="submenu-item"><a href="books.html#children-books" class="submenu-link">کتاب کودک و نوجوان</a></div>
-                        <div class="submenu-item"><a href="books.html#used-books" class="submenu-link">کتاب‌های دسته‌دوم</a></div>
-                        <div class="submenu-item"><a href="books.html#ebooks" class="submenu-link">کتاب‌های الکترونیکی</a></div>
-                        <div class="submenu-item"><a href="books.html#konkoor-books" class="submenu-link">کتاب‌های کانکوری</a></div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="print.html" class="nav-link">مطبعه <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="print.html#printing" class="submenu-link">پرینت، کپی و اسکن</a></div>
-                        <div class="submenu-item"><a href="print.html#quran-printing" class="submenu-link">چاپ رقعه ختم قرآن و فاتحه</a></div>
-                        <div class="submenu-item"><a href="print.html#wedding-cards" class="submenu-link">چاپ کارت عروسی</a></div>
-                        <div class="submenu-item"><a href="print.html#pvc-cards" class="submenu-link">کاپی استخوانی (PVC Card)</a></div>
-                        <div class="submenu-item"><a href="print.html#translation" class="submenu-link">ترجمه اسناد</a></div>
-                        <div class="submenu-item"><a href="print.html#lamination" class="submenu-link">پوش یا لمینت اسناد</a></div>
-                        <div class="submenu-item"><a href="print.html#online-registration" class="submenu-link">ثبت‌نام خدمات آنلاین</a></div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="photography.html" class="nav-link">عکاسی <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="photography.html#professional-photos" class="submenu-link">تولید عکس‌های حرفه‌ای</a></div>
-                        <div class="submenu-item"><a href="photography.html#photo-restoration" class="submenu-link">بازسازی عکس‌های کهنه</a></div>
-                        <div class="submenu-item"><a href="photography.html#photo-editing" class="submenu-link">ادیت عکس مطابق سفارش</a></div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="stationery.html" class="nav-link">قرطاسیه‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="stationery.html#writing-materials" class="submenu-link">لوازم تحریر</a></div>
-                        <div class="submenu-item"><a href="stationery.html#office-supplies" class="submenu-link">لوازم اداری</a></div>
-                        <div class="submenu-item"><a href="stationery.html#art-supplies" class="submenu-link">لوازم هنری</a></div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="education.html" class="nav-link">آموزش دیجیتال <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="education.html#computer-courses" class="submenu-link">آموزش کامپیوتر</a></div>
-                        <div class="submenu-item"><a href="education.html#english-courses" class="submenu-link">آموزش زبان انگلیسی</a></div>
-                        <div class="submenu-item"><a href="education.html#sewing-courses" class="submenu-link">آموزش خیاطی</a></div>
-                        <div class="submenu-item"><a href="education.html#professional-courses" class="submenu-link">آموزش‌های حرفه‌ای</a></div>
-                    </div>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="services-special.html" class="nav-link">خدمات تخصصی <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="services.html#web-app" class="submenu-link">خدمات وبسایت، اپلیکیشن و نرم افزار</a></div>
-                        <div class="submenu-item"><a href="services.html#video-editing" class="submenu-link">خدمات ویرایش و بهسازی ویدئو و تصاویر</a></div>
-                        <div class="submenu-item"><a href="services.html#social-media" class="submenu-link">خدمات شبکه‌های اجتماعی و درآمدزایی آنلاین</a></div>
-                        <div class="submenu-item"><a href="services.html#digital-training" class="submenu-link">خدمات آموزشی و توانمندسازی دیجیتال</a></div>
-                        <div class="submenu-item"><a href="services.html#translation" class="submenu-link">خدمات ترجمه، تایپ و امور اسنادی</a></div>
-                    </div>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="charity.html" class="nav-link">فعالیت‌های خیریه <span class="nav-caret" aria-hidden="true">▾</span></a>
-                    <div class="submenu">
-                        <div class="submenu-item"><a href="volunteer.html" class="submenu-link">فعالیت‌های داوطلبانه</a></div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Header Actions -->
-        <div class="header-actions">
-            <a href="tel:+93781821838" class="contact-btn" aria-label="تماس تلفنی">
-                <i class="bi bi-telephone"></i>
-                <span class="contact-text">تماس</span>
-            </a>
-        </div>
-    </div>
-</header>
 
 <!-- ===== Hero Slider ===== -->
 <section class="hero-slider" aria-label="اسلایدر تصاویر">
@@ -2093,7 +1071,7 @@ p {
                 </div>
                 <h3 class="service-title">کتاب‌فروشی</h3>
                 <p class="service-description">کلیه کتاب‌های درسی، دانشگاهی، کانکوری، مطالعاتی و دینی با قیمت مناسب و کیفیت تضمینی. تنوع کامل کتاب‌ها برای همه مقاطع تحصیلی.</p>
-                <a href="books.html" class="cta-btn secondary">مشاهده کتاب‌ها</a>
+                <a href="{{ site.baseurl }}/books" class="cta-btn secondary">مشاهده کتاب‌ها</a>
             </div>
             
             <div class="service-card animate-fade-in delay-2">
@@ -2102,7 +1080,7 @@ p {
                 </div>
                 <h3 class="service-title">مطبعه</h3>
                 <p class="service-description">پرینت، کپی، اسکن، چاپ کارت، ترجمه اسناد و خدمات آنلاین با پیشرفته‌ترین دستگاه‌ها. کیفیت بالا و سرعت در انجام کارها.</p>
-                <a href="print.html" class="cta-btn secondary">خدمات مطبعه</a>
+                <a href="{{ site.baseurl }}/print" class="cta-btn secondary">خدمات مطبعه</a>
             </div>
             
             <div class="service-card animate-fade-in delay-3">
@@ -2111,7 +1089,7 @@ p {
                 </div>
                 <h3 class="service-title">عکاسی</h3>
                 <p class="service-description">عکاسی حرفه‌ای، بازسازی عکس‌های قدیمی و ادیت عکس مطابق سلیقه شما. استفاده از تجهیزات مدرن و نرم‌افزارهای تخصصی.</p>
-                <a href="photography.html" class="cta-btn secondary">خدمات عکاسی</a>
+                <a href="{{ site.baseurl }}/photography" class="cta-btn secondary">خدمات عکاسی</a>
             </div>
             
             <div class="service-card animate-fade-in delay-1">
@@ -2120,7 +1098,7 @@ p {
                 </div>
                 <h3 class="service-title">قرطاسیه‌فروشی</h3>
                 <p class="service-description">لوازم تحریر، اداری و هنری با تنوع بالا و قیمت مناسب برای دانش‌آموزان و ادارات. کیفیت برتر در لوازم آموزشی.</p>
-                <a href="stationery.html" class="cta-btn secondary">محصولات قرطاسیه</a>
+                <a href="{{ site.baseurl }}/stationery" class="cta-btn secondary">محصولات قرطاسیه</a>
             </div>
             
             <div class="service-card animate-fade-in delay-2">
@@ -2129,7 +1107,7 @@ p {
                 </div>
                 <h3 class="service-title">آموزش دیجیتال</h3>
                 <p class="service-description">دوره‌های آموزشی کامپیوتر، زبان انگلیسی، خیاطی و مهارت‌های کارآفرینی. آموزش‌های کاربردی و بازار محور.</p>
-                <a href="education.html" class="cta-btn secondary">آموزش دیجیتال</a>
+                <a href="{{ site.baseurl }}/education" class="cta-btn secondary">آموزش دیجیتال</a>
             </div>
             
             <div class="service-card animate-fade-in delay-3">
@@ -2138,7 +1116,7 @@ p {
                 </div>
                 <h3 class="service-title">خدمات آنلاین</h3>
                 <p class="service-description">ثبت‌نام تذکره، پاسپورت، بورسیه و سایر خدمات دولتی به صورت آنلاین. صرفه‌جویی در زمان و هزینه.</p>
-                <a href="print.html#online-registration" class="cta-btn secondary">خدمات آنلاین</a>
+                <a href="{{ site.baseurl }}/print#online-registration" class="cta-btn secondary">خدمات آنلاین</a>
             </div>
         </div>
     </div>
@@ -2257,12 +1235,12 @@ p {
             <p class="cta-description animate-fade-in delay-1">برای ثبت سفارش، دریافت مشاوره یا بازدید از فروشگاه، با ما در تماس باشید. ما بهترین خدمات را با کیفیت عالی و قیمت مناسب ارائه می‌دهیم.</p>
             
             <div class="cta-buttons">
-                <a href="tel:+93781821838" class="cta-btn primary animate-fade-in delay-2">
+                <a href="tel:{{ site.phone_primary }}" class="cta-btn primary animate-fade-in delay-2">
                     <i class="bi bi-telephone"></i>
-                    تماس تلفنی: ۰۷۸۱۸۲۱۸۳۸
+                    تماس تلفنی: {{ site.phone_primary }}
                 </a>
                 
-                <a href="#contact" class="cta-btn secondary animate-fade-in delay-3">
+                <a href="#footer" class="cta-btn secondary animate-fade-in delay-3">
                     <i class="bi bi-geo-alt"></i>
                     آدرس فروشگاه
                 </a>
@@ -2271,104 +1249,243 @@ p {
     </div>
 </section>
 
-<!-- ===== Footer ===== -->
-<footer class="footer" id="contact">
-    <div class="container">
-        <div class="footer-content">
-            <!-- Column 1: About -->
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <div class="logo-icon">ع</div>
-                        <div class="logo-text">
-                            <h1 class="logo-title">علی اکبری</h1>
-                            <p class="logo-subtitle">کتاب‌فروشی، مطبعه و خدمات کامپیوتری</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="footer-description">فروشگاه علی اکبری با سال‌ها تجربه در ارائه خدمات آموزشی، چاپی و دیجیتال در کابل فعالیت می‌کند.</p>
-                
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="فیس‌بوک">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="اینستاگرام">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="تلگرام">
-                        <i class="bi bi-telegram"></i>
-                    </a>
-                    <a href="https://wa.me/93781821838" class="social-link" aria-label="واتس‌اپ" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Column 2: Quick Links -->
-            <div class="footer-column">
-                <h3 class="footer-title">لینک‌های سریع</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html" class="footer-link"><i class="bi bi-house"></i> صفحه اصلی</a></li>
-                    <li><a href="books.html" class="footer-link"><i class="bi bi-book"></i> کتاب‌فروشی</a></li>
-                    <li><a href="print.html" class="footer-link"><i class="bi bi-printer"></i> مطبعه</a></li>
-                    <li><a href="photography.html" class="footer-link"><i class="bi bi-camera"></i> عکاسی</a></li>
-                    <li><a href="stationery.html" class="footer-link"><i class="bi bi-pencil"></i> قرطاسیه</a></li>
-                    <li><a href="education.html" class="footer-link"><i class="bi bi-laptop"></i> آموزش دیجیتال</a></li>
-                </ul>
-            </div>
-            
-            <!-- Column 3: Contact Info -->
-            <div class="footer-column">
-                <h3 class="footer-title">تماس با ما</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="bi bi-telephone contact-icon"></i>
-                        <div>
-                            <p class="mb-0">۰۷۸۱۸۲۱۸۳۸</p>
-                            <p class="mb-0" style="font-size: var(--font-size-xs); opacity: 0.8;">۰۷۷۴۵۳۰۳۷۲</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="bi bi-envelope contact-icon"></i>
-                        <div>
-                            <p class="mb-0">tarjman.online@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="bi bi-geo-alt contact-icon"></i>
-                        <div>
-                            <p class="mb-0">کابل، ناحیه ۶، شهرک ۱۲ امام</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="bi bi-clock contact-icon"></i>
-                        <div>
-                            <p class="mb-0">شنبه تا پنجشنبه: ۸ صبح تا ۸ شب</p>
-                            <p class="mb-0">جمعه: ۹ صبح تا ۲ بعدازظهر</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <div>
-                    <p class="mb-0">© ۲۰۲۴ فروشگاه علی اکبری. کلیه حقوق محفوظ است.</p>
-                </div>
-                <div>
-                    <p class="mb-0">طراحی و توسعه با ❤️ برای کسب‌وکارهای افغانستان</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
 <script>
-    // JavaScript code for slider, menu, etc.
-    // این کد در فایل جداگانه JavaScript قرار می‌گیرد
-    // برای سادگی، کد کامل JavaScript اینجا حذف شده است
+// Slider Functionality
+class HeroSlider {
+    constructor() {
+        this.slides = document.querySelectorAll('.slide');
+        this.dots = document.querySelectorAll('.slider-dot');
+        this.prevBtn = document.querySelector('.prev-slide');
+        this.nextBtn = document.querySelector('.next-slide');
+        this.currentSlide = 0;
+        this.slideInterval = null;
+        this.slideDuration = 5000;
+        this.isAutoSliding = true;
+        this.touchStartX = 0;
+        this.touchEndX = 0;
+
+        this.init();
+    }
+
+    init() {
+        // Set initial active slide
+        this.showSlide(this.currentSlide);
+
+        // Dot controls
+        this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                this.stopAutoSlide();
+                this.showSlide(index);
+                this.startAutoSlide();
+            });
+        });
+
+        // Previous button
+        this.prevBtn.addEventListener('click', () => {
+            this.stopAutoSlide();
+            this.prevSlide();
+            this.startAutoSlide();
+        });
+
+        // Next button
+        this.nextBtn.addEventListener('click', () => {
+            this.stopAutoSlide();
+            this.nextSlide();
+            this.startAutoSlide();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                this.stopAutoSlide();
+                this.prevSlide();
+                this.startAutoSlide();
+            } else if (e.key === 'ArrowLeft') {
+                this.stopAutoSlide();
+                this.nextSlide();
+                this.startAutoSlide();
+            }
+        });
+
+        // Touch/swipe support
+        const slider = document.querySelector('.hero-slider');
+        slider.addEventListener('touchstart', (e) => {
+            this.touchStartX = e.changedTouches[0].screenX;
+            this.stopAutoSlide();
+        }, { passive: true });
+
+        slider.addEventListener('touchend', (e) => {
+            this.touchEndX = e.changedTouches[0].screenX;
+            this.handleSwipe();
+            this.startAutoSlide();
+        }, { passive: true });
+
+        // Start auto-slide
+        this.startAutoSlide();
+
+        // Pause on hover (desktop only)
+        if (window.matchMedia('(hover: hover)').matches) {
+            slider.addEventListener('mouseenter', () => this.stopAutoSlide());
+            slider.addEventListener('mouseleave', () => this.startAutoSlide());
+        }
+
+        // Handle visibility change
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                this.stopAutoSlide();
+            } else {
+                this.startAutoSlide();
+            }
+        });
+    }
+
+    showSlide(index) {
+        // Remove active class from all slides and dots
+        this.slides.forEach(slide => {
+            slide.classList.remove('active');
+            slide.setAttribute('aria-hidden', 'true');
+        });
+        this.dots.forEach(dot => dot.classList.remove('active'));
+
+        // Add active class to current slide and dot
+        this.currentSlide = (index + this.slides.length) % this.slides.length;
+        this.slides[this.currentSlide].classList.add('active');
+        this.slides[this.currentSlide].setAttribute('aria-hidden', 'false');
+        this.dots[this.currentSlide].classList.add('active');
+        this.dots[this.currentSlide].setAttribute('aria-current', 'true');
+        
+        // Update other dots
+        this.dots.forEach((dot, i) => {
+            if (i !== this.currentSlide) {
+                dot.removeAttribute('aria-current');
+            }
+        });
+    }
+
+    nextSlide() {
+        this.showSlide(this.currentSlide + 1);
+    }
+
+    prevSlide() {
+        this.showSlide(this.currentSlide - 1);
+    }
+
+    startAutoSlide() {
+        if (this.isAutoSliding) {
+            this.stopAutoSlide();
+            this.slideInterval = setInterval(() => this.nextSlide(), this.slideDuration);
+        }
+    }
+
+    stopAutoSlide() {
+        if (this.slideInterval) {
+            clearInterval(this.slideInterval);
+            this.slideInterval = null;
+        }
+    }
+
+    handleSwipe() {
+        const swipeThreshold = 50;
+        const swipeDistance = this.touchEndX - this.touchStartX;
+
+        if (Math.abs(swipeDistance) > swipeThreshold) {
+            if (swipeDistance > 0) {
+                // Swipe right = previous slide
+                this.prevSlide();
+            } else {
+                // Swipe left = next slide
+                this.nextSlide();
+            }
+        }
+    }
+}
+
+// Initialize slider when DOM is loaded
+let slider;
+document.addEventListener('DOMContentLoaded', () => {
+    slider = new HeroSlider();
+});
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe elements with animation classes
+document.querySelectorAll('.animate-fade-in').forEach(el => {
+    observer.observe(el);
+});
+
+// Lazy loading for images with intersection observer
+if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                }
+                img.classList.remove('loading');
+                imageObserver.unobserve(img);
+            }
+        });
+    }, {
+        rootMargin: '50px 0px',
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+        img.classList.add('loading');
+        imageObserver.observe(img);
+    });
+}
+
+// Add loading state to buttons on click
+document.querySelectorAll('.cta-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        if (this.href && this.href.startsWith('tel:')) {
+            return; // Don't add loading state for tel links
+        }
+        
+        // Add loading state
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="loading-text">در حال بارگذاری...</span>';
+        this.classList.add('loading');
+        
+        // Restore after delay (simulate loading)
+        setTimeout(() => {
+            this.innerHTML = originalText;
+            this.classList.remove('loading');
+        }, 1500);
+    });
+});
+
+// Handle reduced motion preference
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (prefersReducedMotion.matches && slider) {
+    slider.isAutoSliding = false;
+    slider.stopAutoSlide();
+}
+
+// Update on preference change
+prefersReducedMotion.addEventListener('change', (e) => {
+    if (slider) {
+        slider.isAutoSliding = !e.matches;
+        if (slider.isAutoSliding) {
+            slider.startAutoSlide();
+        } else {
+            slider.stopAutoSlide();
+        }
+    }
+});
 </script>
