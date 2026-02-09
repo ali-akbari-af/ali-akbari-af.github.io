@@ -778,8 +778,8 @@ breadcrumb:
             </div>
         </a>
         
-        <a href="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="رنگ‌های هنری">
-            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="رنگ‌های هنری" class="gallery-img">
+        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/colors.jpg" class="gallery-item" data-lightbox="gallery" data-title="رنگ‌های هنری">
+            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/colors.jpg" alt="رنگ‌های هنری" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">رنگ‌های هنری</h4>
                 <p class="gallery-description">تنوع کامل رنگ‌های اکریلیک، روغن و آبرنگ</p>
