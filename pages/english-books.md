@@ -702,7 +702,7 @@ breadcrumb:
     
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/pages/art-tools/sketch-book.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" 
                  alt="کتاب انگلیسی" 
                  class="gallery-image">
             <div class="gallery-overlay">
