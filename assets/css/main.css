@@ -9,7 +9,7 @@
     --dark: #0f1724;
     --dark-light: #24303a;
     --light: #f8fafc;
-    --gray: #6b7280;
+    --gray: #fff;
     --gray-light: #e6eef2;
     --gray-lighter: #f7fafc;
     --success: #16a34a;
@@ -208,4 +208,5 @@ p {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+
 }
