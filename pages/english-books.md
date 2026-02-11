@@ -736,7 +736,6 @@ breadcrumb:
                 <p>کتاب آموزش مکالمه</p>
             </div>
         </div>
-    </div>
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                  alt="کتاب آموزش مکالمه" 
@@ -745,7 +744,6 @@ breadcrumb:
                 <p>کتاب آموزش مکالمه</p>
             </div>
         </div>
-    </div>
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                  alt="کتاب آموزش مکالمه" 
