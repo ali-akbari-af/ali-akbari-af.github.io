@@ -696,13 +696,13 @@ breadcrumb:
         </div>
         
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/emerican-files.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/american-files.jpg" 
                  alt="American English Files" 
                  class="gallery-image">
         </div>
         
         <div class="gallery-item">
-            <img src="httpshttps://ali-akbari-af.github.io/assets/images/english-books/family.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/family.jpg" 
                  alt="Family and Friends" 
                  class="gallery-image">
         </div>
