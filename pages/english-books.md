@@ -245,19 +245,7 @@ breadcrumb:
     transform: scale(1.1);
 }
 
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 1.5rem;
-    color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
+.gallery-item:hover {
     transform: translateY(0);
 }
 
@@ -702,55 +690,37 @@ breadcrumb:
     
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/art-tools/sketch-book.jpg" 
-                 alt="کتاب انگلیسی" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/4000-words.jpg" 
+                 alt="4000 Essential English Words" 
                  class="gallery-image">
-            <div class="gallery-overlay">
-                <p>کتاب آموزش انگلیسی</p>
-            </div>
         </div>
         
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب لغت انگلیسی" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/emerican-files.jpg" 
+                 alt="American English Files" 
                  class="gallery-image">
-            <div class="gallery-overlay">
-                <p>کتاب لغت انگلیسی</p>
-            </div>
         </div>
         
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب گرامر انگلیسی" 
+            <img src="httpshttps://ali-akbari-af.github.io/assets/images/english-books/family.jpg" 
+                 alt="Family and Friends" 
                  class="gallery-image">
-            <div class="gallery-overlay">
-                <p>کتاب گرامر انگلیسی</p>
-            </div>
         </div>
         
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب آموزش مکالمه" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/let's-go.jpg" 
+                 alt="Let's go books" 
                  class="gallery-image">
-            <div class="gallery-overlay">
-                <p>کتاب آموزش مکالمه</p>
-            </div>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب آموزش مکالمه" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/english-times.jpg" 
+                 alt="English Times" 
                  class="gallery-image">
-            <div class="gallery-overlay">
-                <p>کتاب آموزش مکالمه</p>
-            </div>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب آموزش مکالمه" 
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/four-corners.jpg" 
+                 alt="Four Corners" 
                  class="gallery-image">
-            <div class="gallery-overlay">
-                <p>کتاب آموزش مکالمه</p>
-            </div>
         </div>
     </div>
 </section>
