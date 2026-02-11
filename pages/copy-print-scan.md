@@ -371,6 +371,75 @@ breadcrumb:
     font-size: 0.9rem;
 }
 
+  /* بخش گالری تصاویر */
+.gallery-section {
+    margin: 6rem 0;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.03), rgba(255, 107, 107, 0.03));
+    border-radius: 0.75rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    aspect-ratio: 4/3;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(138, 43, 226, 0.25);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-description {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
 /* بخش اطلاعات تماس */
 .contact-info-section {
     background: white;
