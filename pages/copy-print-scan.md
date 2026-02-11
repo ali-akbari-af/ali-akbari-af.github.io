@@ -898,6 +898,47 @@ breadcrumb:
     </div>
 </section>
 
+<section class="gallery-section">
+    <div class="section-title">
+        <h2>تجهیزات چاپ و کپی حرفه‌ای</h2>
+        <p>مجموعه‌ای از دستگاه‌های تخصصی چاپ و اسکن برای ارائه خدمات دقیق، سریع و حرفه‌ای.</p>
+    </div>
+    
+    <div class="gallery-grid">
+        <a href="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l1455.jpg" class="gallery-item" data-lightbox="gallery" data-title="پرینتر L1455">
+            <img src="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l1455.jpg" alt="پرینتر حرفه ای L1455" class="gallery-img">
+            <div class="gallery-overlay">
+                <h4 class="gallery-title">پرینتر Epson L1455</h4>
+                <p class="gallery-description">Epson L1455؛ کیفیت ممتاز، عملکرد قابل اعتماد.</p>
+            </div>
+        </a>
+        
+        <a href="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l850.jpg" class="gallery-item" data-lightbox="gallery" data-title="پرینتر Epson L850">
+            <img src="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l850.jpg" alt="پرینتر Epson L850" class="gallery-img">
+            <div class="gallery-overlay">
+                <h4 class="gallery-title">پرینتر Epson L850</h4>
+                <p class="gallery-description">چاپ و اسکن با کیفیت بالا و جوهر اقتصادی</p>
+            </div>
+        </a>
+        
+        <a href="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l1455-scanner.jpg" class="gallery-item" data-lightbox="gallery" data-title="اسکنر l1455">
+            <img src="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l1455-scanner.jpg" alt="اسکنر حرفه ای l1455" class="gallery-img">
+            <div class="gallery-overlay">
+                <h4 class="gallery-title">اسکنر Epson L1455</h4>
+                <p class="gallery-description">اسکن با کیفیت و حرفه ای سایز های بزرگ</p>
+            </div>
+        </a>
+        
+        <a href="https://ali-akbari-af.github.io/assets/copy-print-scan/l850-scanner.jpg" class="gallery-item" data-lightbox="gallery" data-title="اسکنر l850">
+            <img src="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l850-scanner.jpg" alt="اسکنر حرفه ای L850" class="gallery-img">
+            <div class="gallery-overlay">
+                <h4 class="gallery-title">اسکنر Epson L850</h4>
+                <p class="gallery-description">اسکن با کیفیت و رنگ های زنده</p>
+            </div>
+        </a>
+    </div>
+</section>
+
 <!-- بخش اطلاعات تماس -->
 <section class="contact-info-section">
     <div class="section-title">
