@@ -9,7 +9,7 @@
     --dark: #0f1724;
     --dark-light: #24303a;
     --light: #f8fafc;
-    --gray: #fff;
+    --gray: #6b7280;
     --gray-light: #e6eef2;
     --gray-lighter: #f7fafc;
     --success: #16a34a;
@@ -210,3 +210,4 @@ p {
     }
 
 }
+
