@@ -648,14 +648,14 @@ breadcrumb:
 <section class="contact-info-section">
     <div class="section-title">
         <h2>روش دریافت مجموعه کانکوری</h2>
-        <p>برای دریافت این مجموعه ارزشمند، یکی از روش‌های زیر را انتخاب کنید</p>
+        <p>برای دریافت این مجموعه ارزشمند، می توانید ارتباط بگیرید</p>
     </div>
     
     <div class="contact-methods">
         <div class="method-card">
             <div class="method-icon">📞</div>
             <h3 class="method-title">تماس تلفنی</h3>
-            <p class="method-description">با ما تماس بگیرید، لیست کامل کتاب‌ها و فرم‌ها را دریافت کنید و مجموعه مورد نظر خود را انتخاب نمایید.</p>
+            <p class="method-description">برای دریافت اطلاعات و مشاوره سریع با ما تماس بگیرید.</p>
             <a href="tel:+93781821838" class="method-btn">
                 تماس: ۰۷۸۱۸۲۱۸۳۸
             </a>
@@ -664,7 +664,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">🏪</div>
             <h3 class="method-title">مراجعه حضوری</h3>
-            <p class="method-description">به فروشگاه ما مراجعه کنید، منابع را مشاهده کرده و پس از انتخاب دریافت کنید.</p>
+            <p class="method-description">برای تجربه بهتر و انتخاب راحت‌تر، از فروشگاه ما بازدید کنید.</p>
             <a href="#footer" class="method-btn">
                 آدرس فروشگاه
             </a>
@@ -672,8 +672,8 @@ breadcrumb:
         
         <div class="method-card">
             <div class="method-icon">📱</div>
-            <h3 class="method-title">دریافت از طریق واتس‌اپ</h3>
-            <p class="method-description">لیست کامل منابع را در واتس‌اپ دریافت کنید و پس از انتخاب، برایتان ارسال می‌شود.</p>
+            <h3 class="method-title">ارتباط از طریق واتساپ</h3>
+            <p class="method-description">از طریق واتساپ می‌توانید پرسش‌ها و هماهنگی‌های خود را با ما انجام دهید.</p>
             <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارتباط در واتس‌اپ
