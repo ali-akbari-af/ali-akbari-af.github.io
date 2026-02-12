@@ -205,14 +205,12 @@ breadcrumb:
     color: #0b8f89;
     margin-bottom: 1.2rem;
     font-weight: 800;
-    color: var(--myself);
 }
 
 .content-description {
     color: #6b7280;
     line-height: 1.7;
     font-size: 1.05rem;
-    color: var(--myself);
 }
 
 /* بخش فلسفه ما */
@@ -365,6 +363,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-description {
@@ -375,6 +374,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-buttons {
