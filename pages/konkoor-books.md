@@ -205,12 +205,14 @@ breadcrumb:
     color: #0b8f89;
     margin-bottom: 1.2rem;
     font-weight: 800;
+    color: var(--myself);
 }
 
 .content-description {
     color: #6b7280;
     line-height: 1.7;
     font-size: 1.05rem;
+    color: var(--myself);
 }
 
 /* بخش فلسفه ما */
@@ -709,7 +711,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself);">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
