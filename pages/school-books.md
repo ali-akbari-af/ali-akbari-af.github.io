@@ -406,7 +406,7 @@ p {
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(transparent, #0084ff);
     padding: 1.5rem;
     color: white;
     transform: translateY(100%);
@@ -431,6 +431,7 @@ p {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -438,6 +439,7 @@ p {
     opacity: 0.9;
     max-width: 700px;
     margin: 0 auto 2rem;
+    color: var(--myself)
 }
 
 .contact-buttons {
