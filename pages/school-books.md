@@ -387,7 +387,7 @@ p {
     overflow: hidden;
     aspect-ratio: 4/3;
     background: var(--gray-light);
-    border-radius: 0.3rem;
+    border-radius: 1rem;
 }
 
 .gallery-image {
