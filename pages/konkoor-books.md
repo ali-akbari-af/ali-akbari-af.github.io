@@ -56,19 +56,6 @@ breadcrumb:
     border-radius: 3px;
 }
 
-.price-badge {
-    display: inline-block;
-    background: linear-gradient(135deg, #10b981, #059669);
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin: 1rem 0 2rem;
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
-    border: 3px solid white;
-}
-
 .page-description {
     font-size: 1.3rem;
     color: #0f1724;
@@ -581,11 +568,6 @@ breadcrumb:
         font-size: 2.4rem;
     }
     
-    .price-badge {
-        font-size: 1.5rem;
-        padding: 0.6rem 1.5rem;
-    }
-    
     .price-comparison-section,
     .philosophy-section,
     .contact-info-section {
@@ -664,10 +646,6 @@ breadcrumb:
         font-size: 1rem;
     }
     
-    .price-badge {
-        font-size: 1.3rem;
-        padding: 0.5rem 1.2rem;
-    }
     
     .price-amount {
         font-size: 2.5rem;
@@ -697,7 +675,7 @@ breadcrumb:
 <!-- بخش هیرو -->
 <section class="page-hero">
     <h1 class="page-title">کتاب‌های کانکوری</h1>
-    <div class="price-badge">قیمت استثنایی: ۳۰ افغانی</div>
+  
     <div class="page-description">
         <p>
             کتاب‌های کانکوری – منابع جامع و نازل
