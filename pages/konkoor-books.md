@@ -5,7 +5,7 @@ description: "کتاب‌های کانکوری با قیمت استثنایی ۳
 keywords: "کتاب کانکوری, منابع کنکور, آمادگی کنکور, فرم‌های کانکور, قیمت استثنایی, کابل, علی اکبری"
 breadcrumb:
   - title: "کتاب‌فروشی"
-    link: "/books/index.html"
+    link: "/books/index.hftml"
 ---
 
 <style>
@@ -601,13 +601,6 @@ breadcrumb:
             <p class="content-description">آرشیو کامل فرم‌های کانکور از سال‌های مختلف برای تمرین</p>
         </div>
         
-        <div class="content-card">
-            <div class="content-icon">
-                <i class="fas fa-chart-line"></i>
-            </div>
-            <h3 class="content-title">تحلیل سوالات</h3>
-            <p class="content-description">تحلیل تخصصی سوالات پرتکرار و پیش‌بینی سوالات احتمالی</p>
-        </div>
         
         <div class="content-card">
             <div class="content-icon">
@@ -625,14 +618,6 @@ breadcrumb:
             <p class="content-description">خلاصه‌های مفید و کاربردی از کتاب‌های درسی اصلی</p>
         </div>
         
-        <div class="content-card">
-            <div class="content-icon">
-                <i class="fas fa-trophy"></i>
-            </div>
-            <h3 class="content-title">تجربیات قبول‌شدگان</h3>
-            <p class="content-description">تجربیات و راهنمایی‌های دانشجویان قبول شده در سال‌های قبل</p>
-        </div>
-    </div>
 </section>
 
 <!-- بخش فلسفه ما -->
