@@ -226,73 +226,6 @@ breadcrumb:
     font-size: 1.05rem;
 }
 
-/* بخش گالری تصاویر */
-.gallery-section {
-    margin: 6rem 0;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, rgba(14, 165, 164, 0.03), rgba(99, 102, 241, 0.03));
-    border-radius: var(--radius-lg);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-base);
-    aspect-ratio: 4/3;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: var(--shadow-hover);
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-base);
-}
-
-.gallery-item:hover .gallery-img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 1.5rem;
-    transform: translateY(100%);
-    transition: var(--transition-base);
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-description {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-}
 
 /* بخش ویژگی‌ها */
 .features-section {
@@ -454,6 +387,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -464,6 +398,8 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself)
+
 }
 
 .contact-buttons {
@@ -741,48 +677,6 @@ breadcrumb:
             <h3 class="category-title">ترجمه فوری</h3>
             <p class="category-description">ترجمه سریع اسناد و متون با حفظ کیفیت در کوتاه‌ترین زمان ممکن</p>
         </div>
-    </div>
-</section>
-
-<!-- بخش گالری تصاویر -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>نمونه کارهای ترجمه</h2>
-        <p>برخی از پروژه‌های موفق ترجمه انجام شده</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <a href="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ترجمه مقاله علمی">
-            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ترجمه مقاله علمی" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ترجمه مقاله علمی</h4>
-                <p class="gallery-description">ترجمه مقاله ISI رشته پزشکی</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ترجمه سند حقوقی">
-            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ترجمه سند حقوقی" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ترجمه سند حقوقی</h4>
-                <p class="gallery-description">ترجمه قرارداد بین‌المللی تجاری</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ترجمه گزارش مالی">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ترجمه گزارش مالی" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ترجمه گزارش مالی</h4>
-                <p class="gallery-description">ترجمه گزارش سالیانه شرکت‌های بین‌المللی</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ترجمه کتاب تخصصی">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ترجمه کتاب تخصصی" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ترجمه کتاب تخصصی</h4>
-                <p class="gallery-description">ترجمه کتاب دانشگاهی رشته مهندسی</p>
-            </div>
-        </a>
     </div>
 </section>
 
