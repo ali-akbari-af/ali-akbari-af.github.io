@@ -589,6 +589,7 @@ p {
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -599,6 +600,7 @@ p {
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-buttons {
@@ -1006,37 +1008,6 @@ p {
     </div>
 </section>
 
-<!-- بخش قیمت‌گذاری ویژه -->
-<section class="pricing-section">
-    <h2 class="pricing-title">قیمت‌گذاری استثنایی</h2>
-    <p class="pricing-description">
-        ما با درک شرایط اقتصادی جامعه، کتاب‌های باکیفیت را با حداقل قیمت ممکن ارائه می‌دهیم.
-        هدف ما دسترسی همه به کتاب و دانش است، نه سودآوری صرف.
-    </p>
-    
-    <div class="price-comparison">
-        <div class="price-item">
-            <div class="price-label">قیمت معمول بازار</div>
-            <div class="price-amount">۳۰۰ افغانی</div>
-            <div class="price-note">برای یک کتاب مطالعاتی معمولی</div>
-        </div>
-        
-        <div class="price-arrow">
-            <i class="fas fa-long-arrow-alt-right"></i>
-        </div>
-        
-        <div class="price-item">
-            <div class="price-label">قیمت ما</div>
-            <div class="price-amount">از ۵۰ افغانی</div>
-            <div class="price-note">همان کتاب با کیفیت مناسب</div>
-        </div>
-    </div>
-    
-    <p class="pricing-description" style="font-style: italic; margin-top: 2rem;">
-        فروش به صورت لیلام - فرصتی برای تهیه کتاب‌های مورد نیاز با کمترین هزینه ممکن
-    </p>
-</section>
-
 <!-- بخش فلسفه ما -->
 <section class="philosophy-section">
     <h2 class="philosophy-title">فلسفه ما: تجارت همراه با مسئولیت اجتماعی</h2>
@@ -1078,7 +1049,7 @@ p {
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself);">
         ساعات کار: شنبه تا پنجشنبه - ۸ صبح تا ۸ شب
     </p>
 </section>
