@@ -16,6 +16,7 @@
     --warning: #f59e0b;
     --danger: #ef4444;
     --price-color: #0ea5a4;
+    --myself: #fff;
     
     /* Typography */
     --font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -210,4 +211,5 @@ p {
     }
 
 }
+
 
