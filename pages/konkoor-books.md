@@ -617,7 +617,7 @@ breadcrumb:
             <h3 class="content-title">منابع درسی خلاصه</h3>
             <p class="content-description">خلاصه‌های مفید و کاربردی از کتاب‌های درسی اصلی</p>
         </div>
-        
+      </div>
 </section>
 
 <!-- بخش فلسفه ما -->
