@@ -426,12 +426,12 @@ breadcrumb:
 .contact-info-section {
     background: white;
     padding: 5rem;
-    border-radius: 1.5rem;
-    box-shadow: var(--shadow-lg);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     margin: 6rem 0;
     position: relative;
     overflow: hidden;
-    border: 2px solid rgba(16, 185, 129, 0.1);
+    border: 2px solid rgba(14, 165, 164, 0.1);
 }
 
 .contact-methods {
@@ -444,57 +444,33 @@ breadcrumb:
 .method-card {
     text-align: center;
     padding: 3rem 2rem;
-    background: var(--gradient-light);
-    border-radius: 1.5rem;
-    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgba(14, 165, 164, 0.05), rgba(99, 102, 241, 0.05));
+    border-radius: 0.75rem;
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-.method-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--gradient-primary);
-    transform: translateX(-100%);
-    transition: transform 0.6s ease;
-}
-
-.method-card:hover::before {
-    transform: translateX(0);
 }
 
 .method-card:hover {
     transform: translateY(-10px);
-    border-color: var(--primary);
-    box-shadow: var(--shadow-hover);
+    border-color: #0ea5a4;
+    box-shadow: 0 20px 50px rgba(14, 165, 164, 0.25);
 }
 
 .method-icon {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    color: var(--primary);
-    transition: all 0.4s ease;
-}
-
-.method-card:hover .method-icon {
-    color: var(--accent-bright);
-    transform: scale(1.1);
+    color: #0ea5a4;
 }
 
 .method-title {
     font-size: 1.5rem;
-    color: var(--primary-dark);
+    color: #0b8f89;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .method-description {
-    color: var(--gray);
+    color: #6b7280;
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -502,38 +478,20 @@ breadcrumb:
 .method-btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background: var(--gradient-primary);
+    background: #0ea5a4;
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
-    transition: all 0.4s ease;
-    border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.method-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-accent);
-    transform: translateX(-100%);
-    transition: transform 0.6s ease;
-    z-index: -1;
-}
-
-.method-btn:hover::before {
-    transform: translateX(0);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid #0ea5a4;
 }
 
 .method-btn:hover {
+    background: white;
+    color: #0ea5a4;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 10px 20px rgba(14, 165, 164, 0.3);
 }
 
 .whatsapp-btn {
@@ -541,14 +499,10 @@ breadcrumb:
     border-color: #25D366;
 }
 
-.whatsapp-btn::before {
-    background: #128C7E;
-}
-
 .whatsapp-btn:hover {
-    border-color: #25D366;
+    background: white;
+    color: #25D366;
 }
-
 /* بخش تماس */
 .contact-section {
     background: var(--gradient-primary);
