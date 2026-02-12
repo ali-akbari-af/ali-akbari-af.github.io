@@ -413,6 +413,10 @@ p {
     transition: transform 0.3s ease;
 }
 
+.overlay-text {
+  color: var(--myself)
+}
+
 .gallery-item:hover .gallery-overlay {
     transform: translateY(0);
 }
@@ -774,7 +778,7 @@ p {
                  alt="کتاب درسی های صنف سوم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب های درسی صنف سوم</p>
+                <p class="overlay-text">کتاب های درسی صنف سوم</p>
             </div>
         </div>
         
@@ -783,7 +787,7 @@ p {
                  alt="کتاب های درسی صنف هفتم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب های درسی صنف هفتم</p>
+                <p class="overlay-text">کتاب های درسی صنف هفتم</p>
             </div>
         </div>
         
@@ -792,7 +796,7 @@ p {
                  alt="کتاب های درسی صنف هشتم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب های درسی صنف هشتم</p>
+                <p class="overlay-text">کتاب های درسی صنف هشتم</p>
             </div>
         </div>
         
@@ -801,7 +805,7 @@ p {
                  alt="کتاب های درسی صنف نهم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب های درسی صنف نهم</p>
+                <p class="overlay-text">کتاب های درسی صنف نهم</p>
             </div>
         </div>
     </div>
