@@ -577,6 +577,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -587,6 +588,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-buttons {
@@ -931,13 +933,6 @@ breadcrumb:
             <p class="feature-description">محصولات با دوام و قابل اعتماد برای استفاده طولانی مدت</p>
         </div>
         
-        <div class="feature-card">
-            <div class="feature-icon">
-                <i class="fas fa-truck"></i>
-            </div>
-            <h3 class="feature-title">تحویل سریع</h3>
-            <p class="feature-description">ارسال سریع محصولات به تمام نقاط شهر برای سفارش‌های بالای ۱۰۰۰ افغانی</p>
-        </div>
     </div>
 </section>
 
@@ -1005,7 +1000,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself)">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
