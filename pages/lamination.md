@@ -227,72 +227,6 @@ breadcrumb:
 }
 
 /* بخش گالری تصاویر */
-.gallery-section {
-    margin: 6rem 0;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, rgba(14, 165, 164, 0.03), rgba(99, 102, 241, 0.03));
-    border-radius: 0.75rem;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    aspect-ratio: 4/3;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(14, 165, 164, 0.25);
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-item:hover .gallery-img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 1.5rem;
-    transform: translateY(100%);
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-description {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-}
 
 /* بخش ویژگی‌ها */
 .features-section {
@@ -454,6 +388,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -464,6 +399,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-buttons {
@@ -747,67 +683,6 @@ breadcrumb:
     </div>
 </section>
 
-<!-- بخش گالری تصاویر -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>نمونه کارهای لمینت</h2>
-        <p>برخی از پروژه‌های موفق لمینت انجام شده</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <a href="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-           class="gallery-item" 
-           data-lightbox="gallery"
-           data-title="لمینت مدارک اداری">
-            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 alt="لمینت مدارک اداری" 
-                 class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">لمینت مدارک اداری</h4>
-                <p class="gallery-description">لمینت قراردادها و اسناد رسمی</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-           class="gallery-item" 
-           data-lightbox="gallery"
-           data-title="لمینت مدارک شناسایی">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 alt="لمینت مدارک شناسایی" 
-                 class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">لمینت مدارک شناسایی</h4>
-                <p class="gallery-description">کارت ملی، تذکره و گواهینامه</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-           class="gallery-item" 
-           data-lightbox="gallery"
-           data-title="لمینت مدارک تحصیلی">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 alt="لمینت مدارک تحصیلی" 
-                 class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">لمینت مدارک تحصیلی</h4>
-                <p class="gallery-description">دیپلم، لیسانس و مدارک دانشگاهی</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-           class="gallery-item" 
-           data-lightbox="gallery"
-           data-title="لمینت عکس و تصاویر">
-            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 alt="لمینت عکس و تصاویر" 
-                 class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">لمینت عکس و تصاویر</h4>
-                <p class="gallery-description">عکس‌های شخصی و آثار هنری</p>
-            </div>
-        </a>
-    </div>
-</section>
 
 <!-- بخش ویژگی‌ها -->
 <section class="features-section">
@@ -915,7 +790,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself)">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
