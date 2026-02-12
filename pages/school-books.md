@@ -387,6 +387,7 @@ p {
     overflow: hidden;
     aspect-ratio: 4/3;
     background: var(--gray-light);
+    border-radius: 0.3rem;
 }
 
 .gallery-image {
@@ -767,38 +768,38 @@ p {
     <div class="gallery-grid">
         <!-- جایگزین کنید: تصاویر کتاب‌های خود را اینجا قرار دهید -->
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب درسی" 
+            <img src="https://ali-akbari-af.github.io/assets/images/school-books/grade-three.jpg" 
+                 alt="کتاب درسی های صنف سوم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب ریاضی</p>
+                <p>کتاب های درسی صنف سوم</p>
             </div>
         </div>
         
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب علوم" 
+            <img src="https://ali-akbari-af.github.io/assets/images/school-books/grade-seven.jpg" 
+                 alt="کتاب های درسی صنف هفتم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب علوم تجربی</p>
+                <p>کتاب های درسی صنف هفتم</p>
             </div>
         </div>
         
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب ادبیات" 
+            <img src="https://ali-akbari-af.github.io/assets/images/school-books/grade-eight.jpg" 
+                 alt="کتاب های درسی صنف هشتم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب زبان و ادبیات</p>
+                <p>کتاب های درسی صنف هشتم</p>
             </div>
         </div>
         
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1456513080510-34497c1d87a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="کتاب تاریخ" 
+            <img src="https://ali-akbari-af.github.io/assets/images/school-books/grade-nine.jpg" 
+                 alt="کتاب های درسی صنف نهم" 
                  class="gallery-image">
             <div class="gallery-overlay">
-                <p>کتاب تاریخ و جغرافیا</p>
+                <p>کتاب های درسی صنف نهم</p>
             </div>
         </div>
     </div>
