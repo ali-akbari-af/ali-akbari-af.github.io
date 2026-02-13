@@ -456,6 +456,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -466,6 +467,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-buttons {
@@ -727,22 +729,7 @@ breadcrumb:
             <h3 class="category-title">رنگ‌های تخصصی</h3>
             <p class="category-description">رنگ‌های اکریلیک، روغن، آبرنگ، گواش، رنگ‌پاش و فیکساتیو</p>
         </div>
-        
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-palette"></i>
-            </div>
-            <h3 class="category-title">تجهیزات هنری</h3>
-            <p class="category-description">سه‌پایه بوم، تخته‌شاسی، پالت، ظرف شستشو و میز طراحی</p>
-        </div>
-        
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-boxes"></i>
-            </div>
-            <h3 class="category-title">بسته‌های آموزشی</h3>
-            <p class="category-description">بسته‌های مناسب برای شروع، شامل تمام لوازم ضروری برای هنرجویان</p>
-        </div>
+                
     </div>
 </section>
 
@@ -894,7 +881,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself)">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
