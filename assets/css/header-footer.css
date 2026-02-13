@@ -433,6 +433,27 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
     font-weight: bold;
 }
+/* استایل برای دکمه‌های گروه منو */
+.nav-group-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    font-family: inherit;
+}
+
+/* رفع استایل پیش‌فرض دکمه در حالت focus */
+.nav-group-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* برای حالت hover، دقیقاً مثل لینک‌ها عمل کند */
+.nav-group-btn:hover {
+    background: rgba(14, 165, 164, 0.08);
+    color: var(--primary);
+}
 
 /* ===== فوتر ===== */
 .main-footer {
@@ -819,4 +840,5 @@ h1, h2, h3, h4, h5, h6 {
     .breadcrumb {
         margin-top: 110px;
     }
+
 }
