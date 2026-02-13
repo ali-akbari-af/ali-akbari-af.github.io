@@ -17,14 +17,14 @@
         <!-- Navigation -->
         <nav class="nav" id="nav" aria-label="منوی اصلی">
             <ul class="nav-menu">
-                <!-- خانه -->
+                <!-- خانه (بدون زیرمنو، لینک معمولی) -->
                 <li class="nav-item">
                     <a href="{{ '/' | relative_url }}" class="nav-link">خانه</a>
                 </li>
 
-                <!-- کتاب‌فروشی -->
+                <!-- کتاب‌فروشی (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/books/' | relative_url }}" class="nav-link">کتاب‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">کتاب‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/pages/school-books/' | relative_url }}" class="submenu-link">کتاب‌های درسی مکتب</a></div>
                         <div class="submenu-item"><a href="{{ '/pages/english-books/' | relative_url }}" class="submenu-link">کتاب‌های انگلیسی</a></div>
@@ -37,9 +37,9 @@
                     </div>
                 </li>
 
-                <!-- مطبعه -->
+                <!-- مطبعه (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/print/' | relative_url }}" class="nav-link">مطبعه <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">مطبعه <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/pages/copy-print-scan/' | relative_url }}" class="submenu-link">پرینت، کپی و اسکن</a></div>
                         <div class="submenu-item"><a href="{{ '/pages/quran/' | relative_url }}" class="submenu-link">چاپ رقعه ختم قرآن و فاتحه</a></div>
@@ -51,9 +51,9 @@
                     </div>
                 </li>
 
-                <!-- عکاسی -->
+                <!-- عکاسی (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/photography/' | relative_url }}" class="nav-link">عکاسی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">عکاسی <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/photography/professional-photos/' | relative_url }}" class="submenu-link">تولید عکس‌های حرفه‌ای</a></div>
                         <div class="submenu-item"><a href="{{ '/photography/photo-restoration/' | relative_url }}" class="submenu-link">بازسازی عکس‌های کهنه</a></div>
@@ -61,9 +61,9 @@
                     </div>
                 </li>
 
-                <!-- قرطاسیه‌فروشی -->
+                <!-- قرطاسیه‌فروشی (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/stationery/' | relative_url }}" class="nav-link">قرطاسیه‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">قرطاسیه‌فروشی <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/stationery/writing-tools' | relative_url }}" class="submenu-link">لوازم تحریر</a></div>
                         <div class="submenu-item"><a href="{{ '/stationery/office-supplies/' | relative_url }}" class="submenu-link">لوازم اداری</a></div>
@@ -71,9 +71,9 @@
                     </div>
                 </li>
 
-                <!-- آموزش دیجیتال -->
+                <!-- آموزش دیجیتال (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/education/' | relative_url }}" class="nav-link">بانک آموزش های ویدیوئی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">بانک آموزش های ویدیوئی <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/pages/not-available/' | relative_url }}" class="submenu-link">آموزش کامپیوتر</a></div>
                         <div class="submenu-item"><a href="{{ '/pages/not-available/' | relative_url }}" class="submenu-link">آموزش زبان انگلیسی</a></div>
@@ -82,9 +82,9 @@
                     </div>
                 </li>
                 
-                <!-- خدمات تخصصی -->
+                <!-- خدمات تخصصی (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/services-special/' | relative_url }}" class="nav-link">خدمات تخصصی <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">خدمات تخصصی <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/pages/not-available/' | relative_url }}" class="submenu-link">خدمات وبسایت، اپلیکیشن و نرم افزار</a></div>
                         <div class="submenu-item"><a href="{{ '/pages/not-available/' | relative_url }}" class="submenu-link">خدمات ویرایش و بهسازی ویدئو و تصاویر</a></div>
@@ -94,15 +94,15 @@
                     </div>
                 </li>
                 
-                <!-- فعالیت‌های خیریه -->
+                <!-- فعالیت‌های خیریه (با زیرمنو، تبدیل به دکمه) -->
                 <li class="nav-item">
-                    <a href="{{ '/charity/' | relative_url }}" class="nav-link">فعالیت‌های خیریه <span class="nav-caret" aria-hidden="true">▾</span></a>
+                    <button class="nav-link nav-group-btn" aria-expanded="false">فعالیت‌های خیریه <span class="nav-caret" aria-hidden="true">▾</span></button>
                     <div class="submenu">
                         <div class="submenu-item"><a href="{{ '/pages/volunteer/' | relative_url }}" class="submenu-link">فعالیت‌های داوطلبانه</a></div>
                     </div>
                 </li>
 
-                <!-- تماس -->
+                <!-- تماس (بدون زیرمنو، لینک معمولی) -->
                 <li class="nav-item">
                     <a href="{{ '/contact/' | relative_url }}" class="nav-link">تماس با ما</a>
                 </li>
@@ -117,7 +117,4 @@
             </a>
         </div>
     </div>
-
 </header>
-
-
