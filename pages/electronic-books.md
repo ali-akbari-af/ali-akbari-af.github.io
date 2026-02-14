@@ -426,6 +426,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-description {
@@ -436,6 +437,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself)
 }
 
 .contact-buttons {
@@ -806,7 +808,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself)">
         📍 {{ site.address }} | 🕗 {{ site.work_hours }}
     </p>
 </section>
