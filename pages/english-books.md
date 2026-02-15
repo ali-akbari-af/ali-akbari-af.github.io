@@ -263,6 +263,7 @@ breadcrumb:
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
+    color: var(--myself);
 }
 
 .contact-description {
@@ -270,6 +271,7 @@ breadcrumb:
     opacity: 0.9;
     max-width: 700px;
     margin: 0 auto 2rem;
+    color: var(--myself);
 }
 
 .contact-buttons {
