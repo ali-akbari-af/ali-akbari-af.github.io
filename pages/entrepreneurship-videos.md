@@ -267,105 +267,6 @@ breadcrumb:
 }
 
 /* بخش گالری ویدیوهای آموزشی دیجیتال */
-.gallery-section {
-    margin: 6rem 0;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, rgba(14, 165, 164, 0.03), rgba(59, 130, 246, 0.03));
-    border-radius: var(--radius-lg);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-base);
-    background: white;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-}
-
-.video-thumbnail {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: var(--transition-base);
-}
-
-.gallery-item:hover .video-thumbnail {
-    transform: scale(1.05);
-}
-
-.video-content {
-    padding: 1.5rem;
-}
-
-.video-title {
-    font-size: 1.3rem;
-    color: var(--primary-dark);
-    margin-bottom: 0.8rem;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.video-description {
-    color: var(--gray);
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.video-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--gray);
-    font-size: 0.9rem;
-}
-
-.video-duration {
-    background: rgba(14, 165, 164, 0.1);
-    color: var(--primary);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-weight: 600;
-}
-
-.play-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--primary);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition-base);
-    margin-top: 1rem;
-    width: 100%;
-    justify-content: center;
-}
-
-.play-btn:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-}
-
-.play-btn i {
-    font-size: 1.2rem;
-}
 
 /* بخش ویژگی‌های آموزش دیجیتال */
 .features-section {
@@ -524,6 +425,7 @@ breadcrumb:
     margin-bottom: 1.8rem;
     font-weight: 800;
     position: relative;
+    color: var(--myself);
 }
 
 .support-description {
@@ -531,6 +433,7 @@ breadcrumb:
     opacity: 0.95;
     line-height: 1.9;
     margin-bottom: 3rem;
+    color: var(--myself);
 }
 
 .support-cta {
@@ -654,6 +557,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-description {
@@ -664,6 +568,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-buttons {
@@ -960,78 +865,7 @@ breadcrumb:
 </section>
 
 <!-- بخش گالری ویدیوهای آموزشی دیجیتال -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>ویدیوهای منتخب آموزش دیجیتال</h2>
-        <p>آموزش‌های کاربردی و قابل اجرا برای کارآفرینی دیجیتال</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="کسب‌وکار اینترنتی" class="video-thumbnail">
-            <div class="video-content">
-                <h4 class="video-title">راه‌اندازی فروشگاه اینترنتی در ۲۴ ساعت</h4>
-                <p class="video-description">آموزش گام به گام ایجاد فروشگاه آنلاین بدون نیاز به دانش برنامه‌نویسی</p>
-                <div class="video-meta">
-                    <span class="video-duration">۴۸ دقیقه</span>
-                    <span>۳،۴۵۶ بازدید</span>
-                </div>
-                <a href="#" class="play-btn">
-                    <i class="fas fa-play"></i>
-                    مشاهده ویدیو
-                </a>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="برنامه‌نویسی موبایل" class="video-thumbnail">
-            <div class="video-content">
-                <h4 class="video-title">آموزش ساخت اپلیکیشن موبایل برای کسب‌وکار</h4>
-                <p class="video-description">آموزش مقدماتی برنامه‌نویسی اندروید برای کارآفرینان</p>
-                <div class="video-meta">
-                    <span class="video-duration">۵۲ دقیقه</span>
-                    <span>۲،۸۹۱ بازدید</span>
-                </div>
-                <a href="#" class="play-btn">
-                    <i class="fas fa-play"></i>
-                    مشاهده ویدیو
-                </a>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="بازاریابی دیجیتال" class="video-thumbnail">
-            <div class="video-content">
-                <h4 class="video-title">بازاریابی دیجیتال برای کسب‌وکارهای کوچک</h4>
-                <p class="video-description">آموزش استراتژی‌های بازاریابی آنلاین با بودجه محدود</p>
-                <div class="video-meta">
-                    <span class="video-duration">۴۱ دقیقه</span>
-                    <span>۴،۱۲۰ بازدید</span>
-                </div>
-                <a href="#" class="play-btn">
-                    <i class="fas fa-play"></i>
-                    مشاهده ویدیو
-                </a>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="فریلنسینگ" class="video-thumbnail">
-            <div class="video-content">
-                <h4 class="video-title">راهنمای کامل فریلنسینگ و درآمدزایی آنلاین</h4>
-                <p class="video-description">آموزش پیدا کردن پروژه، قیمت‌گذاری و مدیریت کار به عنوان فریلنسر</p>
-                <div class="video-meta">
-                    <span class="video-duration">۵۶ دقیقه</span>
-                    <span>۳،۵۶۷ بازدید</span>
-                </div>
-                <a href="#" class="play-btn">
-                    <i class="fas fa-play"></i>
-                    مشاهده ویدیو
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- بخش ویژگی‌های آموزش دیجیتال -->
 <section class="features-section">
@@ -1086,7 +920,7 @@ breadcrumb:
         <div class="course-card">
             <h4 class="course-title">آموزش کامپیوتر مقدماتی تا پیشرفته</h4>
             <p class="course-description">آموزش کامل مهارت‌های کامپیوتری از پایه تا سطح حرفه‌ای برای بازار کار</p>
-            <a href="/education/computer-courses.html" class="course-link">
+            <a href="#contact-section">
                 اطلاعات بیشتر
                 <i class="fas fa-arrow-left"></i>
             </a>
@@ -1095,7 +929,7 @@ breadcrumb:
         <div class="course-card">
             <h4 class="course-title">آموزش زبان انگلیسی دیجیتال</h4>
             <p class="course-description">آموزش زبان انگلیسی با تمرکز بر نیازهای کسب‌وکار و فناوری</p>
-            <a href="/education/english-courses.html" class="course-link">
+            <a href="#contact-section">
                 اطلاعات بیشتر
                 <i class="fas fa-arrow-left"></i>
             </a>
@@ -1104,7 +938,7 @@ breadcrumb:
         <div class="course-card">
             <h4 class="course-title">آموزش‌های حرفه‌ای دیجیتال</h4>
             <p class="course-description">دوره‌های تخصصی در زمینه‌های مختلف فناوری اطلاعات و دیجیتال</p>
-            <a href="/education/professional-courses.html" class="course-link">
+            <a href="#contact-section">
                 اطلاعات بیشتر
                 <i class="fas fa-arrow-left"></i>
             </a>
@@ -1167,7 +1001,7 @@ breadcrumb:
 </section>
 
 <!-- بخش تماس -->
-<section class="contact-section">
+<section class="contact-section" id="contact-section">
     <h2 class="contact-title">آموزش دیجیتال، راهی به سوی آینده‌ای پایدار</h2>
     <p class="contact-description">
         با آموزش دیجیتال هدفمند و کاربردی، جوانان را برای ایجاد کسب‌وکارهای پایدار در عصر دیجیتال توانمند کنیم
