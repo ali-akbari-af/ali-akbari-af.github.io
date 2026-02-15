@@ -913,7 +913,7 @@ breadcrumb:
 <section class="related-courses">
     <div class="section-title">
         <h2>آموزش‌های دیجیتال مرتبط</h2>
-        <p>دوره‌های آموزشی دیگر ما در حوزه دیجیتال</p>
+        <p>نمونه های از دوره‌های آموزشی در حوزه دیجیتال</p>
     </div>
     
     <div class="courses-grid">
