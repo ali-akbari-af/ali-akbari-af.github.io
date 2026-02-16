@@ -85,6 +85,11 @@ breadcrumb:
     box-sizing: border-box;
 }
 
+  svg {
+    width: 4rem;
+    height: 4rem;
+  }
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
