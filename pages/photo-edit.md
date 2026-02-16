@@ -538,7 +538,7 @@ breadcrumb:
 .method-card {
     text-align: center;
     padding: 3rem 2rem;
-    background: linear-gradient(135deg, rgba(0, 180, 216, 0.05), rgba(255, 107, 107, 0.05));
+    background: linear-gradient(135deg, rgba(0, 180, 216, 0.05), rgb(107 221 255 / 5%));
     border-radius: 20px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 2px solid transparent;
@@ -977,7 +977,7 @@ breadcrumb:
         <div class="before-after-grid">
             <div class="before-after-card">
                 <div class="ba-image-container">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="عکس قبل از ادیت" class="ba-image">
+                    <img src="https://ali-akbari-af.github.io/assets/images/photo-edit/before1.jpg" alt="عکس قبل از ادیت" class="ba-image">
                     <div class="ba-label before">قبل از ادیت</div>
                 </div>
                 <div class="ba-content">
