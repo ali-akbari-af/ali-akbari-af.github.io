@@ -273,7 +273,7 @@ breadcrumb:
 .category-icon {
     width: 85px;
     height: 85px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, #2edef6, #4a5ebc);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -761,7 +761,7 @@ breadcrumb:
 
 /* بخش تماس */
 .contact-section {
-    background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     color: white;
     padding: 5rem 2rem;
     border-radius: 25px;
@@ -788,6 +788,7 @@ breadcrumb:
     position: relative;
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: var(--myself);
 }
 
 .contact-description {
@@ -799,6 +800,7 @@ breadcrumb:
     position: relative;
     z-index: 1;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: var(--myself);
 }
 
 .contact-buttons {
@@ -1145,46 +1147,6 @@ breadcrumb:
 </section>
 
 <!-- بخش گالری تصاویر -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>گالری نمونه کارها</h2>
-        <p>برخی از پروژه‌های موفق ادیت عکس انجام شده</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <a href="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ادیت عکس پروفایل حرفه‌ای">
-            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ادیت عکس پروفایل حرفه‌ای" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ادیت عکس پروفایل</h4>
-                <p class="gallery-description">ویرایش عکس پروفایل برای شبکه‌های اجتماعی حرفه‌ای</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="رتوش عروس">
-            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="رتوش عروس" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">رتوش عروس</h4>
-                <p class="gallery-description">زیباسازی عکس عروسی با حفظ طبیعی‌بودن چهره</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ادیت عکس مدلینگ">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ادیت عکس مدلینگ" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ادیت عکس مدلینگ</h4>
-                <p class="gallery-description">ویرایش حرفه‌ای عکس‌های مدلینگ و فشن</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="ادیت عکس محصول">
-            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ادیت عکس محصول" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">ادیت عکس محصول</h4>
-                <p class="gallery-description">بهبود کیفیت عکس محصولات برای کاتالوگ و سایت</p>
-            </div>
-        </a>
-    </div>
-</section>
 
 <!-- بخش ویژگی‌ها -->
 <section class="features-section">
@@ -1294,7 +1256,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.95; font-size: 1.1rem; font-weight: 600; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+    <p style="margin-top: 2rem; opacity: 0.95; font-size: 1.1rem; font-weight: 600; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); color: var(--myself);">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
