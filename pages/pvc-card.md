@@ -141,113 +141,6 @@ breadcrumb:
 }
 
 /* بخش گالری عکس */
-.gallery-section {
-    margin: 6rem 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.section-title h2 {
-    font-size: 2.5rem;
-    background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 1.5rem;
-    font-weight: 800;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 120px;
-    height: 5px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    border-radius: 3px;
-    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
-}
-
-.section-title p {
-    color: var(--dark-light);
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
-    font-weight: 500;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: white;
-    border: 3px solid transparent;
-}
-
-.gallery-item:hover {
-    transform: translateY(-15px) scale(1.03);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-    color: white;
-    padding: 2.5rem 2rem 2rem;
-    transform: translateY(100%);
-    transition: transform 0.4s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.gallery-description {
-    font-size: 1rem;
-    opacity: 0.95;
-    line-height: 1.6;
-}
 
 /* بخش ویژگی‌ها */
 .features-section {
@@ -661,6 +554,7 @@ breadcrumb:
     position: relative;
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: var(--myself);
 }
 
 .contact-description {
@@ -672,6 +566,7 @@ breadcrumb:
     position: relative;
     z-index: 1;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: var(--myself);
 }
 
 .contact-buttons {
@@ -892,54 +787,6 @@ breadcrumb:
 </section>
 
 <!-- بخش گالری عکس -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>گالری نمونه کارهای کاپی استخوانی</h2>
-        <p>نمونه‌هایی از کارت‌های PVC با کیفیت بالا که تولید کرده‌ایم</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="pvc-gallery" data-title="کارت PVC اداری">
-                <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت PVC اداری" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت PVC اداری</h3>
-                <p class="gallery-description">کارت شناسایی با کیفیت بالا برای محیط‌های اداری</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1590080789846-6ff5e5d5a1c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="pvc-gallery" data-title="کارت دانشجویی">
-                <img src="https://images.unsplash.com/photo-1590080789846-6ff5e5d5a1c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت دانشجویی" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت دانشجویی</h3>
-                <p class="gallery-description">کارت PVC با طراحی حرفه‌ای برای دانشجویان</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1621423041078-dc1f34f66b9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="pvc-gallery" data-title="کارت عضویت">
-                <img src="https://images.unsplash.com/photo-1621423041078-dc1f34f66b9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت عضویت" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت عضویت</h3>
-                <p class="gallery-description">کارت PVC برای باشگاه‌ها و مراکز تفریحی</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="pvc-gallery" data-title="کارت تذکره">
-                <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت تذکره" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت تذکره</h3>
-                <p class="gallery-description">کارت شناسایی شخصی با کیفیت بالا</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- بخش ویژگی‌ها -->
 <section class="features-section">
@@ -1091,7 +938,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.95; font-size: 1.1rem; font-weight: 600; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+    <p style="margin-top: 2rem; opacity: 0.95; font-size: 1.1rem; font-weight: 600; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); color: var(--myself)">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
