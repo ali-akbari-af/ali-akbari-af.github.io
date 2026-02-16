@@ -1,4 +1,4 @@
-<img width="709" height="945" alt="image" src="https://github.com/user-attachments/assets/58e5e18b-e0bd-464f-93f1-e2295dc9cefd" />---
+---
 layout: page
 title: "ادیت عکس مطابق سفارش | فروشگاه علی اکبری - کابل"
 description: "ادیت عکس مطابق سفارش با دقت و توجه کامل انجام می‌شود. اصلاح و بهینه‌سازی تصاویر شخصی، خانوادگی، اداری و تبلیغاتی با بالاترین کیفیت."
