@@ -750,6 +750,13 @@ breadcrumb:
             <h3 class="category-title">لوازم مصرفی اداری</h3>
             <p class="category-description">کاغذ A4، ماشین حساب، منگنه، سوزن منگنه و دیگر لوازم مصرفی با کیفیت</p>
         </div>
+        <div class="category-card">
+            <div class="category-icon">
+                <i class="fas fa-pen"></i>
+            </div>
+            <h3 class="category-title">لوازم مصرفی اداری</h3>
+            <p class="category-description">کاغذ A4، ماشین حساب، منگنه، سوزن منگنه و دیگر لوازم مصرفی با کیفیت</p>
+        </div>
               
 </section>
 
@@ -770,7 +777,7 @@ breadcrumb:
             </a>
         
         <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/stapler.jpg" class="gallery-item" data-lightbox="gallery" data-title="استبلر و پایه اسکاشتب">
-            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/button-filefolder.jpg" alt="استبلر و پایه اسکاشتیب" class="gallery-img">
+            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/stapler.jpg" alt="استبلر و پایه اسکاشتیب" class="gallery-img">
         </a>
         
         <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" class="gallery-item" data-lightbox="gallery" data-title="استامپ پد اثر انگشت و سوراخ کن کاغذ">
