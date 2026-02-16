@@ -492,57 +492,6 @@ body {
 }
 
 /* بخش گالری نمونه کارها */
-.gallery-section {
-    margin: 6rem 0;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: var(--radius);
-    overflow: hidden;
-    aspect-ratio: 3/4;
-    background: var(--gray-light);
-    transition: var(--transition);
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-}
-
-.gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.gallery-item:hover .gallery-image {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 1.5rem;
-    color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
 
 /* بخش اطلاعات تماس */
 .contact-info-section {
@@ -656,6 +605,7 @@ body {
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-description {
@@ -666,6 +616,7 @@ body {
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-buttons {
@@ -1077,50 +1028,6 @@ body {
 </section>
 
 <!-- بخش گالری نمونه کارها -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>نمونه کارهای چاپ شده</h2>
-        <p>نمونه‌هایی از رقعه‌های چاپ شده با کیفیت عالی</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1529245019870-59a7a3e0c5df?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="رقعه ختم قرآن" 
-                 class="gallery-image">
-            <div class="gallery-overlay">
-                <p>رقعه ختم قرآن - طراحی سنتی</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="رقعه فاتحه" 
-                 class="gallery-image">
-            <div class="gallery-overlay">
-                <p>رقعه فاتحه - طراحی مدرن</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1590077428593-a55bb07c4665?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="رقعه ماه رمضان" 
-                 class="gallery-image">
-            <div class="gallery-overlay">
-                <p>رقعه ماه مبارک رمضان</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                 alt="رقعه مناسبت مذهبی" 
-                 class="gallery-image">
-            <div class="gallery-overlay">
-                <p>رقعه مناسبت‌های مذهبی</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- بخش اطلاعات تماس -->
 <section class="contact-info-section">
@@ -1187,7 +1094,7 @@ body {
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself);">
         ✨ کیفیت عالی | 🙏 احترام به ارزش‌های مذهبی | 🎨 طراحی هنرمندانه
     </p>
 </section>
