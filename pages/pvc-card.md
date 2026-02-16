@@ -524,7 +524,7 @@ breadcrumb:
 }
 
 .whatsapp-btn {
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    background: #25D366;
 }
 
 .whatsapp-btn:hover {
