@@ -153,7 +153,7 @@ breadcrumb:
 
 .section-title h2 {
     font-size: 2.5rem;
-    background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
