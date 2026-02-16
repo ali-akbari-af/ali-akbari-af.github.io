@@ -308,73 +308,6 @@ breadcrumb:
     padding-right: 0.5rem;
 }
 
-/* بخش گالری تصاویر */
-.gallery-section {
-    margin: 6rem 0;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(139, 92, 246, 0.03));
-    border-radius: var(--radius-lg);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-base);
-    aspect-ratio: 4/3;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: var(--shadow-hover);
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-base);
-}
-
-.gallery-item:hover .gallery-img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 1.5rem;
-    transform: translateY(100%);
-    transition: var(--transition-base);
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-description {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-}
 
 /* بخش مشارکت */
 .contribution-section {
@@ -394,6 +327,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contribution-description {
@@ -404,6 +338,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contribution-methods {
@@ -790,47 +725,6 @@ breadcrumb:
     </div>
 </section>
 
-<!-- بخش گالری تصاویر -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>گالری فعالیت‌های داوطلبانه</h2>
-        <p>تصاویری از اقدامات خیریه و توزیع منابع آموزشی</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <a href="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="توزیع کتاب برای کودکان">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="توزیع کتاب برای کودکان" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">توزیع کتاب برای کودکان</h4>
-                <p class="gallery-description">توزیع کتاب و لوازم تحریر برای دانش‌آموزان نیازمند</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="آموزش کامپیوتر به نوجوانان">
-            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="آموزش کامپیوتر به نوجوانان" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">آموزش کامپیوتر</h4>
-                <p class="gallery-description">آموزش مهارت‌های کامپیوتری به نوجوانان محروم</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="توزیع منابع آموزشی">
-            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="توزیع منابع آموزشی" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">توزیع منابع آموزشی</h4>
-                <p class="gallery-description">توزیع کتابچه و مواد آموزشی برای کودکان</p>
-            </div>
-        </a>
-        
-        <a href="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="gallery-item" data-lightbox="gallery" data-title="حمایت از کودکان یتیم">
-            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="حمایت از کودکان یتیم" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">حمایت از کودکان یتیم</h4>
-                <p class="gallery-description">ارائه کمک‌های آموزشی و فرهنگی به کودکان بی‌سرپرست</p>
-            </div>
-        </a>
-    </div>
-</section>
 
 <!-- بخش مشارکت -->
 <section class="contribution-section">
