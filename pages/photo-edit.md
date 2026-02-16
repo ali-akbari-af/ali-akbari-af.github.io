@@ -1,4 +1,4 @@
----
+<img width="709" height="945" alt="image" src="https://github.com/user-attachments/assets/58e5e18b-e0bd-464f-93f1-e2295dc9cefd" />---
 layout: page
 title: "ادیت عکس مطابق سفارش | فروشگاه علی اکبری - کابل"
 description: "ادیت عکس مطابق سفارش با دقت و توجه کامل انجام می‌شود. اصلاح و بهینه‌سازی تصاویر شخصی، خانوادگی، اداری و تبلیغاتی با بالاترین کیفیت."
@@ -43,17 +43,6 @@ breadcrumb:
     overflow: hidden;
 }
 
-.page-hero::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(0, 180, 216, 0.15) 0%, transparent 70%);
-    z-index: -1;
-}
-
 .page-hero::after {
     content: '';
     position: absolute;
@@ -67,7 +56,7 @@ breadcrumb:
 
 .page-title {
     font-size: 3.2rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -87,14 +76,14 @@ breadcrumb:
     transform: translateX(50%);
     width: 180px;
     height: 6px;
-    background: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     border-radius: 3px;
     box-shadow: 0 4px 12px rgba(0, 180, 216, 0.3);
 }
 
 .service-badge {
     display: inline-block;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     color: white;
     padding: 0.8rem 2.5rem;
     border-radius: 50px;
@@ -334,98 +323,6 @@ breadcrumb:
 }
 
 /* بخش گالری تصاویر */
-.gallery-section {
-    margin: 6rem 0;
-    padding: 4rem 0;
-    background: linear-gradient(135deg, rgba(0, 180, 216, 0.03), rgba(255, 107, 107, 0.03));
-    border-radius: 25px;
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(0, 180, 216, 0.1) 0%, transparent 70%);
-}
-
-.gallery-section::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.8rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-    position: relative;
-    z-index: 1;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    aspect-ratio: 4/3;
-}
-
-.gallery-item:hover {
-    transform: translateY(-12px) scale(1.03);
-    box-shadow: var(--shadow-hover);
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.gallery-item:hover .gallery-img {
-    transform: scale(1.15);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
-    padding: 1.8rem;
-    transform: translateY(100%);
-    transition: transform 0.4s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.gallery-description {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
 
 /* بخش قبل و بعد */
 .before-after-section {
@@ -588,7 +485,7 @@ breadcrumb:
 .feature-icon {
     width: 75px;
     height: 75px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     border-radius: 50%;
     display: flex;
     align-items: center;
