@@ -28,6 +28,10 @@ breadcrumb:
     --shadow-hover: 0 20px 50px rgba(67, 97, 238, 0.3); /* سایه با رنگ اصلی */
 }
 
+  .h2 p {
+    text-align: center;
+  }
+
 /* ===== محتوای صفحه با پالت جدید ===== */
 .page-content {
     max-width: 1400px;
