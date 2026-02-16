@@ -86,8 +86,7 @@ breadcrumb:
 }
 
   svg {
-    width: 4rem;
-    height: 4rem;
+    font-size: 3rem;
   }
 
 html {
