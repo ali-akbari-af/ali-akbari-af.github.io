@@ -925,7 +925,7 @@ p {
         <div class="method-card">
             <div class="method-icon">📞</div>
             <h3 class="method-title">مشاوره تلفنی</h3>
-            <p class="method-description">با ما تماس بگیرید و می توانید سوال بپرسید</p>
+            <p class="method-description">با ما تماس بگیرید و می توانید سوال های خودرا بپرسید</p>
             <a href="tel:+93781821838" class="method-btn">
                 تماس: ۰۷۸۱۸۲۱۸۳۸
             </a>
