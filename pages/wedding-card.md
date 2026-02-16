@@ -100,107 +100,6 @@ breadcrumb:
     border-radius: 2px;
 }
 
-/* بخش گالری عکس */
-.gallery-section {
-    margin: 6rem 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.section-title h2 {
-    font-size: 2.5rem;
-    color: var(--primary-dark);
-    margin-bottom: 1.5rem;
-    font-weight: 800;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    border-radius: 2px;
-}
-
-.section-title p {
-    color: var(--gray);
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-base);
-    background: white;
-    border: 2px solid transparent;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    transition: transform var(--transition-base);
-}
-
-.gallery-item:hover img {
-    transform: scale(1.05);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    color: white;
-    padding: 2rem 1.5rem 1.5rem;
-    transform: translateY(100%);
-    transition: transform var(--transition-base);
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-description {
-    font-size: 0.9rem;
-    opacity: 0.9;
-}
 
 /* بخش ویژگی‌ها */
 .features-section {
@@ -463,6 +362,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-description {
@@ -473,6 +373,7 @@ breadcrumb:
     line-height: 1.9;
     position: relative;
     z-index: 1;
+    color: var(--myself);
 }
 
 .contact-buttons {
@@ -694,55 +595,6 @@ breadcrumb:
     </div>
 </section>
 
-<!-- بخش گالری عکس -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>گالری نمونه کارت‌های عروسی</h2>
-        <p>نمونه‌هایی از کارت‌های عروسی با طراحی زیبا و کیفیت بالا</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="wedding-gallery" data-title="کارت عروسی کلاسیک">
-                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت عروسی کلاسیک" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت عروسی کلاسیک</h3>
-                <p class="gallery-description">طراحی کلاسیک با جزئیات طلایی و فونت‌های ظریف</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="wedding-gallery" data-title="کارت عروسی مدرن">
-                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت عروسی مدرن" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت عروسی مدرن</h3>
-                <p class="gallery-description">طراحی مدرن با رنگ‌های شاد و المان‌های مینیمال</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1508919805625-272c8f5c8b7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="wedding-gallery" data-title="کارت عروسی سنتی">
-                <img src="https://images.unsplash.com/photo-1508919805625-272c8f5c8b7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت عروسی سنتی" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت عروسی سنتی</h3>
-                <p class="gallery-description">طراحی سنتی با تزئینات و نقوش فرهنگی</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="wedding-gallery" data-title="کارت عروسی لاکچری">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="کارت عروسی لاکچری" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">کارت عروسی لاکچری</h3>
-                <p class="gallery-description">طراحی لوکس با جزئیات برجسته و متریال‌های خاص</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- بخش توجه مهم -->
 <section class="notice-section">
@@ -905,7 +757,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.1rem; color: var(--myself);">
         📍 {{ site.address }} | 🕗 {{ site.work_hours }}
     </p>
 </section>
