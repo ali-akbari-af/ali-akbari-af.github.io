@@ -343,73 +343,6 @@ breadcrumb:
 }
 
 /* بخش گالری نمونه کارها */
-.gallery-section {
-    margin: 6rem 0;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.8rem;
-    margin-top: 3rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: all 0.4s ease;
-    background: white;
-    border: 2px solid transparent;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(31, 41, 55, 0.95), transparent);
-    color: var(--text-light);
-    padding: 1.8rem;
-    transform: translateY(100%);
-    transition: transform 0.4s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-light);
-}
-
-.gallery-description {
-    font-size: 1rem;
-    opacity: 0.9;
-    color: var(--text-light);
-}
 
 /* بخش مراحل کار */
 .process-section {
@@ -971,54 +904,6 @@ breadcrumb:
 </section>
 
 <!-- بخش گالری نمونه کارها -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>نمونه عکس‌های حرفه‌ای</h2>
-        <p>نمونه‌هایی از عکس‌های با کیفیت که تولید کرده‌ایم</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="photo-gallery" data-title="عکس پرسنلی حرفه‌ای">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="عکس پرسنلی حرفه‌ای" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">عکس پرسنلی</h3>
-                <p class="gallery-description">عکس استاندارد برای مصارف اداری</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="photo-gallery" data-title="عکس پاسپورت">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="عکس پاسپورت" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">عکس پاسپورت</h3>
-                <p class="gallery-description">عکس با استانداردهای بین‌المللی</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1494790108755-2616b786d4d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="photo-gallery" data-title="عکس تبلیغاتی">
-                <img src="https://images.unsplash.com/photo-1494790108755-2616b786d4d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="عکس تبلیغاتی" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">عکس تبلیغاتی</h3>
-                <p class="gallery-description">عکس حرفه‌ای برای برندینگ</p>
-            </div>
-        </div>
-        
-        <div class="gallery-item">
-            <a href="https://images.unsplash.com/photo-1507591064344-4c6ce005-128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" data-lightbox="photo-gallery" data-title="عکس تحصیلی">
-                <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005-128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="عکس تحصیلی" loading="lazy">
-            </a>
-            <div class="gallery-overlay">
-                <h3 class="gallery-title">عکس تحصیلی</h3>
-                <p class="gallery-description">عکس مناسب برای مدارک دانشگاهی</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- بخش مراحل کار -->
 <section class="process-section">
@@ -1134,7 +1019,7 @@ breadcrumb:
         </a>
     </div>
     
-    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.2rem;">
+    <p style="margin-top: 2rem; opacity: 0.9; font-size: 1.2rem; color: var(--myself)">
         📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب
     </p>
 </section>
