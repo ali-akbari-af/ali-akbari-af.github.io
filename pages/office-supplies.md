@@ -761,56 +761,23 @@ breadcrumb:
         <h2>دسته‌بندی محصولات اداری</h2>
         <p>انواع لوازم اداری با کیفیت بالا برای نیازهای مختلف</p>
     </div>
-    
-    <div class="categories-grid">
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-chair"></i>
-            </div>
-            <h3 class="category-title">میز و صندلی اداری</h3>
-            <p class="category-description">میزهای مدیریتی، میز کارمندی، صندلی‌های اداری ارگونومیک و راحت برای محیط‌های کاری</p>
-        </div>
-        
+          
         <div class="category-card">
             <div class="category-icon">
                 <i class="fas fa-archive"></i>
             </div>
             <h3 class="category-title">سیستم بایگانی</h3>
-            <p class="category-description">کمدهای بایگانی، فایل‌های دیواری، قفسه‌های اداری و سیستم‌های سازماندهی اسناد</p>
+            <p class="category-description">دوسیه های بایگانی، دوسیه های دکمه دار، پلاستیک شیت های مخصوص</p>
         </div>
-        
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-print"></i>
-            </div>
-            <h3 class="category-title">تجهیزات اداری</h3>
-            <p class="category-description">پرینتر، کپی، اسکنر، فکس، دستگاه‌های شیرینگ و دیگر تجهیزات اداری مدرن</p>
-        </div>
-        
+                
         <div class="category-card">
             <div class="category-icon">
                 <i class="fas fa-pen"></i>
             </div>
             <h3 class="category-title">لوازم مصرفی اداری</h3>
-            <p class="category-description">کاغذ A4، کارتریج، ماشین حساب، منگنه، سوزن منگنه و دیگر لوازم مصرفی با کیفیت</p>
+            <p class="category-description">کاغذ A4، ماشین حساب، منگنه، سوزن منگنه و دیگر لوازم مصرفی با کیفیت</p>
         </div>
-        
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-box-open"></i>
-            </div>
-            <h3 class="category-title">بسته‌بندی و ارسال</h3>
-            <p class="category-description">کارتن، نایلون حبابدار، چسب بسته‌بندی، دستگاه چسب‌زن و تجهیزات بسته‌بندی اداری</p>
-        </div>
-        
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-coffee"></i>
-            </div>
-            <h3 class="category-title">لوازم رفاهی اداری</h3>
-            <p class="category-description">یخچال، ماکروفر، سماور، آبسردکن و دیگر لوازم رفاهی برای محیط‌های کاری</p>
-        </div>
-    </div>
+              
 </section>
 
 <!-- بخش گالری تصاویر -->
@@ -846,7 +813,7 @@ breadcrumb:
         </a>
         
         <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" class="gallery-item" data-lightbox="gallery" data-title="استامپ پد اثر انگشت">
-            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/button-filefolder.jpg" alt="استامپ پد اثر انگشت" class="gallery-img">
+            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" alt="استامپ پد اثر انگشت" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">استامپ پد اثر انگشت</h4>
                 <p class="gallery-description">هر اثر انگشت، با رنگ واضح و تمیز</p>
