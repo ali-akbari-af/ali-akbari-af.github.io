@@ -28,7 +28,11 @@ breadcrumb:
     --shadow-hover: 0 20px 50px rgba(67, 97, 238, 0.3); /* سایه با رنگ اصلی */
 }
 
-  h2 p {
+  h2 {
+    text-align: center;
+  }
+
+  p {
     text-align: center;
   }
 
