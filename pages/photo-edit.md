@@ -43,16 +43,6 @@ breadcrumb:
     overflow: hidden;
 }
 
-.page-hero::after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    left: -100px;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
-    z-index: -1;
-}
 
 .page-title {
     font-size: 3.2rem;
@@ -135,17 +125,6 @@ breadcrumb:
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.page-description::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(255, 209, 102, 0.1) 0%, transparent 70%);
-    z-index: -1;
-}
-
 .page-description strong {
     color: var(--primary);
     font-weight: 800;
@@ -192,7 +171,7 @@ breadcrumb:
     transform: translateX(50%);
     width: 120px;
     height: 5px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     border-radius: 3px;
     box-shadow: 0 4px 12px rgba(0, 180, 216, 0.3);
 }
@@ -616,7 +595,7 @@ breadcrumb:
     justify-content: center;
     gap: 0.8rem;
     padding: 1rem 2.5rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(36deg, #009eff, #6bb7ff);
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -647,7 +626,7 @@ breadcrumb:
 }
 
 .whatsapp-btn {
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    background: linear-gradient(135deg, #25D366, #1cdd2a);
 }
 
 .whatsapp-btn:hover {
