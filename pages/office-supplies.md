@@ -313,33 +313,6 @@ breadcrumb:
     transform: scale(1.1);
 }
 
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-    padding: 1.5rem;
-    transform: translateY(100%);
-    transition: all 0.4s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-description {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
-}
-
 /* بخش ویژگی‌ها */
 .features-section {
     background: var(--gradient-light);
@@ -790,34 +763,18 @@ breadcrumb:
     <div class="gallery-grid">
         <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/folders.jpg" class="gallery-item" data-lightbox="gallery" data-title="بایگان اسناد">
             <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/folders.jpg" alt="بایگان اسناد" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">بایگان اسناد</h4>
-                <p class="gallery-description">بایگانی منظم، مدیریت حرفه‌ای</p>
-            </div>
         </a>
         
-        <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/hole-punch.jpg" class="gallery-item" data-lightbox="gallery" data-title="دستگاه سوراخ‌کن کاغذ">
-            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/hole-punch.jpg" alt="دستگاه سوراخ‌کن کاغذ" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">دستگاه سوراخ‌کن کاغذ</h4>
-                <p class="gallery-description">ابزار ساده برای نظم حرفه‌ای</p>
-            </div>
+        <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/calculator.jpg" class="gallery-item" data-lightbox="gallery" data-title="ماشین حساب">
+            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/calculator.jpg" alt="ماشین حساب" class="gallery-img">
+            </a>
+        
+        <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/stapler.jpg" class="gallery-item" data-lightbox="gallery" data-title="استبلر و پایه اسکاشتب">
+            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/button-filefolder.jpg" alt="استبلر و پایه اسکاشتیب" class="gallery-img">
         </a>
         
-        <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/button-filefolder.jpg" class="gallery-item" data-lightbox="gallery" data-title="دوسیه پلاستیکی دکمه‌دار">
-            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/button-filefolder.jpg" alt="دوسیه پلاستیکی دکمه‌دار" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">دوسیه پلاستیکی دکمه‌دار</h4>
-                <p class="gallery-description">هر سند در جای خود، با دوسیه دکمه‌دار</p>
-            </div>
-        </a>
-        
-        <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" class="gallery-item" data-lightbox="gallery" data-title="استامپ پد اثر انگشت">
-            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" alt="استامپ پد اثر انگشت" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">استامپ پد اثر انگشت</h4>
-                <p class="gallery-description">هر اثر انگشت، با رنگ واضح و تمیز</p>
-            </div>
+        <a href="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" class="gallery-item" data-lightbox="gallery" data-title="استامپ پد اثر انگشت و سوراخ کن کاغذ">
+            <img src="https://ali-akbari-af.github.io/assets/images/office-supplies/stamp-pad.jpg" alt="استامپ پد اثر انگشت و سوراخ کن کاغذ" class="gallery-img">
         </a>
     </div>
 </section>
