@@ -489,6 +489,110 @@ p {
     transform: translateY(-3px);
 }
 
+  /* بخش تماس */
+.contact-section {
+    background: white;
+    padding: 5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    margin: 6rem 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(99, 102, 241, 0.1);
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+    color: var(--primary-dark);
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.3rem;
+    color: var(--gray);
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.9;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.method-card {
+    text-align: center;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+    border-radius: var(--radius-lg);
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+}
+
+.method-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-hover);
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.method-title {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.method-description {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.method-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition-base);
+    border: 2px solid var(--primary);
+}
+
+.method-btn:hover {
+    background: white;
+    color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background: white;
+    color: #25D366;
+}
+
+
 /* ===== Responsive Design ===== */
 /* Large Desktop (≥1400px) */
 @media (min-width: 1400px) {
@@ -814,14 +918,14 @@ p {
 <section class="contact-section">
     <h2 class="contact-title">شروع پروژه تخصصی خود</h2>
     <p class="contact-description">
-        برای دریافت مشاوره رایگان و شروع پروژه خود، یکی از روش‌های زیر را انتخاب کنید
+        برای خرید کتاب های درسی مکتب می توانید با ما تماس بگیرید
     </p>
     
     <div class="contact-methods">
         <div class="method-card">
             <div class="method-icon">📞</div>
             <h3 class="method-title">مشاوره تلفنی</h3>
-            <p class="method-description">با ما تماس بگیرید و در مورد پروژه خود مشورت کنید</p>
+            <p class="method-description">با ما تماس بگیرید و می توانید سوال بپرسید</p>
             <a href="tel:+93781821838" class="method-btn">
                 تماس: ۰۷۸۱۸۲۱۸۳۸
             </a>
@@ -830,7 +934,7 @@ p {
         <div class="method-card">
             <div class="method-icon">🏪</div>
             <h3 class="method-title">مراجعه حضوری</h3>
-            <p class="method-description">به فروشگاه ما مراجعه کنید و مستقیماً با متخصصان مشورت کنید</p>
+            <p class="method-description">به فروشگاه می مراجعه نمایید و خرید خود را انجام دهید</p>
             <a href="#footer" class="method-btn">
                 آدرس فروشگاه
             </a>
@@ -838,8 +942,8 @@ p {
         
         <div class="method-card">
             <div class="method-icon">📱</div>
-            <h3 class="method-title">دریافت پیشنهاد</h3>
-            <p class="method-description">جزئیات پروژه خود را در واتس‌اپ ارسال کنید و پیشنهاد دریافت کنید</p>
+            <h3 class="method-title">تماس در واتساپ</h3>
+            <p class="method-description">می توانید در واتساپ با ما تماس بگیرید و سوال های خود را بپرسید</p>
             <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارسال در واتس‌اپ
