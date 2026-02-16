@@ -810,20 +810,40 @@ p {
         </div>
     </div>
 </section>
-
 <!-- بخش تماس -->
 <section class="contact-section">
-    <h2 class="contact-title">برای دریافت اطلاعات بیشتر</h2>
-    <p class="contact-description">با ما تماس بگیرید یا به فروشگاه ما مراجعه کنید</p>
+    <h2 class="contact-title">شروع پروژه تخصصی خود</h2>
+    <p class="contact-description">
+        برای دریافت مشاوره رایگان و شروع پروژه خود، یکی از روش‌های زیر را انتخاب کنید
+    </p>
     
-    <div class="contact-buttons">
-        <a href="tel:+93781821838" class="btn btn-primary">
-            <i class="fas fa-phone"></i>
-            تماس: ۰۷۸۱۸۲۱۸۳۸
-        </a>
-        <a href="#footer" class="btn btn-secondary">
-            <i class="fas fa-map-marker-alt"></i>
-            آدرس فروشگاه
-        </a>
+    <div class="contact-methods">
+        <div class="method-card">
+            <div class="method-icon">📞</div>
+            <h3 class="method-title">مشاوره تلفنی</h3>
+            <p class="method-description">با ما تماس بگیرید و در مورد پروژه خود مشورت کنید</p>
+            <a href="tel:+93781821838" class="method-btn">
+                تماس: ۰۷۸۱۸۲۱۸۳۸
+            </a>
+        </div>
+        
+        <div class="method-card">
+            <div class="method-icon">🏪</div>
+            <h3 class="method-title">مراجعه حضوری</h3>
+            <p class="method-description">به فروشگاه ما مراجعه کنید و مستقیماً با متخصصان مشورت کنید</p>
+            <a href="#footer" class="method-btn">
+                آدرس فروشگاه
+            </a>
+        </div>
+        
+        <div class="method-card">
+            <div class="method-icon">📱</div>
+            <h3 class="method-title">دریافت پیشنهاد</h3>
+            <p class="method-description">جزئیات پروژه خود را در واتس‌اپ ارسال کنید و پیشنهاد دریافت کنید</p>
+            <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                ارسال در واتس‌اپ
+            </a>
+        </div>
     </div>
 </section>
