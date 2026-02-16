@@ -916,7 +916,7 @@ p {
 </section>
 <!-- بخش تماس -->
 <section class="contact-section">
-    <h2 class="contact-title">شروع پروژه تخصصی خود</h2>
+    <h2 class="contact-title">می خواهید بیشتر بدانید؟</h2>
     <p class="contact-description">
         برای خرید کتاب های درسی مکتب می توانید با ما تماس بگیرید
     </p>
