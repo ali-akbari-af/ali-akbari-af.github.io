@@ -1098,7 +1098,7 @@ breadcrumb:
             <div class="method-icon">📧</div>
             <h3 class="method-title">ارسال ایمیل</h3>
             <p class="method-description">عکس خود را ایمیل کنید، جزییات سفارش و قیمت را دریافت کنید.</p>
-            <a href="mailto:photo.edit@gmail.com" class="method-btn">
+            <a href="mailto:tarjman.online@gmail.com" class="method-btn">
                 <i class="fas fa-envelope"></i>
                 ارسال ایمیل
             </a>
