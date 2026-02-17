@@ -113,160 +113,38 @@ breadcrumb:
     border-radius: 2px;
 }
 
-/* بخش محصولات ویژه */
-.featured-products {
-    margin: 6rem 0;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, rgba(14, 165, 164, 0.03), rgba(99, 102, 241, 0.03));
-    border-radius: var(--radius-lg);
+/* Gallery Section */
+.gallery-section {
+    margin: 4rem 0;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.section-title h2 {
-    font-size: 2.5rem;
-    color: var(--primary-dark);
-    margin-bottom: 1.5rem;
-    font-weight: 800;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    border-radius: 2px;
-}
-
-.section-title p {
-    color: var(--gray);
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.products-grid {
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.product-card {
-    background: white;
+.gallery-item {
+    position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-base);
-    border: 2px solid transparent;
-    position: relative;
+    aspect-ratio: 4/3;
+    background: var(--gray-light);
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
-}
-
-.product-image {
-    height: 250px;
-    overflow: hidden;
-}
-
-.product-image img {
+.gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition-slow);
+    transition: transform 0.5s ease;
 }
 
-.product-card:hover .product-image img {
+.gallery-item:hover .gallery-image {
     transform: scale(1.1);
 }
 
-.product-content {
-    padding: 2rem;
-}
-
-.product-category {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--dark);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-full);
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.product-title {
-    font-size: 1.4rem;
-    color: var(--primary-dark);
-    margin-bottom: 0.8rem;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.product-description {
-    color: var(--gray);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    height: 4rem;
-    overflow: hidden;
-}
-
-.product-price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--gray-light);
-}
-
-.price {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary);
-}
-
-.price-old {
-    font-size: 1rem;
-    color: var(--gray);
-    text-decoration: line-through;
-    margin-right: 0.5rem;
-}
-
-.product-btn {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: var(--primary);
-    color: white;
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: var(--transition-base);
-    border: 2px solid var(--primary);
-}
-
-.product-btn:hover {
-    background: white;
-    color: var(--primary);
-    transform: translateY(-2px);
+.gallery-item:hover {
+    transform: translateY(0);
 }
 
 /* بخش دسته‌بندی محصولات */
@@ -347,42 +225,6 @@ breadcrumb:
     font-size: 1.05rem;
 }
 
-/* بخش برندها */
-.brands-section {
-    background: linear-gradient(135deg, rgba(14, 165, 164, 0.05), rgba(99, 102, 241, 0.05));
-    padding: 5rem;
-    border-radius: var(--radius-lg);
-    margin: 6rem 0;
-}
-
-.brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
-    align-items: center;
-}
-
-.brand-item {
-    background: white;
-    padding: 2rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    transition: var(--transition-base);
-    text-align: center;
-}
-
-.brand-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.brand-name {
-    font-size: 1.2rem;
-    color: var(--dark);
-    font-weight: 600;
-    margin-top: 1rem;
-}
 
 /* بخش ویژگی‌ها */
 .features-section {
@@ -794,70 +636,50 @@ breadcrumb:
         </p>
     </div>
 </section>
-
-<!-- بخش محصولات ویژه -->
-<section class="featured-products">
+<!-- بخش گالری -->
+<section class="gallery-section">
     <div class="section-title">
-        <h2>محصولات ویژه</h2>
-        <p>برترین محصولات لوازم تحریر با بهترین کیفیت و قیمت</p>
+        <h2>گالری تصاویر</h2>
+        <p>نمونه‌ای از کتاب‌های انگلیسی موجود</p>
     </div>
     
-    <div class="products-grid">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="کیف مدرسه">
-            </div>
-            <div class="product-content">
-                <span class="product-category">کیف مدرسه</span>
-                <h3 class="product-title">کیف مدرسه پسرانه</h3>
-                <p class="product-description">کیف مدرسه با طراحی مدرن، جادار و مقاوم برای دانش‌آموزان پسر</p>
-                <div class="product-price">
-                    <div>
-                        <span class="price">۱۲۰۰ افغانی</span>
-                        <span class="price-old">۱۴۵۰ افغانی</span>
-                    </div>
-                    <a href="tel:+93781821838" class="product-btn">سفارش</a>
-                </div>
-            </div>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/4000-words.jpg" 
+                 alt="4000 Essential English Words" 
+                 class="gallery-image">
         </div>
         
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="دفتر مشق">
-            </div>
-            <div class="product-content">
-                <span class="product-category">دفتر و کاپی</span>
-                <h3 class="product-title">دفتر مشق ۱۰۰ برگ</h3>
-                <p class="product-description">دفتر مشق با کیفیت بالا، کاغذ سفید و خطوط منظم</p>
-                <div class="product-price">
-                    <div>
-                        <span class="price">۸۰ افغانی</span>
-                        <span class="price-old">۱۰۰ افغانی</span>
-                    </div>
-                    <a href="tel:+93781821838" class="product-btn">سفارش</a>
-                </div>
-            </div>
+        <div class="gallery-item">
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/american-files.jpg" 
+                 alt="American English Files" 
+                 class="gallery-image">
         </div>
         
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="قلم و خودکار">
-            </div>
-            <div class="product-content">
-                <span class="product-category">قلم و خودکار</span>
-                <h3 class="product-title">بسته ۱۲ عددی خودکار</h3>
-                <p class="product-description">بسته کامل خودکار با رنگ‌های متنوع و کیفیت نوشتاری عالی</p>
-                <div class="product-price">
-                    <div>
-                        <span class="price">۲۴۰ افغانی</span>
-                        <span class="price-old">۳۰۰ افغانی</span>
-                    </div>
-                    <a href="tel:+93781821838" class="product-btn">سفارش</a>
-                </div>
-            </div>
+        <div class="gallery-item">
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/family.jpg" 
+                 alt="Family and Friends" 
+                 class="gallery-image">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/let's-go.jpg" 
+                 alt="Let's go books" 
+                 class="gallery-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/english-times.jpg" 
+                 alt="English Times" 
+                 class="gallery-image">
+        </div>
+        <div class="gallery-item">
+            <img src="https://ali-akbari-af.github.io/assets/images/english-books/four-corners.jpg" 
+                 alt="Four Corners" 
+                 class="gallery-image">
         </div>
     </div>
 </section>
+
 
 <!-- بخش دسته‌بندی محصولات -->
 <section class="categories-section">
@@ -917,45 +739,6 @@ breadcrumb:
     </div>
 </section>
 
-<!-- بخش برندها -->
-<section class="brands-section">
-    <div class="section-title">
-        <h2>برندهای معتبر</h2>
-        <p>ما محصولات با کیفیت از بهترین برندهای داخلی و خارجی ارائه می‌دهیم</p>
-    </div>
-    
-    <div class="brands-grid">
-        <div class="brand-item">
-            <i class="fas fa-star" style="font-size: 3rem; color: var(--accent);"></i>
-            <p class="brand-name">پلیکان</p>
-        </div>
-        
-        <div class="brand-item">
-            <i class="fas fa-feather-alt" style="font-size: 3rem; color: var(--primary);"></i>
-            <p class="brand-name">پارکر</p>
-        </div>
-        
-        <div class="brand-item">
-            <i class="fas fa-pen-nib" style="font-size: 3rem; color: var(--secondary);"></i>
-            <p class="brand-name">استدلر</p>
-        </div>
-        
-        <div class="brand-item">
-            <i class="fas fa-paint-brush" style="font-size: 3rem; color: var(--accent);"></i>
-            <p class="brand-name">فابر کاستل</p>
-        </div>
-        
-        <div class="brand-item">
-            <i class="fas fa-highlighter" style="font-size: 3rem; color: var(--primary);"></i>
-            <p class="brand-name">پنتل</p>
-        </div>
-        
-        <div class="brand-item">
-            <i class="fas fa-marker" style="font-size: 3rem; color: var(--secondary);"></i>
-            <p class="brand-name">بیک</p>
-        </div>
-    </div>
-</section>
 
 <!-- بخش ویژگی‌ها -->
 <section class="features-section">
