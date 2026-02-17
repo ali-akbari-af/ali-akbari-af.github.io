@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "پرینت، کپی و اسکن | فروشگاه علی اکبری - کابل"
+title: "پرینت، کپی و اسکن"
 description: "کپی، پرینت و اسکن اسناد با کیفیت عالی و دقت بالا در فروشگاه علی اکبری کابل"
 keywords: "پرینت, کپی, اسکن, خدمات دیجیتال, چاپ اسناد, کابل, علی اکبری"
 breadcrumb:
@@ -806,7 +806,7 @@ breadcrumb:
             <div class="service-features">
                 <div class="feature-item">
                     <i class="fas fa-check-circle"></i>
-                    <span>پرینت رنگی لیزری</span>
+                    <span>پرینت رنگی</span>
                 </div>
                 <div class="feature-item">
                     <i class="fas fa-check-circle"></i>
