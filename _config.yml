@@ -1,1 +1,102 @@
+# =========================
+# Site Settings
+# =========================
+title: "قرطاسیه فروشی و مطبعه علی اکبری"
+description: "چاپ، کپی، اسکن، PVC کارت، عکاسی و آموزش کامپیوتر در کابل با کیفیت و قیمت مناسب"
+baseurl: "" # اگر سایت در root GitHub Pages است خالی بگذارید
+url: "https://ali-akbari-af.github.io" # اگر دامنه اختصاصی دارید، آن را جایگزین کنید
+lang: "fa"
+timezone: "Asia/Kabul"
 
+# =========================
+# Build Settings
+# =========================
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# =========================
+# SEO Settings
+# =========================
+google_analytics: "G-VYGZ3635RG"
+seo:
+  title: "{{ page.title | default: site.title }}"
+  description: "{{ page.description | default: site.description }}"
+  twitter: 
+    card: "summary_large_image"
+  og:
+    type: "website"
+    image: "/og-image.jpg"
+    locale: "fa_AF"
+  canonical: "{{ page.url | absolute_url }}"
+
+# =========================
+# Favicon and Icons
+# =========================
+favicon: "/favicon.png"
+apple_touch_icon: "/favicon.png"
+
+# =========================
+# Author / Business Info
+# =========================
+author:
+  name: "قرطاسیه و خدمات کامپیوتری علی اکبری"
+  phone: "+93781821838"
+  whatsapp: "+93781821838" # شماره واتساپ کسب‌وکار
+  address:
+    street: "شهرک ۱۲ امام"
+    city: "کابل"
+    country: "AF"
+  geo:
+    lat: 34.5553
+    lng: 69.2075
+  opening_hours:
+    - day: "Saturday"
+      opens: "08:00"
+      closes: "20:00"
+    - day: "Sunday"
+      opens: "08:00"
+      closes: "20:00"
+    - day: "Monday"
+      opens: "08:00"
+      closes: "20:00"
+    - day: "Tuesday"
+      opens: "08:00"
+      closes: "20:00"
+    - day: "Wednesday"
+      opens: "08:00"
+      closes: "20:00"
+    - day: "Thursday"
+      opens: "08:00"
+      closes: "20:00"
+
+# =========================
+# Pagination & Navigation
+# =========================
+paginate: 10
+paginate_path: "/page:num/"
+collections:
+  pages:
+    output: true
+
+# =========================
+# Include / Exclude
+# =========================
+include:
+  - "_pages"
+  - "_posts"
+exclude:
+  - "node_modules"
+  - "vendor"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+# =========================
+# Social / Maps
+# =========================
+social:
+  google_maps: "https://maps.google.com/?q=34.5553,69.2075"
+  whatsapp: "https://wa.me/93781821838"
