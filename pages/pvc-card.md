@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "کاپی استخوانی (PVC Card) | فروشگاه علی اکبری - کابل"
+title: "کاپی استخوانی (PVC Card)"
 description: "کاپی استخوانی (PVC Card) با کیفیت بالا، چاپ با وضوح و دقت کامل، دوام و ماندگاری بالا در فروشگاه علی اکبری کابل"
 keywords: "کاپی استخوانی, PVC Card, کارت PVC, کارت مکاتب, کارت تذکره, کارت اداری, چاپ کارت, کابل, علی اکبری"
 breadcrumb:
@@ -891,7 +891,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📞</div>
             <h3 class="method-title">تماس تلفنی</h3>
-            <p class="method-description">با ما تماس بگیرید، نمونه‌ها و قیمت‌ها را دریافت کنید و کارت مورد نظر خود را سفارش دهید.</p>
+            <p class="method-description">جهت تماس و کسب معلومات بیشتر، با ما تماس بگیرید.</p>
             <a href="tel:+93781821838" class="method-btn">
                 <i class="fas fa-phone"></i>
                 تماس: ۰۷۸۱۸۲۱۸۳۸
@@ -911,7 +911,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📱</div>
             <h3 class="method-title">دریافت از طریق واتس‌اپ</h3>
-            <p class="method-description">عکس و اطلاعات مورد نیاز را در واتس‌اپ ارسال کنید و کارت خود را سفارش دهید.</p>
+            <p class="method-description">برای تماس و دریافت معلومات بیشتر، لطفاً از طریق واتس‌اپ با ما در ارتباط شوید.</p>
             <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارتباط در واتس‌اپ
