@@ -143,6 +143,10 @@ p {
     line-height: 1.6;
 }
 
+svg {
+    font-size: 3rem;
+}
+
 /* ===== Container ===== */
 .container {
     width: 100%;
@@ -211,5 +215,6 @@ p {
     }
 
 }
+
 
 
