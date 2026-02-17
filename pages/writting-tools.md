@@ -120,7 +120,7 @@ breadcrumb:
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
@@ -645,38 +645,27 @@ breadcrumb:
     
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/4000-words.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/writting-tools/product1.jpg" 
                  alt="4000 Essential English Words" 
                  class="gallery-image">
         </div>
         
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/american-files.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/writting-tools/product2.jpg" 
                  alt="American English Files" 
                  class="gallery-image">
         </div>
         
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/family.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/writting-tools/product3.jpg" 
                  alt="Family and Friends" 
                  class="gallery-image">
         </div>
         
         <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/let's-go.jpg" 
+            <img src="https://ali-akbari-af.github.io/assets/images/writting-tools/product4.jpg" 
                  alt="Let's go books" 
                  class="gallery-image">
-        </div>
-        <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/english-times.jpg" 
-                 alt="English Times" 
-                 class="gallery-image">
-        </div>
-        <div class="gallery-item">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-books/four-corners.jpg" 
-                 alt="Four Corners" 
-                 class="gallery-image">
-        </div>
     </div>
 </section>
 
