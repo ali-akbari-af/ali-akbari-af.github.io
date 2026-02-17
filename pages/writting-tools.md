@@ -9,6 +9,13 @@ breadcrumb:
 ---
 
 <style>
+
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 /* ===== محتوای صفحه ===== */
 .page-content {
     max-width: 1400px;
@@ -666,6 +673,7 @@ breadcrumb:
             <img src="https://ali-akbari-af.github.io/assets/images/writting-tools/product4.jpg" 
                  alt="Let's go books" 
                  class="gallery-image">
+        </div>
     </div>
 </section>
 
