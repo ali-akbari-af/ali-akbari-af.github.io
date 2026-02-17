@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "چاپ کارت عروسی | فروشگاه علی اکبری - کابل"
+title: "چاپ کارت عروسی"
 description: "چاپ کارت عروسی با دقت و ظرافت ویژه، کیفیت بالا و طراحی متناسب با شکوه مراسم عروسی در فروشگاه علی اکبری کابل"
 keywords: "چاپ کارت عروسی, کارت دعوت عروسی, کارت عروسی, طراحی کارت عروسی, چاپ کارت دعوت, کابل, علی اکبری"
 breadcrumb:
@@ -9,6 +9,12 @@ breadcrumb:
 ---
 
 <style>
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 /* ===== محتوای صفحه ===== */
 .page-content {
     max-width: 1400px;
@@ -310,39 +316,6 @@ breadcrumb:
     box-shadow: 0 10px 20px rgba(214, 51, 132, 0.3);
 }
 
-/* بخش توجه مهم */
-.notice-section {
-    background: linear-gradient(135deg, #fff9e6, #ffe6e6);
-    padding: 3rem;
-    border-radius: var(--radius-lg);
-    margin: 4rem 0;
-    border-right: 5px solid var(--warning);
-    border-left: 5px solid var(--warning);
-}
-
-.notice-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.notice-icon {
-    font-size: 3rem;
-    color: var(--warning);
-    flex-shrink: 0;
-}
-
-.notice-text h3 {
-    color: var(--primary-dark);
-    margin-bottom: 1rem;
-}
-
-.notice-text p {
-    color: var(--dark);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 0;
-}
 
 /* بخش تماس */
 .contact-section {
@@ -596,18 +569,6 @@ breadcrumb:
 </section>
 
 
-<!-- بخش توجه مهم -->
-<section class="notice-section">
-    <div class="notice-content">
-        <div class="notice-icon">
-            <i class="fas fa-info-circle"></i>
-        </div>
-        <div class="notice-text">
-            <h3>توجه مهم:</h3>
-            <p>این صفحه صرفاً جهت معرفی خدمات ما می‌باشد. سفارش‌ها به صورت حضوری در فروشگاه انجام می‌شود. لطفاً برای دریافت مشاوره، مشاهده نمونه‌های بیشتر و ثبت سفارش، به فروشگاه ما مراجعه فرمایید.</p>
-        </div>
-    </div>
-</section>
 
 <!-- بخش ویژگی‌ها -->
 <section class="features-section">
