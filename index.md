@@ -1,186 +1,438 @@
 ---
 layout: default
-title: "قرطاسیه فروشی و مطبعه علی اکبری"
-description: "ارائه کلیه خدمات آموزشی، چاپ و دیجیتال در کابل - کتاب‌فروشی، مطبعه، عکاسی، قرطاسیه و آموزش دیجیتال"
-keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چاپ, عکاسی, کابل, علی اکبری"
+title: "قرطاسیه فروشی و مطبعه علی اکبری | مرکز تخصصی خدمات آموزشی، چاپ و دیجیتال در کابل"
+description: "ارائه کلیه خدمات آموزشی، چاپ و دیجیتال در کابل - کتاب‌فروشی، مطبعه، عکاسی، قرطاسیه، خدمات کامپیوتری و آموزش دیجیتال با بالاترین کیفیت"
+keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چاپ, عکاسی, کابل, علی اکبری, لوازم تحریر, آموزش دیجیتال"
 ---
 
 <style>
-/* ===== CSS Variables ===== */
-:root {
-    /* Colors (refreshed palette: teal + indigo + warm accent) */
-    --primary: #0ea5a4;
-    --primary-dark: #0b8f89;
-    --primary-light: #2dd4bf;
-    --secondary: #6366f1;
-    --accent: #f59e0b;
-    --dark: #0f1724;
-    --dark-light: #24303a;
-    --light: #f8fafc;
-    --gray: #6b7280;
-    --gray-light: #e6eef2;
-    --gray-lighter: #f7fafc;
-    --success: #16a34a;
-    --warning: #f59e0b;
-    --danger: #ef4444;
-    
-    /* Typography */
-    --font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-3xl: 1.875rem;
-    --font-size-4xl: 2.25rem;
-    --font-size-5xl: 3rem;
-    
-    /* Spacing */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-2xl: 3rem;
-    --spacing-3xl: 4rem;
-    
-    /* Border Radius */
-    --radius-sm: 0.375rem;
-    --radius-md: 0.5rem;
-    --radius-lg: 0.75rem;
-    --radius-xl: 1rem;
-    --radius-2xl: 1.5rem;
-    
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    
-    /* Transitions */
-    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Container */
-    --container-xs: 100%;
-    --container-sm: 640px;
-    --container-md: 768px;
-    --container-lg: 1024px;
-    --container-xl: 1280px;
-    --container-2xl: 1536px;
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ===== Hero Slider ===== */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+    /* رنگ‌بندی جدید و جذاب - ترکیب فیروزه‌ای و طلایی */
+    --primary: #0f5e7a;
+    --primary-light: #1e7e9e;
+    --primary-dark: #0a4055;
+    --secondary: #f0b202;
+    --secondary-light: #f9c74f;
+    --secondary-dark: #cb8b00;
+    --accent-1: #f25f5c;
+    --accent-2: #9b5de5;
+    --gradient-1: linear-gradient(135deg, var(--primary), #2a9d8f);
+    --gradient-2: linear-gradient(135deg, var(--secondary), var(--accent-2));
+    --gradient-3: linear-gradient(135deg, #f25f5c, #f0b202);
+    --gradient-gold: linear-gradient(135deg, #f0b202, #f9c74f, #f0b202);
+    --gradient-teal: linear-gradient(135deg, #0f5e7a, #1e7e9e, #2a9d8f);
+    
+    /* سایه‌های درخشان */
+    --shadow-sm: 0 4px 6px rgba(15, 94, 122, 0.05);
+    --shadow-md: 0 10px 25px rgba(15, 94, 122, 0.1);
+    --shadow-lg: 0 20px 40px rgba(15, 94, 122, 0.15);
+    --shadow-xl: 0 30px 60px rgba(15, 94, 122, 0.2);
+    --shadow-glow: 0 0 30px rgba(240, 178, 2, 0.3);
+    --shadow-glow-primary: 0 0 30px rgba(15, 94, 122, 0.3);
+    
+    /* انیمیشن‌ها */
+    --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* فاصله‌ها */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 6rem;
+}
+
+/* ===== LOADING ANIMATION ===== */
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #0f5e7a, #1e7e9e);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-logo {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 50px rgba(255,255,255,0.5);
+    animation: pulse 2s infinite;
+}
+
+.loader-logo span {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.loader-spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes floatReverse {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes tilt {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-1px, -1px); }
+    80% { transform: translate(1px, 1px); }
+}
+
+.animate-fade-up {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.animate-fade-right {
+    animation: fadeInRight 1s ease forwards;
+}
+
+.animate-fade-left {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.animate-scale {
+    animation: scaleIn 1s ease forwards;
+}
+
+.animate-float {
+    animation: float 6s infinite ease-in-out;
+}
+
+.animate-float-reverse {
+    animation: floatReverse 8s infinite ease-in-out;
+}
+
+.animate-tilt {
+    animation: tilt 10s infinite ease-in-out;
+}
+
+.animate-glitch:hover {
+    animation: glitch 0.3s infinite;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* ===== HERO SLIDER با دیزاین جدید ===== */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 900px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
 .hero-slider {
     position: relative;
-    height: calc(100vh - 140px);
-    min-height: 500px;
-    max-height: 800px;
-    overflow: hidden;
-    border-radius: var(--radius-2xl);
-    margin-top: 140px;
-    margin-bottom: var(--spacing-3xl);
-    margin-right: var(--spacing-lg);
-    margin-left: var(--spacing-lg);
-}
-
-.slider-container {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
 .slide {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity var(--transition-slow);
-    will-change: opacity;
+    visibility: hidden;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.5s;
+    will-change: opacity, visibility;
 }
 
 .slide.active {
     opacity: 1;
+    visibility: visible;
 }
 
 .slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    transform: scale(1);
+    transition: transform 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide.active .slide-image {
+    transform: scale(1.1);
 }
 
 .slide-overlay {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
         135deg,
-        rgba(30, 41, 59, 0.9) 0%,
-        rgba(30, 41, 59, 0.7) 50%,
-        rgba(30, 41, 59, 0.4) 100%
+        rgba(15, 94, 122, 0.9) 0%,
+        rgba(15, 94, 122, 0.7) 30%,
+        rgba(240, 178, 2, 0.5) 70%,
+        transparent 100%
     );
+    z-index: 2;
 }
 
 .slide-content {
     position: absolute;
     top: 50%;
-    right: var(--spacing-xl);
+    right: 10%;
     transform: translateY(-50%);
-    max-width: 600px;
+    max-width: 700px;
     color: white;
-    z-index: 2;
-    padding: var(--spacing-lg);
-    width: calc(100% - 2 * var(--spacing-xl));
+    z-index: 3;
+    text-align: right;
 }
 
 .slide-content h2 {
-    font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
-    color: white;
-    margin-bottom: var(--spacing-md);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.slide-content h2::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-gold);
+    border-radius: 2px;
 }
 
 .slide-content p {
-    font-size: clamp(var(--font-size-base), 1.5vw, var(--font-size-lg));
-    color: rgba(255, 255, 255, 0.95);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.6;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    opacity: 0.95;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+.slide-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--secondary-light);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.slide-badge i {
+    margin-left: 0.5rem;
+    color: var(--secondary);
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2.5rem;
+    background: var(--gradient-gold);
+    color: var(--primary-dark);
+    text-decoration: none;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(240, 178, 2, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.hero-cta:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(240, 178, 2, 0.5);
+}
+
+.hero-cta:hover::before {
+    left: 100%;
+}
+
+.hero-cta i {
+    transition: transform 0.3s;
+}
+
+.hero-cta:hover i {
+    transform: translateX(-5px);
 }
 
 .slider-controls {
     position: absolute;
-    bottom: var(--spacing-lg);
+    bottom: 30px;
     right: 50%;
     transform: translateX(50%);
     display: flex;
-    gap: var(--spacing-sm);
-    z-index: 3;
+    gap: 1rem;
+    z-index: 4;
 }
 
 .slider-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255,255,255,0.4);
+    border: 2px solid transparent;
     cursor: pointer;
-    transition: all var(--transition-fast);
-    border: none;
+    transition: all 0.3s;
     padding: 0;
-    min-width: 10px;
-    min-height: 10px;
 }
 
 .slider-dot.active {
-    background: white;
-    transform: scale(1.3);
+    width: 30px;
+    border-radius: 6px;
+    background: var(--secondary);
+    transform: scale(1);
 }
 
 .slider-nav {
@@ -190,166 +442,370 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 var(--spacing-md);
-    z-index: 3;
+    padding: 0 30px;
+    z-index: 4;
 }
 
 .slider-btn {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255,255,255,0.2);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255,255,255,0.3);
     color: white;
-    font-size: var(--font-size-lg);
+    font-size: 1.2rem;
     cursor: pointer;
+    transition: all 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all var(--transition-base);
-    min-width: 44px;
-    min-height: 44px;
 }
 
 .slider-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--secondary);
+    border-color: white;
     transform: scale(1.1);
+    color: var(--primary-dark);
 }
 
-/* ===== Services Section ===== */
+/* ===== FLOATING ELEMENTS ===== */
+.floating-elements {
+    position: relative;
+    height: 0;
+    z-index: 10;
+}
+
+.floating-element {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-element-1 {
+    top: 20%;
+    right: 5%;
+    animation: float 10s infinite;
+}
+
+.floating-element-2 {
+    bottom: 20%;
+    left: 5%;
+    animation: floatReverse 12s infinite;
+}
+
+.floating-element-3 {
+    top: 40%;
+    left: 10%;
+    animation: tilt 15s infinite;
+}
+
+.floating-element-4 {
+    bottom: 30%;
+    right: 15%;
+    animation: float 8s infinite reverse;
+}
+
+/* ===== SERVICES SECTION با دیزاین جدید ===== */
 .services-section {
-    padding: var(--spacing-2xl) 0;
-    background: var(--gray-lighter);
+    padding: var(--spacing-3xl) 0;
+    background: #f8fafc;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(15,94,122,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.services-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(240,178,2,0.05) 0%, transparent 70%);
+    border-radius: 50%;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: var(--spacing-2xl);
-    padding: 0 var(--spacing-md);
+    position: relative;
+    z-index: 2;
+}
+
+.section-tag {
+    display: inline-block;
+    background: var(--gradient-teal);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-md);
 }
 
 .section-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--primary-dark);
+    font-weight: 900;
+    margin-bottom: 1rem;
     position: relative;
     display: inline-block;
-    margin-bottom: var(--spacing-md);
-    padding: 0 var(--spacing-md);
 }
 
-.section-title::after {
+.section-title span {
+    color: var(--secondary);
+    position: relative;
+}
+
+.section-title span::after {
     content: '';
     position: absolute;
-    bottom: -8px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    border-radius: 2px;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: rgba(240, 178, 2, 0.2);
+    z-index: -1;
 }
 
 .section-subtitle {
     max-width: 700px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    color: #64748b;
+    font-size: 1.2rem;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
-    padding: 0 var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 2;
 }
 
 .service-card {
     background: white;
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-xl);
+    border-radius: 30px;
+    padding: 2.5rem;
     box-shadow: var(--shadow-lg);
-    transition: all var(--transition-base);
-    border: 1px solid transparent;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .service-card::before {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
-    height: 4px;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    transform: translateX(-100%);
-    transition: transform 0.6s ease;
-}
-
-.service-card:hover::before {
-    transform: translateX(0);
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: -1;
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl);
-    border-color: var(--primary-light);
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
 }
 
-.service-icon {
-    width: 56px;
-    height: 56px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    border-radius: var(--radius-lg);
+.service-card:hover::before {
+    opacity: 0.03;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--gradient-gold);
+    transition: height 0.5s;
+}
+
+.service-card:hover::after {
+    height: 100%;
+}
+
+.service-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-teal);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
     color: white;
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--spacing-lg);
-    flex-shrink: 0;
+    font-size: 2rem;
+    transition: all 0.5s;
+    box-shadow: var(--shadow-md);
+}
+
+.service-card:hover .service-icon-wrapper {
+    border-radius: 50%;
+    transform: rotate(360deg) scale(1.1);
+    background: var(--gradient-gold);
 }
 
 .service-title {
-    font-size: var(--font-size-lg);
-    color: var(--dark);
-    margin-bottom: var(--spacing-md);
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.service-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--gradient-gold);
+    border-radius: 2px;
+    transition: width 0.3s;
+}
+
+.service-card:hover .service-title::after {
+    width: 80px;
 }
 
 .service-description {
-    color: var(--gray);
-    margin-bottom: var(--spacing-lg);
-    flex: 1;
-    font-size: var(--font-size-sm);
+    color: #64748b;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
-/* ===== Gallery Section ===== */
+.service-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.service-features i {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.service-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-gold);
+    transition: width 0.3s;
+}
+
+.service-link:hover {
+    color: var(--secondary);
+    gap: 1rem;
+}
+
+.service-link:hover::before {
+    width: 100%;
+}
+
+/* ===== GALLERY SECTION با دیزاین جدید ===== */
 .gallery-section {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-section .section-title {
+    color: white;
+}
+
+.gallery-section .section-subtitle {
+    color: rgba(255,255,255,0.8);
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-    padding: 0 var(--spacing-md);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
 }
 
 .gallery-item {
     position: relative;
-    border-radius: var(--radius-xl);
+    border-radius: 30px;
     overflow: hidden;
-    aspect-ratio: 4/3;
-    background: var(--gray-light);
+    aspect-ratio: 1;
     cursor: pointer;
+    box-shadow: var(--shadow-xl);
+    transition: all 0.5s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: 1;
+}
+
+.gallery-item.wide {
+    grid-column: span 2;
+    aspect-ratio: 2/1;
 }
 
 .gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition-slow);
+    transition: transform 0.8s;
 }
 
 .gallery-item:hover .gallery-image {
@@ -359,30 +815,139 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 .gallery-overlay {
     position: absolute;
     bottom: 0;
-    right: 0;
     left: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: var(--spacing-lg);
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    padding: 2rem;
     color: white;
     transform: translateY(100%);
-    transition: transform var(--transition-base);
-}
-
-.gallery-overlay h4,
-.gallery-overlay p {
-    color: white;
-    margin: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item:hover .gallery-overlay {
     transform: translateY(0);
 }
 
-/* ===== Trust Section ===== */
-.trust-section {
+.gallery-overlay h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+
+.gallery-overlay p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.gallery-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-gold);
+    color: var(--primary-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-item:hover .gallery-badge {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ===== STATS SECTION ===== */
+.stats-section {
     padding: var(--spacing-2xl) 0;
-    background: var(--dark);
-    color: white;
+    background: white;
+    position: relative;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc, white);
+    border-radius: 30px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-gold);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-item:hover::before {
+    transform: translateX(0);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+/* ===== TRUST SECTION با دیزاین جدید ===== */
+.trust-section {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, #0f5e7a, #1e7e9e);
+    position: relative;
+    overflow: hidden;
+}
+
+.trust-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="white" stroke-width="2"/><circle cx="50" cy="50" r="15" fill="none" stroke="white" stroke-width="2"/></svg>') repeat;
+    background-size: 50px;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
 }
 
 .trust-section .section-title {
@@ -390,69 +955,197 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 }
 
 .trust-section .section-subtitle {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255,255,255,0.9);
 }
 
 .trust-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-xl);
-    padding: 0 var(--spacing-md);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.trust-item {
-    text-align: center;
-    padding: var(--spacing-lg);
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-xl);
+.trust-card {
+    background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all var(--transition-base);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
 }
 
-.trust-item:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--primary-light);
+.trust-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 0;
+}
+
+.trust-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: var(--secondary);
+}
+
+.trust-card:hover::before {
+    opacity: 0.1;
 }
 
 .trust-icon {
-    font-size: var(--font-size-2xl);
-    color: var(--primary-light);
-    margin-bottom: var(--spacing-md);
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--primary-dark);
+    font-size: 2rem;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.trust-card:hover .trust-icon {
+    border-radius: 50%;
+    transform: rotate(360deg);
 }
 
 .trust-title {
-    font-size: var(--font-size-base);
+    font-size: 1.4rem;
     color: white;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
 }
 
 .trust-description {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: var(--font-size-xs);
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
 }
 
-/* ===== CTA Section ===== */
-.cta-section {
-    padding: var(--spacing-2xl) 0;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials-section {
+    padding: var(--spacing-3xl) 0;
+    background: #f8fafc;
     position: relative;
     overflow: hidden;
-    margin: 0 var(--spacing-lg);
-    border-radius: var(--radius-2xl);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.4s;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.testimonial-card::before {
+    content: '❝';
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 5rem;
+    color: var(--secondary);
+    opacity: 0.2;
+    font-family: serif;
+    line-height: 1;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.author-info h4 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.2rem;
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* ===== CTA SECTION با دیزاین جدید ===== */
+.cta-section {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    position: relative;
+    overflow: hidden;
 }
 
 .cta-section::before {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    top: -50%;
+    left: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+    border-radius: 50%;
+    animation: float 10s infinite;
+}
+
+.cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+    border-radius: 50%;
+    animation: floatReverse 12s infinite;
 }
 
 .cta-content {
@@ -461,156 +1154,224 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    color: var(--primary-dark);
 }
 
 .cta-title {
-    font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
-    color: white;
-    margin-bottom: var(--spacing-md);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .cta-description {
-    font-size: clamp(var(--font-size-base), 1.5vw, var(--font-size-lg));
-    color: rgba(255, 255, 255, 0.95);
-    margin-bottom: var(--spacing-xl);
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
 }
 
 .cta-buttons {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .cta-btn {
-    padding: var(--spacing-md) var(--spacing-xl);
-    border-radius: var(--radius-lg);
-    font-weight: 600;
-    font-size: var(--font-size-sm);
+    padding: 1.2rem 2.5rem;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 1.1rem;
     text-decoration: none;
-    transition: all var(--transition-base);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    min-width: 44px;
-    min-height: 44px;
-    justify-content: center;
+    gap: 0.8rem;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
 }
 
 .cta-btn.primary {
-    background: white;
-    color: var(--primary);
-    border: 2px solid white;
+    background: var(--primary-dark);
+    color: white;
+    box-shadow: 0 10px 30px rgba(15, 94, 122, 0.3);
 }
 
 .cta-btn.primary:hover {
-    background: transparent;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-xl);
+    background: white;
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .cta-btn.secondary {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background: white;
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
 }
 
 .cta-btn.secondary:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: var(--primary-dark);
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-/* ===== Responsive Design ===== */
-
-/* Large Desktop (≥1400px) */
-@media (min-width: 1400px) {
-    .hero-slider {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: var(--container-2xl);
-    }
-    
-    .cta-section {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: var(--container-2xl);
-    }
+.cta-btn i {
+    transition: transform 0.3s;
 }
 
-/* Desktop (≥1200px) */
-@media (min-width: 1200px) {
-    .slide-content {
-        right: var(--spacing-2xl);
-        max-width: 650px;
-    }
+.cta-btn:hover i {
+    transform: translateX(-5px) scale(1.2);
 }
 
-/* Tablet Landscape (992px - 1199px) */
-@media (max-width: 1199px) and (min-width: 992px) {
-    .hero-slider {
-        height: 70vh;
-        min-height: 450px;
-        margin-top: 130px;
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    padding: var(--spacing-2xl) 0;
+    background: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #f8fafc, white);
+    padding: 2.5rem;
+    border-radius: 30px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(15,94,122,0.1);
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.contact-info p {
+    color: #64748b;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.contact-details {
+    list-style: none;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(15,94,122,0.1);
+}
+
+.contact-details li:last-child {
+    border-bottom: none;
+}
+
+.contact-details i {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-details span {
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.contact-details small {
+    display: block;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.contact-map {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 400px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
     
-    .slide-content h2 {
-        font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-3xl));
-    }
-    
-    .services-grid {
+    .stats-grid,
+    .trust-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-/* Tablet Portrait (768px - 991px) */
-@media (max-width: 991px) {
-    .hero-slider {
-        height: 60vh;
-        min-height: 400px;
-        margin-top: 120px;
-        margin-right: var(--spacing-md);
-        margin-left: var(--spacing-md);
-        border-radius: var(--radius-xl);
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
     .slide-content {
-        right: var(--spacing-lg);
-        left: var(--spacing-lg);
-        width: calc(100% - 2 * var(--spacing-lg));
+        right: 5%;
+        left: 5%;
+        width: 90%;
         text-align: center;
-        padding: var(--spacing-md);
     }
     
-    .slider-nav {
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .slider-btn {
-        width: 40px;
-        height: 40px;
-        font-size: var(--font-size-base);
+    .slide-content h2::before {
+        right: 50%;
+        transform: translateX(50%);
     }
     
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
-    }
-    
-    .service-card {
-        padding: var(--spacing-lg);
     }
     
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
+    .gallery-item.large,
+    .gallery-item.wide {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid,
+    .gallery-grid,
+    .stats-grid,
+    .trust-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .slider-nav {
+        display: none;
     }
     
     .cta-buttons {
@@ -620,627 +1381,512 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     
     .cta-btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
+        justify-content: center;
+    }
+    
+    .contact-grid {
+        gap: 2rem;
     }
 }
 
-/* Mobile Landscape (576px - 767px) */
-@media (max-width: 767px) and (min-width: 576px) {
-    .hero-slider {
-        height: 50vh;
-        min-height: 350px;
-        margin-top: 110px;
-    }
-    
+@media (max-width: 480px) {
     .slide-content h2 {
-        font-size: var(--font-size-xl);
-        margin-bottom: var(--spacing-sm);
+        font-size: 1.8rem;
     }
     
     .slide-content p {
-        font-size: var(--font-size-sm);
-        margin-bottom: var(--spacing-lg);
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
+        font-size: 1rem;
     }
     
     .service-card {
-        padding: var(--spacing-lg);
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-sm);
-    }
-    
-    .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-sm);
-    }
-    
-    .trust-item {
-        padding: var(--spacing-md);
-    }
-    
-    .cta-section {
-        margin: 0 var(--spacing-md);
-        border-radius: var(--radius-xl);
-    }
-}
-
-/* Mobile Portrait (≤575px) */
-@media (max-width: 575px) {
-    .hero-slider {
-        height: 40vh;
-        min-height: 300px;
-        margin-top: 90px;
-        margin-right: var(--spacing-sm);
-        margin-left: var(--spacing-sm);
-        border-radius: var(--radius-lg);
-        margin-bottom: var(--spacing-xl);
-    }
-    
-    .slide-content {
-        right: var(--spacing-md);
-        left: var(--spacing-md);
-        width: calc(100% - 2 * var(--spacing-md));
-        padding: var(--spacing-sm);
-    }
-    
-    .slide-content h2 {
-        font-size: var(--font-size-lg);
-        margin-bottom: var(--spacing-xs);
-    }
-    
-    .slide-content p {
-        font-size: var(--font-size-xs);
-        margin-bottom: var(--spacing-md);
-        line-height: 1.5;
-    }
-    
-    .slider-controls {
-        bottom: var(--spacing-md);
-    }
-    
-    .slider-nav {
-        display: none;
-    }
-    
-    .slider-dot {
-        width: 8px;
-        height: 8px;
-    }
-    
-    .section-header {
-        margin-bottom: var(--spacing-xl);
-    }
-    
-    .section-title {
-        font-size: var(--font-size-xl);
-    }
-    
-    .section-subtitle {
-        font-size: var(--font-size-sm);
-    }
-    
-    .services-section {
-        padding: var(--spacing-xl) 0;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .service-card {
-        padding: var(--spacing-md);
-    }
-    
-    .service-icon {
-        width: 48px;
-        height: 48px;
-        font-size: var(--font-size-lg);
-        margin-bottom: var(--spacing-md);
+        padding: 1.5rem;
     }
     
     .service-title {
-        font-size: var(--font-size-base);
+        font-size: 1.5rem;
     }
     
-    .service-description {
-        font-size: var(--font-size-xs);
-    }
-    
-    .gallery-section {
-        padding: var(--spacing-xl) 0;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-sm);
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .gallery-overlay {
-        padding: var(--spacing-md);
-    }
-    
-    .gallery-overlay h4 {
-        font-size: var(--font-size-sm);
-    }
-    
-    .gallery-overlay p {
-        font-size: var(--font-size-xs);
-    }
-    
-    .trust-section {
-        padding: var(--spacing-xl) 0;
-    }
-    
-    .trust-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-        padding: 0 var(--spacing-sm);
-    }
-    
-    .trust-item {
-        padding: var(--spacing-md);
-    }
-    
-    .trust-icon {
-        font-size: var(--font-size-xl);
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .trust-title {
-        font-size: var(--font-size-sm);
-    }
-    
-    .trust-description {
-        font-size: var(--font-size-xs);
-    }
-    
-    .cta-section {
-        padding: var(--spacing-xl) var(--spacing-sm);
-        margin: 0 var(--spacing-sm);
-        border-radius: var(--radius-lg);
-    }
-    
-    .cta-title {
-        font-size: var(--font-size-xl);
-    }
-    
-    .cta-description {
-        font-size: var(--font-size-sm);
-    }
-    
-    .cta-btn {
-        padding: var(--spacing-sm) var(--spacing-lg);
-        font-size: var(--font-size-xs);
-        width: 100%;
-    }
-}
-
-/* Small Mobile (≤375px) */
-@media (max-width: 375px) {
-    .hero-slider {
-        height: 35vh;
-        min-height: 250px;
-    }
-    
-    .slide-content h2 {
-        font-size: var(--font-size-base);
-    }
-    
-    .slide-content p {
-        font-size: 0.75rem;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-    
-    .services-grid {
-        gap: var(--spacing-sm);
-    }
-    
-    .service-card {
-        padding: var(--spacing-sm);
-    }
-    
-    .cta-section {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
-    
-    .cta-title {
-        font-size: var(--font-size-lg);
-    }
-}
-
-/* Extra Small Mobile (≤320px) */
-@media (max-width: 320px) {
-    .hero-slider {
-        margin-top: 85px;
-        height: 30vh;
-        min-height: 200px;
-    }
-    
-    .slide-content {
-        padding: var(--spacing-xs);
-    }
-    
-    .slider-controls {
-        bottom: var(--spacing-sm);
-    }
-    
-    .cta-buttons {
-        gap: var(--spacing-sm);
-    }
-    
-    .cta-btn {
-        padding: var(--spacing-xs) var(--spacing-md);
-    }
-}
-
-/* Touch Device Optimizations */
-@media (hover: none) and (pointer: coarse) {
-    .service-card:hover {
-        transform: none;
-    }
-    
-    .gallery-item:hover .gallery-overlay {
-        transform: translateY(0);
-    }
-    
-    .gallery-item:hover .gallery-image {
-        transform: none;
-    }
-    
-    .trust-item:hover {
-        transform: none;
-    }
-    
-    .cta-btn:hover {
-        transform: none;
-    }
-    
-    .service-card:active {
-        transform: scale(0.98);
-    }
-    
-    .cta-btn:active {
-        transform: scale(0.98);
-    }
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    .slide {
-        transition: none;
-    }
-    
-    .service-card:hover,
-    .trust-item:hover,
-    .gallery-item:hover .gallery-image,
-    .gallery-item:hover .gallery-overlay {
-        transform: none;
-    }
-}
-
-/* ===== Animations ===== */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-}
-
-.delay-1 {
-    animation-delay: 0.2s;
-}
-
-.delay-2 {
-    animation-delay: 0.4s;
-}
-
-.delay-3 {
-    animation-delay: 0.6s;
-}
-
-/* Loading States */
-.loading {
-    position: relative;
-    overflow: hidden;
-}
-
-.loading::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    animation: loading 1.5s infinite;
-}
-
-@keyframes loading {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
+    .stat-number {
+        font-size: 2.5rem;
     }
 }
 </style>
 
-<!-- ===== Hero Slider ===== -->
-<section class="hero-slider" aria-label="اسلایدر تصاویر">
-    <div class="slider-container">
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+        <div class="loader-logo">
+            <span>ع</span>
+        </div>
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+
+<!-- Floating Elements -->
+<div class="floating-elements">
+    <div class="floating-element floating-element-1">📚</div>
+    <div class="floating-element floating-element-2">🖨️</div>
+    <div class="floating-element floating-element-3">📸</div>
+    <div class="floating-element floating-element-4">✏️</div>
+</div>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="hero-section">
+    <div class="hero-slider">
+        <!-- Slide 1 -->
         <div class="slide active" data-slide="1">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
                  alt="کتاب‌فروشی علی اکبری" 
-                 class="slide-image" loading="lazy">
+                 class="slide-image" loading="eager">
             <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <h2>تمام خدمات آموزشی، چاپ و دیجیتال در یک‌جا</h2>
-                <p class="lead">از کتاب‌های درسی تا خدمات کامپیوتری پیشرفته - همه نیازهای آموزشی و اداری شما در فروشگاه علی اکبری</p>
-                <a href="#services" class="cta-btn primary">مشاهده خدمات</a>
+            <div class="slide-content animate-fade-up">
+                <span class="slide-badge">
+                    <i class="bi bi-star-fill"></i>
+                    بیش از ۲۰ سال تجربه
+                </span>
+                <h2>مرکز تخصصی خدمات آموزشی، چاپ و دیجیتال</h2>
+                <p>از کتاب‌های درسی تا خدمات کامپیوتری پیشرفته - همه نیازهای آموزشی و اداری شما در فروشگاه علی اکبری با بالاترین کیفیت و مناسب‌ترین قیمت</p>
+                <a href="#services" class="hero-cta">
+                    <span>مشاهده خدمات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
-        
+
+        <!-- Slide 2 -->
         <div class="slide" data-slide="2">
-            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
                  alt="بخش کتاب‌فروشی" 
                  class="slide-image" loading="lazy">
             <div class="slide-overlay"></div>
-            <div class="slide-content">
+            <div class="slide-content animate-fade-up">
+                <span class="slide-badge">
+                    <i class="bi bi-book-fill"></i>
+                    بیش از ۱۰۰۰۰ عنوان کتاب
+                </span>
                 <h2>کتاب‌فروشی تخصصی برای همه مقاطع</h2>
-                <p class="lead">کتاب‌های درسی، دانشگاهی، کانکوری و مطالعاتی با بهترین قیمت و کیفیت</p>
-                <a href="books.html" class="cta-btn primary">مشاهده کتاب‌ها</a>
+                <p>کتاب‌های درسی، دانشگاهی، کانکوری، زبان و مطالعاتی با بهترین کیفیت و تخفیف‌های ویژه برای دانشجویان و دانش‌آموزان</p>
+                <a href="books.html" class="hero-cta">
+                    <span>مشاهده کتاب‌ها</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
-        
+
+        <!-- Slide 3 -->
         <div class="slide" data-slide="3">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
                  alt="بخش مطبعه" 
                  class="slide-image" loading="lazy">
             <div class="slide-overlay"></div>
-            <div class="slide-content">
+            <div class="slide-content animate-fade-up">
+                <span class="slide-badge">
+                    <i class="bi bi-printer-fill"></i>
+                    مدرن‌ترین دستگاه‌های چاپ
+                </span>
                 <h2>خدمات چاپ و طراحی حرفه‌ای</h2>
-                <p class="lead">چاپ، کپی، اسکن، ترجمه و طراحی با مدرن‌ترین دستگاه‌ها و نرم‌افزارها</p>
-                <a href="print.html" class="cta-btn primary">خدمات مطبعه</a>
+                <p>چاپ رنگی و سیاه‌سفید، کپی، اسکن، لمینت، طراحی گرافیک و ترجمه اسناد با سریع‌ترین زمان و بهترین کیفیت</p>
+                <a href="print.html" class="hero-cta">
+                    <span>خدمات مطبعه</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
-        
+
+        <!-- Slide 4 -->
         <div class="slide" data-slide="4">
-            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
                  alt="آموزش دیجیتال" 
                  class="slide-image" loading="lazy">
             <div class="slide-overlay"></div>
-            <div class="slide-content">
+            <div class="slide-content animate-fade-up">
+                <span class="slide-badge">
+                    <i class="bi bi-laptop-fill"></i>
+                    آموزش‌های کاربردی
+                </span>
                 <h2>آموزش‌های دیجیتال برای مهارت‌افزایی</h2>
-                <p class="lead">دوره‌های آموزشی کامپیوتر، زبان انگلیسی و مهارت‌های حرفه‌ای</p>
-                <a href="education.html" class="cta-btn primary">آموزش دیجیتال</a>
+                <p>دوره‌های آموزشی کامپیوتر، زبان انگلیسی، خیاطی، کارآفرینی و مهارت‌های حرفه‌ای با مدرسان مجرب و گواهی معتبر</p>
+                <a href="education.html" class="hero-cta">
+                    <span>آموزش دیجیتال</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
-    </div>
 
-    <!-- Slider Navigation -->
-    <div class="slider-nav">
-        <button class="slider-btn prev-slide" aria-label="اسلاید قبلی">
-            <i class="bi bi-chevron-right"></i>
-        </button>
-        <button class="slider-btn next-slide" aria-label="اسلاید بعدی">
-            <i class="bi bi-chevron-left"></i>
-        </button>
-    </div>
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="slider-btn prev-slide" aria-label="اسلاید قبلی">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            <button class="slider-btn next-slide" aria-label="اسلاید بعدی">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+        </div>
 
-    <!-- Slider Dots -->
-    <div class="slider-controls">
-        <button class="slider-dot active" data-slide="0" aria-label="رفتن به اسلاید ۱"></button>
-        <button class="slider-dot" data-slide="1" aria-label="رفتن به اسلاید ۲"></button>
-        <button class="slider-dot" data-slide="2" aria-label="رفتن به اسلاید ۳"></button>
-        <button class="slider-dot" data-slide="3" aria-label="رفتن به اسلاید ۴"></button>
+        <!-- Slider Dots -->
+        <div class="slider-controls">
+            <button class="slider-dot active" data-slide="0" aria-label="رفتن به اسلاید ۱"></button>
+            <button class="slider-dot" data-slide="1" aria-label="رفتن به اسلاید ۲"></button>
+            <button class="slider-dot" data-slide="2" aria-label="رفتن به اسلاید ۳"></button>
+            <button class="slider-dot" data-slide="3" aria-label="رفتن به اسلاید ۴"></button>
+        </div>
     </div>
 </section>
 
-<!-- ===== Services Section ===== -->
+<!-- ===== SERVICES SECTION ===== -->
 <section class="services-section" id="services">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title animate-fade-in">خدمات ما</h2>
-            <p class="section-subtitle animate-fade-in delay-1">هر آنچه برای موفقیت تحصیلی، اداری و حرفه‌ای نیاز دارید</p>
+            <span class="section-tag animate-scale">خدمات ما</span>
+            <h2 class="section-title animate-fade-up">هر آنچه برای <span>موفقیت</span> نیاز دارید</h2>
+            <p class="section-subtitle animate-fade-up delay-1">از کتاب و لوازم تحریر تا خدمات چاپ و آموزش دیجیتال، همه در یک مکان</p>
         </div>
-        
+
         <div class="services-grid">
-            <div class="service-card animate-fade-in delay-2">
-                <div class="service-icon">
+            <!-- کتاب‌فروشی -->
+            <div class="service-card animate-fade-up delay-1">
+                <div class="service-icon-wrapper">
                     <i class="bi bi-book"></i>
                 </div>
                 <h3 class="service-title">کتاب‌فروشی</h3>
-                <p class="service-description">کلیه کتاب‌های درسی، دانشگاهی، کانکوری، مطالعاتی و دینی با قیمت مناسب و کیفیت تضمینی. تنوع کامل کتاب‌ها برای همه مقاطع تحصیلی.</p>
-                <a href="{{ site.baseurl }}/books" class="cta-btn secondary">مشاهده کتاب‌ها</a>
+                <p class="service-description">کلیه کتاب‌های درسی، دانشگاهی، کانکوری، زبان و مطالعاتی با تنوع بالا و قیمت مناسب</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle-fill"></i> کتاب‌های کمک‌درسی تمام مقاطع</li>
+                    <li><i class="bi bi-check-circle-fill"></i> کتاب‌های دانشگاهی و تخصصی</li>
+                    <li><i class="bi bi-check-circle-fill"></i> کتاب‌های زبان و رمان</li>
+                    <li><i class="bi bi-check-circle-fill"></i> کتاب‌های کنکور و تست</li>
+                </ul>
+                <a href="books.html" class="service-link">
+                    <span>مشاهده کتاب‌ها</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
-            
-            <div class="service-card animate-fade-in delay-2">
-                <div class="service-icon">
+
+            <!-- مطبعه -->
+            <div class="service-card animate-fade-up delay-2">
+                <div class="service-icon-wrapper">
                     <i class="bi bi-printer"></i>
                 </div>
                 <h3 class="service-title">مطبعه</h3>
-                <p class="service-description">پرینت، کپی، اسکن، چاپ کارت، ترجمه اسناد و خدمات آنلاین با پیشرفته‌ترین دستگاه‌ها. کیفیت بالا و سرعت در انجام کارها.</p>
-                <a href="{{ site.baseurl }}/print" class="cta-btn secondary">خدمات مطبعه</a>
+                <p class="service-description">خدمات چاپ و کپی با پیشرفته‌ترین دستگاه‌ها و بالاترین کیفیت</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle-fill"></i> پرینت و کپی رنگی و سیاه‌سفید</li>
+                    <li><i class="bi bi-check-circle-fill"></i> اسکن و لمینت</li>
+                    <li><i class="bi bi-check-circle-fill"></i> طراحی و چاپ کارت ویزیت</li>
+                    <li><i class="bi bi-check-circle-fill"></i> ترجمه اسناد رسمی</li>
+                </ul>
+                <a href="print.html" class="service-link">
+                    <span>خدمات مطبعه</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
-            
-            <div class="service-card animate-fade-in delay-3">
-                <div class="service-icon">
+
+            <!-- عکاسی -->
+            <div class="service-card animate-fade-up delay-3">
+                <div class="service-icon-wrapper">
                     <i class="bi bi-camera"></i>
                 </div>
                 <h3 class="service-title">عکاسی</h3>
-                <p class="service-description">عکاسی حرفه‌ای، بازسازی عکس‌های قدیمی و ادیت عکس مطابق سلیقه شما. استفاده از تجهیزات مدرن و نرم‌افزارهای تخصصی.</p>
-                <a href="{{ site.baseurl }}/photography" class="cta-btn secondary">خدمات عکاسی</a>
+                <p class="service-description">عکاسی حرفه‌ای، بازسازی عکس و ادیت تخصصی با نرم‌افزارهای مدرن</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle-fill"></i> عکاسی پرسنلی و مدارک</li>
+                    <li><i class="bi bi-check-circle-fill"></i> بازسازی عکس‌های قدیمی</li>
+                    <li><i class="bi bi-check-circle-fill"></i> ادیت و روتوش حرفه‌ای</li>
+                    <li><i class="bi bi-check-circle-fill"></i> چاپ عکس با بهترین کیفیت</li>
+                </ul>
+                <a href="photography.html" class="service-link">
+                    <span>خدمات عکاسی</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
-            
-            <div class="service-card animate-fade-in delay-1">
-                <div class="service-icon">
+
+            <!-- قرطاسیه‌فروشی -->
+            <div class="service-card animate-fade-up delay-1">
+                <div class="service-icon-wrapper">
                     <i class="bi bi-pencil"></i>
                 </div>
                 <h3 class="service-title">قرطاسیه‌فروشی</h3>
-                <p class="service-description">لوازم تحریر، اداری و هنری با تنوع بالا و قیمت مناسب برای دانش‌آموزان و ادارات. کیفیت برتر در لوازم آموزشی.</p>
-                <a href="{{ site.baseurl }}/stationery" class="cta-btn secondary">محصولات قرطاسیه</a>
+                <p class="service-description">انواع لوازم تحریر، اداری و هنری با برندهای معتبر و قیمت مناسب</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle-fill"></i> لوازم تحریر دانش‌آموزی و اداری</li>
+                    <li><i class="bi bi-check-circle-fill"></i> ابزار نقاشی و هنری</li>
+                    <li><i class="bi bi-check-circle-fill"></i> کاغذ و مقوا در ابعاد مختلف</li>
+                    <li><i class="bi bi-check-circle-fill"></i> محصولات فانتزی و هدیه</li>
+                </ul>
+                <a href="stationery.html" class="service-link">
+                    <span>محصولات قرطاسیه</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
-            
-            <div class="service-card animate-fade-in delay-2">
-                <div class="service-icon">
+
+            <!-- آموزش دیجیتال -->
+            <div class="service-card animate-fade-up delay-2">
+                <div class="service-icon-wrapper">
                     <i class="bi bi-laptop"></i>
                 </div>
                 <h3 class="service-title">آموزش دیجیتال</h3>
-                <p class="service-description">دوره‌های آموزشی کامپیوتر، زبان انگلیسی، خیاطی و مهارت‌های کارآفرینی. آموزش‌های کاربردی و بازار محور.</p>
-                <a href="{{ site.baseurl }}/education" class="cta-btn secondary">آموزش دیجیتال</a>
+                <p class="service-description">بسته‌های آموزشی کاربردی برای یادگیری مهارت‌های جدید</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle-fill"></i> زبان انگلیسی (فلش)</li>
+                    <li><i class="bi bi-check-circle-fill"></i> کامپیوتر و برنامه‌نویسی</li>
+                    <li><i class="bi bi-check-circle-fill"></i> هوش مصنوعی</li>
+                    <li><i class="bi bi-check-circle-fill"></i> کارآفرینی و کسب‌وکار</li>
+                </ul>
+                <a href="education.html" class="service-link">
+                    <span>آموزش دیجیتال</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
-            
-            <div class="service-card animate-fade-in delay-3">
-                <div class="service-icon">
+
+            <!-- خدمات آنلاین -->
+            <div class="service-card animate-fade-up delay-3">
+                <div class="service-icon-wrapper">
                     <i class="bi bi-globe"></i>
                 </div>
                 <h3 class="service-title">خدمات آنلاین</h3>
-                <p class="service-description">ثبت‌نام تذکره، پاسپورت، بورسیه و سایر خدمات دولتی به صورت آنلاین. صرفه‌جویی در زمان و هزینه.</p>
-                <a href="{{ site.baseurl }}/print#online-registration" class="cta-btn secondary">خدمات آنلاین</a>
+                <p class="service-description">انجام امور اداری و دولتی به صورت آنلاین با سرعت و دقت</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle-fill"></i> ثبت‌نام تذکره و پاسپورت</li>
+                    <li><i class="bi bi-check-circle-fill"></i> درخواست بورسیه و ویزا</li>
+                    <li><i class="bi bi-check-circle-fill"></i> ثبت شرکت و برند</li>
+                    <li><i class="bi bi-check-circle-fill"></i> خدمات مالیاتی و بیمه</li>
+                </ul>
+                <a href="print.html#online-registration" class="service-link">
+                    <span>خدمات آنلاین</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== Gallery Section ===== -->
+<!-- ===== STATS SECTION ===== -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item animate-scale">
+                <div class="stat-icon">
+                    <i class="bi bi-emoji-smile"></i>
+                </div>
+                <div class="stat-number" data-target="15000">۰</div>
+                <div class="stat-label">مشتریان راضی</div>
+            </div>
+            <div class="stat-item animate-scale delay-1">
+                <div class="stat-icon">
+                    <i class="bi bi-book"></i>
+                </div>
+                <div class="stat-number" data-target="10000">۰</div>
+                <div class="stat-label">عنوان کتاب</div>
+            </div>
+            <div class="stat-item animate-scale delay-2">
+                <div class="stat-icon">
+                    <i class="bi bi-clock"></i>
+                </div>
+                <div class="stat-number" data-target="20">۰</div>
+                <div class="stat-label">سال تجربه</div>
+            </div>
+            <div class="stat-item animate-scale delay-3">
+                <div class="stat-icon">
+                    <i class="bi bi-trophy"></i>
+                </div>
+                <div class="stat-number" data-target="5000">۰</div>
+                <div class="stat-label">پروژه‌های موفق</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALLERY SECTION ===== -->
 <section class="gallery-section" id="gallery">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title animate-fade-in">گالری تصاویر</h2>
-            <p class="section-subtitle animate-fade-in delay-1">نمونه‌کارها و محیط فروشگاه</p>
+            <span class="section-tag animate-scale">گالری تصاویر</span>
+            <h2 class="section-title animate-fade-up">فضای <span>دوست‌داشتنی</span> ما</h2>
+            <p class="section-subtitle animate-fade-up delay-1">تصاویری از محیط فروشگاه، خدمات و محصولات</p>
         </div>
-        
+
         <div class="gallery-grid">
-            <div class="gallery-item animate-fade-in">
-                <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+            <div class="gallery-item large animate-scale">
+                <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                      alt="بخش کتاب‌فروشی" 
                      class="gallery-image" loading="lazy">
+                <div class="gallery-badge">کتاب‌فروشی</div>
                 <div class="gallery-overlay">
-                    <h4 class="mb-0">بخش کتاب‌فروشی</h4>
-                    <p class="mb-0">تنوع گسترده کتاب‌های درسی و دانشگاهی</p>
+                    <h4>بخش کتاب‌فروشی</h4>
+                    <p>تنوع گسترده کتاب‌های درسی و دانشگاهی</p>
                 </div>
             </div>
             
-            <div class="gallery-item animate-fade-in delay-1">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+            <div class="gallery-item animate-scale delay-1">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                      alt="خدمات چاپ" 
                      class="gallery-image" loading="lazy">
+                <div class="gallery-badge">مطبعه</div>
                 <div class="gallery-overlay">
-                    <h4 class="mb-0">بخش چاپ و کپی</h4>
-                    <p class="mb-0">دستگاه‌های پیشرفته چاپ و اسکن</p>
+                    <h4>بخش چاپ و کپی</h4>
+                    <p>دستگاه‌های پیشرفته چاپ</p>
                 </div>
             </div>
             
-            <div class="gallery-item animate-fade-in delay-2">
-                <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+            <div class="gallery-item animate-scale delay-2">
+                <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                      alt="لوازم تحریر" 
                      class="gallery-image" loading="lazy">
+                <div class="gallery-badge">قرطاسیه</div>
                 <div class="gallery-overlay">
-                    <h4 class="mb-0">قرطاسیه‌فروشی</h4>
-                    <p class="mb-0">لوازم تحریر و اداری متنوع</p>
+                    <h4>لوازم تحریر و اداری</h4>
+                    <p>محصولات با کیفیت و متنوع</p>
                 </div>
             </div>
             
-            <div class="gallery-item animate-fade-in delay-3">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+            <div class="gallery-item wide animate-scale delay-3">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                      alt="نمای داخلی فروشگاه" 
                      class="gallery-image" loading="lazy">
+                <div class="gallery-badge">فضای داخلی</div>
                 <div class="gallery-overlay">
-                    <h4 class="mb-0">نمای داخلی فروشگاه</h4>
-                    <p class="mb-0">محیطی منظم و خدمات‌محور</p>
+                    <h4>نمای داخلی فروشگاه</h4>
+                    <p>محیطی مدرن و خدمات‌محور</p>
                 </div>
             </div>
-            <div class="gallery-item animate-fade-in delay-3">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                     alt="نمای داخلی فروشگاه" 
+            
+            <div class="gallery-item animate-scale">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="بخش کتاب کودک" 
                      class="gallery-image" loading="lazy">
+                <div class="gallery-badge">کتاب کودک</div>
                 <div class="gallery-overlay">
-                    <h4 class="mb-0">نمای داخلی فروشگاه</h4>
-                    <p class="mb-0">محیطی منظم و خدمات‌محور</p>
+                    <h4>بخش کتاب کودک</h4>
+                    <p>فضایی شاد برای کودکان</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item animate-scale delay-1">
+                <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="بخش آموزشی" 
+                     class="gallery-image" loading="lazy">
+                <div class="gallery-badge">آموزش</div>
+                <div class="gallery-overlay">
+                    <h4>بخش آموزش دیجیتال</h4>
+                    <p>دوره‌های کاربردی</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== Trust Section ===== -->
+<!-- ===== TRUST SECTION ===== -->
 <section class="trust-section" id="why-us">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title animate-fade-in">چرا ما را انتخاب کنید؟</h2>
-            <p class="section-subtitle animate-fade-in delay-1">مزایای منحصر به فرد فروشگاه علی اکبری</p>
+            <span class="section-tag animate-scale">چرا ما؟</span>
+            <h2 class="section-title animate-fade-up">چرا <span>علی اکبری</span> را انتخاب کنید؟</h2>
+            <p class="section-subtitle animate-fade-up delay-1">مزایای منحصر به فرد فروشگاه ما</p>
         </div>
-        
+
         <div class="trust-grid">
-            <div class="trust-item animate-fade-in">
+            <div class="trust-card animate-scale">
                 <div class="trust-icon">
                     <i class="bi bi-award"></i>
                 </div>
                 <h3 class="trust-title">کیفیت تضمینی</h3>
-                <p class="trust-description">استفاده از بهترین مواد و دستگاه‌های روز دنیا برای ارائه خدمات باکیفیت</p>
+                <p class="trust-description">استفاده از بهترین مواد و دستگاه‌های روز دنیا برای ارائه خدمات با کیفیت</p>
             </div>
             
-            <div class="trust-item animate-fade-in delay-1">
+            <div class="trust-card animate-scale delay-1">
                 <div class="trust-icon">
-                    <i class="bi bi-lightning"></i>
+                    <i class="bi bi-lightning-charge"></i>
                 </div>
                 <h3 class="trust-title">سرعت عمل بالا</h3>
-                <p class="trust-description">ارائه خدمات در کوتاه‌ترین زمان ممکن با حفظ کیفیت</p>
+                <p class="trust-description">ارائه خدمات در کوتاه‌ترین زمان ممکن بدون کاهش کیفیت</p>
             </div>
             
-            <div class="trust-item animate-fade-in delay-2">
+            <div class="trust-card animate-scale delay-2">
                 <div class="trust-icon">
                     <i class="bi bi-cash-stack"></i>
                 </div>
-                <h3 class="trust-title">قیمت مناسب</h3>
-                <p class="trust-description">ارائه خدمات با مناسب‌ترین قیمت‌ها در مقایسه با رقبا</p>
+                <h3 class="trust-title">قیمت منصفانه</h3>
+                <p class="trust-description">بهترین قیمت‌ها در مقایسه با بازار با حفظ کیفیت عالی</p>
             </div>
             
-            <div class="trust-item animate-fade-in delay-3">
+            <div class="trust-card animate-scale delay-3">
                 <div class="trust-icon">
-                    <i class="bi bi-person-badge"></i>
+                    <i class="bi bi-person-workspace"></i>
                 </div>
-                <h3 class="trust-title">تخصص و تجربه</h3>
-                <p class="trust-description">سال‌ها تجربه در زمینه خدمات آموزشی، چاپی و دیجیتال</p>
+                <h3 class="trust-title">تیم مجرب</h3>
+                <p class="trust-description">کادر حرفه‌ای با سال‌ها تجربه در زمینه خدمات آموزشی و چاپی</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== CTA Section ===== -->
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag animate-scale">نظرات مشتریان</span>
+            <h2 class="section-title animate-fade-up">آنچه <span>مشتریان</span> می‌گویند</h2>
+            <p class="section-subtitle animate-fade-up delay-1">صدای رضایت مشتریان ما</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card animate-fade-up">
+                <div class="testimonial-text">
+                    بهترین کتاب‌فروشی کابل! تنوع کتاب‌ها عالیه و قیمت‌ها هم منصفانه. کارکنان بسیار خوش‌برخورد و حرفه‌ای هستن.
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ا</div>
+                    <div class="author-info">
+                        <h4>احمد رحیمی</h4>
+                        <p>دانشجو</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card animate-fade-up delay-1">
+                <div class="testimonial-text">
+                    خدمات چاپشون عالیه، همیشه کارامو به موقع تحویل میدن و کیفیت چاپشون بی‌نظیره. از همه مهم‌تر قیمتاشون مناسبه.
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ف</div>
+                    <div class="author-info">
+                        <h4>فاطمه کریمی</h4>
+                        <p>مدیر شرکت</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card animate-fade-up delay-2">
+                <div class="testimonial-text">
+                    بسته‌های آموزشی زبان انگلیسی که گرفتم خیلی عالی بودن. توی سفر هم می‌تونستم درس بخونم. واقعاً ممنون از تیم خوبتون.
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ح</div>
+                    <div class="author-info">
+                        <h4>حسین احمدی</h4>
+                        <p>مهندس</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
 <section class="cta-section" id="cta">
     <div class="container">
         <div class="cta-content">
-            <h2 class="cta-title animate-fade-in">آماده ارائه خدمات به شما هستیم</h2>
-            <p class="cta-description animate-fade-in delay-1">برای ثبت سفارش، دریافت مشاوره یا بازدید از فروشگاه، با ما در تماس باشید. ما بهترین خدمات را با کیفیت عالی و قیمت مناسب ارائه می‌دهیم.</p>
+            <h2 class="cta-title animate-fade-up">آماده ارائه خدمات به شما هستیم</h2>
+            <p class="cta-description animate-fade-up delay-1">برای سفارش، مشاوره یا بازدید از فروشگاه، با ما در تماس باشید. ما بهترین خدمات را با کیفیت عالی و قیمت مناسب ارائه می‌دهیم.</p>
             
             <div class="cta-buttons">
-                <a href="tel:{{ site.phone_primary }}" class="cta-btn primary animate-fade-in delay-2">
+                <a href="tel:+93781821838" class="cta-btn primary animate-scale delay-2">
                     <i class="bi bi-telephone"></i>
-                    تماس تلفنی: {{ site.phone_primary }}
+                    تماس تلفنی: ۰۷۸۱۸۲۱۸۳۸
                 </a>
                 
-                <a href="#footer" class="cta-btn secondary animate-fade-in delay-3">
+                <a href="#contact" class="cta-btn secondary animate-scale delay-3">
                     <i class="bi bi-geo-alt"></i>
                     آدرس فروشگاه
                 </a>
@@ -1249,8 +1895,75 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     </div>
 </section>
 
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info animate-fade-right">
+                <h3>اطلاعات تماس</h3>
+                <p>ما همیشه آماده پاسخگویی به سوالات شما هستیم. از راه‌های زیر می‌توانید با ما در ارتباط باشید.</p>
+                
+                <ul class="contact-details">
+                    <li>
+                        <i class="bi bi-geo-alt"></i>
+                        <div>
+                            <span>آدرس فروشگاه</span>
+                            <small>کابل، ناحیه ۶، شهرک ۱۲ امام، چهارراه اول، پلاک ۲۳</small>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        <div>
+                            <span>تلفن تماس</span>
+                            <small>۰۷۸۱۸۲۱۸۳۸</small>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-whatsapp"></i>
+                        <div>
+                            <span>واتس‌اپ</span>
+                            <small>۰۷۸۱۸۲۱۸۳۸</small>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                        <div>
+                            <span>ایمیل</span>
+                            <small>info@aliakbari.af</small>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-clock"></i>
+                        <div>
+                            <span>ساعات کاری</span>
+                            <small>شنبه تا پنج‌شنبه: ۸ صبح تا ۸ شب<br>جمعه‌ها: تعطیل</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contact-map animate-fade-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531590444!3d-37.81627974202167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b3f3f3f%3A0x5045675218ce7e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="موقعیت فروشگاه"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== JavaScript ===== -->
 <script>
-// Slider Functionality
+// Page Loader
+window.addEventListener('load', function() {
+    const loader = document.getElementById('pageLoader');
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 500);
+});
+
+// Hero Slider
 class HeroSlider {
     constructor() {
         this.slides = document.querySelectorAll('.slide');
@@ -1259,152 +1972,128 @@ class HeroSlider {
         this.nextBtn = document.querySelector('.next-slide');
         this.currentSlide = 0;
         this.slideInterval = null;
-        this.slideDuration = 5000;
-        this.isAutoSliding = true;
-        this.touchStartX = 0;
-        this.touchEndX = 0;
-
+        this.autoPlayInterval = 5000;
+        
         this.init();
     }
-
+    
     init() {
-        // Set initial active slide
         this.showSlide(this.currentSlide);
-
-        // Dot controls
+        
+        // Dot click handlers
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                this.stopAutoSlide();
                 this.showSlide(index);
-                this.startAutoSlide();
+                this.resetAutoPlay();
             });
         });
-
-        // Previous button
+        
+        // Navigation buttons
         this.prevBtn.addEventListener('click', () => {
-            this.stopAutoSlide();
-            this.prevSlide();
-            this.startAutoSlide();
+            this.showSlide(this.currentSlide - 1);
+            this.resetAutoPlay();
         });
-
-        // Next button
+        
         this.nextBtn.addEventListener('click', () => {
-            this.stopAutoSlide();
-            this.nextSlide();
-            this.startAutoSlide();
+            this.showSlide(this.currentSlide + 1);
+            this.resetAutoPlay();
         });
-
+        
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowRight') {
-                this.stopAutoSlide();
-                this.prevSlide();
-                this.startAutoSlide();
-            } else if (e.key === 'ArrowLeft') {
-                this.stopAutoSlide();
-                this.nextSlide();
-                this.startAutoSlide();
+            if (e.key === 'ArrowLeft') {
+                this.showSlide(this.currentSlide + 1);
+                this.resetAutoPlay();
+            } else if (e.key === 'ArrowRight') {
+                this.showSlide(this.currentSlide - 1);
+                this.resetAutoPlay();
             }
         });
-
-        // Touch/swipe support
-        const slider = document.querySelector('.hero-slider');
-        slider.addEventListener('touchstart', (e) => {
-            this.touchStartX = e.changedTouches[0].screenX;
-            this.stopAutoSlide();
-        }, { passive: true });
-
-        slider.addEventListener('touchend', (e) => {
-            this.touchEndX = e.changedTouches[0].screenX;
-            this.handleSwipe();
-            this.startAutoSlide();
-        }, { passive: true });
-
-        // Start auto-slide
-        this.startAutoSlide();
-
-        // Pause on hover (desktop only)
-        if (window.matchMedia('(hover: hover)').matches) {
-            slider.addEventListener('mouseenter', () => this.stopAutoSlide());
-            slider.addEventListener('mouseleave', () => this.startAutoSlide());
-        }
-
-        // Handle visibility change
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                this.stopAutoSlide();
-            } else {
-                this.startAutoSlide();
-            }
-        });
-    }
-
-    showSlide(index) {
-        // Remove active class from all slides and dots
-        this.slides.forEach(slide => {
-            slide.classList.remove('active');
-            slide.setAttribute('aria-hidden', 'true');
-        });
-        this.dots.forEach(dot => dot.classList.remove('active'));
-
-        // Add active class to current slide and dot
-        this.currentSlide = (index + this.slides.length) % this.slides.length;
-        this.slides[this.currentSlide].classList.add('active');
-        this.slides[this.currentSlide].setAttribute('aria-hidden', 'false');
-        this.dots[this.currentSlide].classList.add('active');
-        this.dots[this.currentSlide].setAttribute('aria-current', 'true');
         
-        // Update other dots
-        this.dots.forEach((dot, i) => {
-            if (i !== this.currentSlide) {
-                dot.removeAttribute('aria-current');
-            }
-        });
+        // Start auto play
+        this.startAutoPlay();
+        
+        // Pause on hover
+        const slider = document.querySelector('.hero-slider');
+        slider.addEventListener('mouseenter', () => this.stopAutoPlay());
+        slider.addEventListener('mouseleave', () => this.startAutoPlay());
     }
-
-    nextSlide() {
-        this.showSlide(this.currentSlide + 1);
+    
+    showSlide(index) {
+        // Handle wrap around
+        if (index < 0) index = this.slides.length - 1;
+        if (index >= this.slides.length) index = 0;
+        
+        // Update slides
+        this.slides.forEach(slide => slide.classList.remove('active'));
+        this.slides[index].classList.add('active');
+        
+        // Update dots
+        this.dots.forEach(dot => dot.classList.remove('active'));
+        this.dots[index].classList.add('active');
+        
+        this.currentSlide = index;
     }
-
-    prevSlide() {
-        this.showSlide(this.currentSlide - 1);
+    
+    startAutoPlay() {
+        this.stopAutoPlay();
+        this.slideInterval = setInterval(() => {
+            this.showSlide(this.currentSlide + 1);
+        }, this.autoPlayInterval);
     }
-
-    startAutoSlide() {
-        if (this.isAutoSliding) {
-            this.stopAutoSlide();
-            this.slideInterval = setInterval(() => this.nextSlide(), this.slideDuration);
-        }
-    }
-
-    stopAutoSlide() {
+    
+    stopAutoPlay() {
         if (this.slideInterval) {
             clearInterval(this.slideInterval);
             this.slideInterval = null;
         }
     }
-
-    handleSwipe() {
-        const swipeThreshold = 50;
-        const swipeDistance = this.touchEndX - this.touchStartX;
-
-        if (Math.abs(swipeDistance) > swipeThreshold) {
-            if (swipeDistance > 0) {
-                // Swipe right = previous slide
-                this.prevSlide();
-            } else {
-                // Swipe left = next slide
-                this.nextSlide();
-            }
-        }
+    
+    resetAutoPlay() {
+        this.stopAutoPlay();
+        this.startAutoPlay();
     }
 }
 
-// Initialize slider when DOM is loaded
-let slider;
+// Initialize slider
 document.addEventListener('DOMContentLoaded', () => {
-    slider = new HeroSlider();
+    new HeroSlider();
 });
+
+// Counter Animation
+function animateNumbers() {
+    const counters = document.querySelectorAll('.stat-number');
+    
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const updateCounter = () => {
+            const current = parseInt(counter.innerText.replace(/[^0-9]/g, '')) || 0;
+            const increment = target / 50; // Smooth animation
+            
+            if (current < target) {
+                counter.innerText = Math.min(current + increment, target).toFixed(0);
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+        
+        // Check if element is in viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(counter);
+    });
+}
+
+// Initialize counters when DOM is loaded
+document.addEventListener('DOMContentLoaded', animateNumbers);
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -1415,77 +2104,38 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+            entry.target.classList.add('animate-fade-up');
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observe elements with animation classes
-document.querySelectorAll('.animate-fade-in').forEach(el => {
+document.querySelectorAll('.service-card, .trust-card, .testimonial-card, .stat-item').forEach(el => {
     observer.observe(el);
 });
 
-// Lazy loading for images with intersection observer
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                }
-                img.classList.remove('loading');
-                imageObserver.unobserve(img);
-            }
-        });
-    }, {
-        rootMargin: '50px 0px',
-        threshold: 0.1
-    });
-
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-        img.classList.add('loading');
-        imageObserver.observe(img);
-    });
-}
-
-// Add loading state to buttons on click
-document.querySelectorAll('.cta-btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        if (this.href && this.href.startsWith('tel:')) {
-            return; // Don't add loading state for tel links
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
-        
-        // Add loading state
-        const originalText = this.innerHTML;
-        this.innerHTML = '<span class="loading-text">در حال بارگذاری...</span>';
-        this.classList.add('loading');
-        
-        // Restore after delay (simulate loading)
-        setTimeout(() => {
-            this.innerHTML = originalText;
-            this.classList.remove('loading');
-        }, 1500);
     });
 });
 
-// Handle reduced motion preference
+// Touch device optimizations
+if ('ontouchstart' in window) {
+    document.body.classList.add('touch-device');
+}
+
+// Reduced motion preference
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-if (prefersReducedMotion.matches && slider) {
-    slider.isAutoSliding = false;
-    slider.stopAutoSlide();
+if (prefersReducedMotion.matches) {
+    document.body.classList.add('reduced-motion');
 }
-
-// Update on preference change
-prefersReducedMotion.addEventListener('change', (e) => {
-    if (slider) {
-        slider.isAutoSliding = !e.matches;
-        if (slider.isAutoSliding) {
-            slider.startAutoSlide();
-        } else {
-            slider.stopAutoSlide();
-        }
-    }
-});
 </script>
