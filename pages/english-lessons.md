@@ -712,7 +712,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📞</div>
             <h3 class="method-title">تماس تلفنی</h3>
-            <p class="method-description">با ما تماس بگیرید و پس از توضیح نیاز خود، بسته را سفارش دهید.</p>
+            <p class="method-description">برای راهنمایی و اطلاعات بیشتر، با ما تماس بگیرید.</p>
             <a href="tel:+93781821838" class="method-btn">
                 تماس: ۰۷۸۱۸۲۱۸۳۸
             </a>
@@ -721,7 +721,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">🏪</div>
             <h3 class="method-title">مراجعه حضوری</h3>
-            <p class="method-description">به فروشگاه ما بیایید، بسته را از نزدیک ببینید و توضیحات تکمیلی بشنوید.</p>
+            <p class="method-description">برای مشاهده و کسب اطلاعات بیشتر، به فروشگاه ما سر بزنید.</p>
             <a href="#footer" class="method-btn">
                 آدرس فروشگاه
             </a>
@@ -730,7 +730,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📱</div>
             <h3 class="method-title">درخواست در واتس‌اپ</h3>
-            <p class="method-description">نام بسته را در واتس‌اپ بفرستید تا راهنمایی و قیمت‌ها را دریافت کنید.</p>
+            <p class="method-description">برای راهنمایی و دریافت اطلاعات بیشتر، در واتس‌اپ با ما تماس بگیرید.</p>
             <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارتباط در واتس‌اپ
