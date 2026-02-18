@@ -768,6 +768,7 @@ breadcrumb:
 
     
     <!-- کارت‌های نمونه کار -->
+  <section>
     <div class="portfolio-grid">
         <div class="portfolio-card">
             <div class="portfolio-thumb">
