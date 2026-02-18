@@ -5,7 +5,6 @@ description: "بسته کامل آموزشی شامل درس‌های ضبط‌�
 keywords: "بسته آموزشی, زبان انگلیسی, فلش آموزشی, درس زبان, استاد بین‌المللی, یادگیری قابل‌حمل, علی اکبری"
 breadcrumb:
   - title: "بسته‌های آموزشی"
-    link: "/educational-packages/index.html"
 ---
 
 <style>
