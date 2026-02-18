@@ -225,73 +225,6 @@ breadcrumb:
     font-size: 1.05rem;
 }
 
-/* بخش گالری تصاویر */
-.gallery-section {
-    margin: 6rem 0;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.03), rgba(23, 162, 184, 0.03));
-    border-radius: 0.75rem;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    aspect-ratio: 4/3;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(0, 123, 255, 0.25);
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-item:hover .gallery-img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    padding: 1.5rem;
-    transform: translateY(100%);
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-title {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-description {
-    color: #fff;
-    font-size: 0.9rem;
-}
 
 /* بخش ویژگی‌ها */
 .features-section {
@@ -725,47 +658,6 @@ breadcrumb:
     </div>
 </section>
 
-<!-- بخش گالری تصاویر (با تصاویر مرتبط با آموزش زبان) -->
-<section class="gallery-section">
-    <div class="section-title">
-        <h2>نمونه‌هایی از بسته آموزشی</h2>
-        <p>تصاویری از فلش، درس‌ها و فضای یادگیری</p>
-    </div>
-    
-    <div class="gallery-grid">
-        <a href="https://ali-akbari-af.github.io/assets/images/english-course/flash-drive.jpg" class="gallery-item" data-lightbox="gallery" data-title="فلش کوچک، همه درس‌ها">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-course/flash-drive.jpg" alt="فلش مموری" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">همه درس‌ها روی یک فلش</h4>
-                <p class="gallery-description">کوچک، قابل حمل و همیشه در دسترس</p>
-            </div>
-        </a>
-        
-        <a href="https://ali-akbari-af.github.io/assets/images/english-course/lessons-preview.jpg" class="gallery-item" data-lightbox="gallery" data-title="پیش‌نمایش درس‌ها">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-course/lessons-preview.jpg" alt="درس‌های انگلیسی" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">درس‌های ویدئویی و صوتی</h4>
-                <p class="gallery-description">آموزش تصویری توسط اساتید بین‌المللی</p>
-            </div>
-        </a>
-        
-        <a href="https://ali-akbari-af.github.io/assets/images/english-course/learn-anywhere.jpg" class="gallery-item" data-lightbox="gallery" data-title="یادگیری در سفر">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-course/learn-anywhere.jpg" alt="یادگیری در هر مکان" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">در خانه، محل کار یا سفر</h4>
-                <p class="gallery-description">هرجا که هستید، یادگیری متوقف نمی‌شود</p>
-            </div>
-        </a>
-        
-        <a href="https://ali-akbari-af.github.io/assets/images/english-course/teachers.jpg" class="gallery-item" data-lightbox="gallery" data-title="اساتید ملی و بین‌المللی">
-            <img src="https://ali-akbari-af.github.io/assets/images/english-course/teachers.jpg" alt="اساتید برجسته" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4 class="gallery-title">اساتید برجسته</h4>
-                <p class="gallery-description">ترکیبی از تجربه‌های داخلی و خارجی</p>
-            </div>
-        </a>
-    </div>
-</section>
 
 <!-- بخش ویژگی‌ها -->
 <section class="features-section">
