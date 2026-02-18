@@ -3,7 +3,6 @@ layout: page
 title: در حال آماده‌سازی
 permalink: /under-construction/
 description: این صفحه در حال آماده‌سازی است - به زودی محتوای جدید اضافه خواهد شد
-robots: noindex, nofollow
 ---
 
 <div style="text-align: center; direction: rtl; padding: 50px 20px;">
