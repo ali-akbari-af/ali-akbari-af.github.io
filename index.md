@@ -966,7 +966,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 <section class="home-advantages">
     <div class="home-container">
         <div class="home-section-header">
-            <h2 style="color: white;">چرا علی اکبری؟</h2>
+            <h2 style="color: white;">چرا ما؟</h2>
             <p style="color: rgba(255,255,255,0.9);">چهار دلیل برای انتخاب ما</p>
         </div>
         
@@ -1029,7 +1029,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
             
             <div class="home-process-step home-animate-fade-up home-delay-2">
                 <div class="home-step-number">۳</div>
-                <h4>تحویل سریع</h4>
+                <h4>اجرا سریع</h4>
                 <p>کار شما در کوتاه‌ترین زمان آماده می‌شود</p>
             </div>
         </div>
@@ -1042,13 +1042,13 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
         <div class="home-contact-grid">
             <div class="home-contact-info home-animate-fade-up">
                 <h3>با ما در تماس باشید</h3>
-                <p>برای مشاوره، سفارش خدمات یا بازدید حضوری، از راه‌های زیر اقدام کنید. ما همیشه آماده پاسخگویی هستیم.</p>
+                <p>جهت اطلاعات بیشتر با تماس بگیرید. ما همیشه آماده پاسخگویی هستیم.</p>
                 
                 <ul class="home-contact-details">
                     <li><i class="bi bi-telephone"></i> ۰۷۸۱۸۲۱۸۳۸</li>
                     <li><i class="bi bi-whatsapp"></i> ۰۷۸۱۸۲۱۸۳۸</li>
-                    <li><i class="bi bi-geo-alt"></i> کابل، ناحیه ۶، شهرک ۱۲ امام، چهارراه اول، پلاک ۲۳</li>
-                    <li><i class="bi bi-clock"></i> شنبه تا پنج‌شنبه ۸ صبح تا ۸ شب - جمعه‌ها تعطیل</li>
+                    <li><i class="bi bi-geo-alt"></i> کابل، ناحیه ۶، شهرک ۱۲ امام، کوچه زیارت 12 امام، قرطاسیه و خدمات کامپیوتری علی اکبری</li>
+                    <li><i class="bi bi-clock"></i> همه روزه از ساعت 7 صبح تا 7 شب</li>
                 </ul>
                 
                 <div class="home-contact-buttons">
