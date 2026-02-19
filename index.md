@@ -9,12 +9,9 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 /* ===== استایل‌های اختصاصی صفحه اصلی ===== */
 /* تمام کلاس‌ها با پیشوند home- شروع می‌شوند تا با هدر تداخل نکنند */
 .site-top-banner .top-accent {
-    background-color: linear-gradient(279deg, #1169e9, #254ec4, #2164d3);
+    background: linear-gradient(279deg, #1169e9, #254ec4, #2164d3);
 }
 
-.home-hero {
-    margin-top: 9rem;
-}
     
 .home-page * {
     margin: 0;
@@ -131,7 +128,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     min-height: 600px;
     display: flex;
     align-items: center;
-    margin-top: 0;
+    margin-top: 9rem;
     position: relative;
     overflow: hidden;
     padding: 40px 0;
