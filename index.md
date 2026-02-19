@@ -70,15 +70,24 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     }
 }
 
-/* ===== بخش‌بندی اصلی ===== */
+@keyframes home-slideFade {
+    0% { opacity: 0; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* ===== بخش‌بندی اصلی با فاصله مناسب ===== */
 .home-section {
-    padding: 80px 0;
+    padding: 100px 0;
     position: relative;
+}
+
+.home-section:first-of-type {
+    padding-top: 40px; /* فاصله از هدر */
 }
 
 .home-section-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .home-section-header h2 {
@@ -109,7 +118,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     margin: 0 auto;
 }
 
-/* ===== 1️⃣ Hero Section جذاب ===== */
+/* ===== 1️⃣ Hero Section با اسلایدر ===== */
 .home-hero {
     background: linear-gradient(135deg, #0a58ca, #1e3a8a, #3b82f6);
     min-height: 600px;
@@ -118,6 +127,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     margin-top: 0;
     position: relative;
     overflow: hidden;
+    padding: 40px 0;
 }
 
 .home-hero::before {
@@ -191,25 +201,70 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-.home-hero-image {
+/* اسلایدر */
+.home-hero-slider {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0,0,0,0.3);
     border: 5px solid rgba(255,255,255,0.2);
-    transform: rotate(2deg);
-    transition: all 0.5s;
+    position: relative;
 }
 
-.home-hero-image:hover {
-    transform: rotate(0deg) scale(1.02);
+.home-slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.home-hero-image img {
+.home-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.home-slide.active {
+    opacity: 1;
+}
+
+.home-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: home-slideFade 5s ease-in-out;
+}
+
+.home-slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.home-slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 0;
+}
+
+.home-slider-dot.active {
+    background: var(--home-secondary);
+    transform: scale(1.2);
+    width: 30px;
+    border-radius: 6px;
 }
 
 /* ===== 2️⃣ خدمات اصلی ===== */
@@ -217,6 +272,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     background: var(--home-bg-light);
     position: relative;
     overflow: hidden;
+    padding: 100px 0;
 }
 
 .home-services-section::before {
@@ -240,7 +296,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 .home-service-card {
     background: var(--home-white);
     border-radius: 30px;
-    padding: 30px;
+    padding: 35px;
     box-shadow: var(--home-shadow-md);
     transition: all 0.4s;
     border: 1px solid rgba(10,88,202,0.1);
@@ -278,7 +334,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: var(--home-white);
     font-size: 2rem;
     transition: all 0.4s;
@@ -299,7 +355,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 
 .home-service-card p {
     color: var(--home-text-light);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 1.6;
     font-size: 0.95rem;
 }
@@ -347,6 +403,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     color: var(--home-white);
     position: relative;
     overflow: hidden;
+    padding: 100px 0;
 }
 
 .home-advantages::before {
@@ -414,69 +471,16 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     font-size: 1rem;
 }
 
-/* ===== 4️⃣ نمونه کار ===== */
-.home-portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.home-portfolio-item {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: var(--home-shadow-md);
-    border: 1px solid rgba(10,88,202,0.1);
-    transition: all 0.4s;
-    position: relative;
-}
-
-.home-portfolio-item:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--home-shadow-lg);
-}
-
-.home-portfolio-item a {
-    text-decoration: none;
-    display: block;
-}
-
-.home-portfolio-image {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    transition: all 0.6s;
-}
-
-.home-portfolio-item:hover .home-portfolio-image {
-    transform: scale(1.1);
-}
-
-.home-portfolio-caption {
-    padding: 15px;
-    background: var(--home-white);
-    position: relative;
-}
-
-.home-portfolio-caption h4 {
-    font-size: 1.1rem;
-    color: var(--home-primary-dark);
-    margin-bottom: 5px;
-}
-
-.home-portfolio-caption p {
-    font-size: 0.9rem;
-    color: var(--home-text-light);
-}
-
-/* ===== 5️⃣ فرآیند کار ===== */
+/* ===== 4️⃣ فرآیند کار ===== */
 .home-process-section {
     background: var(--home-bg-light);
+    padding: 100px 0;
 }
 
 .home-process-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 60px;
     margin-top: 40px;
 }
 
@@ -489,7 +493,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     content: '→';
     position: absolute;
     top: 50px;
-    left: -20px;
+    left: -30px;
     font-size: 2rem;
     color: var(--home-primary-light);
     opacity: 0.5;
@@ -527,11 +531,11 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     font-size: 1.1rem;
 }
 
-/* ===== 6️⃣ اطلاعات تماس ===== */
+/* ===== 5️⃣ اطلاعات تماس ===== */
 .home-contact-section {
     background: linear-gradient(135deg, #1e3a8a, #0a58ca);
     color: var(--home-white);
-    padding: 80px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
 }
@@ -590,7 +594,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     margin-bottom: 15px;
     font-size: 1.2rem;
     background: rgba(255,255,255,0.1);
-    padding: 15px 20px;
+    padding: 15px 25px;
     border-radius: 50px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
@@ -694,17 +698,21 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     }
     
     .home-services-grid,
-    .home-advantages-grid,
-    .home-portfolio-grid {
+    .home-advantages-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
     .home-process-steps {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
     
     .home-process-step:not(:last-child)::after {
         display: none;
+    }
+    
+    .home-section {
+        padding: 80px 0;
     }
 }
 
@@ -713,18 +721,37 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
         padding: 60px 0;
     }
     
+    .home-section:first-of-type {
+        padding-top: 30px;
+    }
+    
     .home-hero {
-        min-height: auto;
-        padding: 60px 0;
+        padding: 30px 0;
     }
     
     .home-hero-text h1 {
         font-size: 2.2rem;
     }
     
+    .home-hero-text p {
+        font-size: 1.1rem;
+    }
+    
+    .home-hero-slider {
+        height: 350px;
+    }
+    
     .home-services-grid,
-    .home-advantages-grid,
-    .home-portfolio-grid {
+    .home-advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .home-service-card {
+        padding: 25px;
+    }
+    
+    .home-service-links {
         grid-template-columns: 1fr;
     }
     
@@ -737,8 +764,49 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
         justify-content: center;
     }
     
-    .home-service-links {
-        grid-template-columns: 1fr;
+    .home-contact-map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 50px 0;
+    }
+    
+    .home-section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .home-section-header p {
+        font-size: 1rem;
+    }
+    
+    .home-hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .home-hero-slider {
+        height: 250px;
+    }
+    
+    .home-advantage-item {
+        padding: 20px;
+    }
+    
+    .home-advantage-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .home-advantage-item h4 {
+        font-size: 1.2rem;
+    }
+    
+    .home-contact-details li {
+        padding: 12px 15px;
+        font-size: 1rem;
     }
 }
 </style>
@@ -746,7 +814,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 <!-- محتوای صفحه اصلی با کلاس wrapper -->
 <div class="home-page">
 
-<!-- 1️⃣ Hero Section -->
+<!-- 1️⃣ Hero Section با اسلایدر -->
 <section class="home-hero">
     <div class="home-container">
         <div class="home-hero-content">
@@ -755,8 +823,27 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
                 <p>خدمات چاپ، فروش کتاب‌های درسی و دانشگاهی، لوازم تحریر با کیفیت و آموزش دیجیتال - همه در یک مکان با قیمت منصفانه</p>
                 <a href="#home-services" class="home-hero-cta">✨ مشاهده همه خدمات</a>
             </div>
-            <div class="home-hero-image home-animate-fade-up home-delay-1">
-                <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="فروشگاه علی اکبری">
+            <div class="home-hero-slider home-animate-fade-up home-delay-1">
+                <div class="home-slider-container">
+                    <div class="home-slide active">
+                        <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="فروشگاه علی اکبری">
+                    </div>
+                    <div class="home-slide">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="کتاب‌فروشی">
+                    </div>
+                    <div class="home-slide">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="خدمات چاپ">
+                    </div>
+                    <div class="home-slide">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="آموزش دیجیتال">
+                    </div>
+                </div>
+                <div class="home-slider-dots">
+                    <span class="home-slider-dot active"></span>
+                    <span class="home-slider-dot"></span>
+                    <span class="home-slider-dot"></span>
+                    <span class="home-slider-dot"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -909,59 +996,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     </div>
 </section>
 
-<!-- 4️⃣ نمونه کار -->
-<section style="padding: 80px 0;">
-    <div class="home-container">
-        <div class="home-section-header home-animate-fade-up">
-            <h2>نمونه کارها</h2>
-            <p>تصاویری از خدمات و محصولات ما</p>
-        </div>
-        
-        <div class="home-portfolio-grid">
-            <div class="home-portfolio-item home-animate-fade-up">
-                <a href="/pages/copy-print-scan">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="خدمات چاپ" class="home-portfolio-image">
-                    <div class="home-portfolio-caption">
-                        <h4>خدمات چاپ رنگی</h4>
-                        <p>پرینت و کپی با کیفیت</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="home-portfolio-item home-animate-fade-up home-delay-1">
-                <a href="/pages/writting-tools">
-                    <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="لوازم تحریر" class="home-portfolio-image">
-                    <div class="home-portfolio-caption">
-                        <h4>لوازم تحریر</h4>
-                        <p>انواع خودکار و مداد</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="home-portfolio-item home-animate-fade-up home-delay-2">
-                <a href="/pages/school-books">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="کتاب‌فروشی" class="home-portfolio-image">
-                    <div class="home-portfolio-caption">
-                        <h4>کتاب‌های درسی</h4>
-                        <p>کتاب‌های مکتب و دانشگاه</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="home-portfolio-item home-animate-fade-up home-delay-3">
-                <a href="/pages/computer-lessons">
-                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="آموزش دیجیتال" class="home-portfolio-image">
-                    <div class="home-portfolio-caption">
-                        <h4>بسته‌های آموزشی</h4>
-                        <p>آموزش روی فلش</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 5️⃣ فرآیند کار -->
+<!-- 4️⃣ فرآیند کار -->
 <section class="home-process-section">
     <div class="home-container">
         <div class="home-section-header home-animate-fade-up">
@@ -991,7 +1026,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     </div>
 </section>
 
-<!-- 6️⃣ اطلاعات تماس -->
+<!-- 5️⃣ اطلاعات تماس -->
 <section class="home-contact-section" id="home-contact">
     <div class="home-container">
         <div class="home-contact-grid">
@@ -1033,3 +1068,46 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 </section>
 
 </div> <!-- پایان home-page -->
+
+<script>
+// اسلایدر هیرو
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.home-slide');
+    const dots = document.querySelectorAll('.home-slider-dot');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        currentSlide = (index + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    // اتوماتیک تغییر هر ۵ ثانیه
+    slideInterval = setInterval(nextSlide, 5000);
+
+    // کلیک روی دات‌ها
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            showSlide(index);
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+    });
+
+    // توقف اسلایدر هنگام هاور (اختیاری)
+    const slider = document.querySelector('.home-hero-slider');
+    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+    slider.addEventListener('mouseleave', () => {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+    });
+});
+</script>
