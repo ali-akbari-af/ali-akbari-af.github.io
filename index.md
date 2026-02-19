@@ -6,14 +6,16 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 ---
 
 <style>
-/* ===== RESET & BASE ===== */
-* {
+/* ===== استایل‌های اختصاصی صفحه اصلی ===== */
+/* تمام کلاس‌ها با پیشوند home- شروع می‌شوند تا با هدر تداخل نکنند */
+
+.home-page * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.home-page {
     font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
     background: #f0f7ff;
     color: #1e293b;
@@ -21,7 +23,7 @@ body {
     direction: rtl;
 }
 
-.container {
+.home-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -29,40 +31,35 @@ body {
 
 /* ===== رنگ‌بندی آبی جذاب ===== */
 :root {
-    --primary: #0a58ca;
-    --primary-dark: #084298;
-    --primary-light: #3b82f6;
-    --primary-soft: #e6f0ff;
-    --secondary: #00b0ff;
-    --accent: #7b68ee;
-    --gradient-1: linear-gradient(135deg, #0a58ca, #3b82f6);
-    --gradient-2: linear-gradient(135deg, #00b0ff, #7b68ee);
-    --text-dark: #1e293b;
-    --text-light: #4b5563;
-    --bg-light: #f8fafc;
-    --white: #ffffff;
-    --shadow-sm: 0 4px 6px rgba(10, 88, 202, 0.1);
-    --shadow-md: 0 10px 25px rgba(10, 88, 202, 0.15);
-    --shadow-lg: 0 20px 40px rgba(10, 88, 202, 0.2);
+    --home-primary: #0a58ca;
+    --home-primary-dark: #084298;
+    --home-primary-light: #3b82f6;
+    --home-primary-soft: #e6f0ff;
+    --home-secondary: #00b0ff;
+    --home-accent: #7b68ee;
+    --home-gradient-1: linear-gradient(135deg, #0a58ca, #3b82f6);
+    --home-gradient-2: linear-gradient(135deg, #00b0ff, #7b68ee);
+    --home-text-dark: #1e293b;
+    --home-text-light: #4b5563;
+    --home-bg-light: #f8fafc;
+    --home-white: #ffffff;
+    --home-shadow-sm: 0 4px 6px rgba(10, 88, 202, 0.1);
+    --home-shadow-md: 0 10px 25px rgba(10, 88, 202, 0.15);
+    --home-shadow-lg: 0 20px 40px rgba(10, 88, 202, 0.2);
 }
 
 /* ===== انیمیشن‌ها ===== */
-@keyframes float {
+@keyframes home-float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
 
-@keyframes pulse {
+@keyframes home-pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
 
-@keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-}
-
-@keyframes fadeInUp {
+@keyframes home-fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -74,26 +71,26 @@ body {
 }
 
 /* ===== بخش‌بندی اصلی ===== */
-section {
+.home-section {
     padding: 80px 0;
     position: relative;
 }
 
-.section-header {
+.home-section-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.section-header h2 {
+.home-section-header h2 {
     font-size: 2.5rem;
-    color: var(--primary-dark);
+    color: var(--home-primary-dark);
     font-weight: 800;
     margin-bottom: 15px;
     position: relative;
     display: inline-block;
 }
 
-.section-header h2::after {
+.home-section-header h2::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -101,29 +98,29 @@ section {
     transform: translateX(50%);
     width: 80px;
     height: 4px;
-    background: var(--gradient-2);
+    background: var(--home-gradient-2);
     border-radius: 2px;
 }
 
-.section-header p {
-    color: var(--text-light);
+.home-section-header p {
+    color: var(--home-text-light);
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
 }
 
 /* ===== 1️⃣ Hero Section جذاب ===== */
-.hero {
+.home-hero {
     background: linear-gradient(135deg, #0a58ca, #1e3a8a, #3b82f6);
     min-height: 600px;
     display: flex;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 0;
     position: relative;
     overflow: hidden;
 }
 
-.hero::before {
+.home-hero::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -132,10 +129,10 @@ section {
     height: 600px;
     background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
     border-radius: 50%;
-    animation: float 10s infinite ease-in-out;
+    animation: home-float 10s infinite ease-in-out;
 }
 
-.hero::after {
+.home-hero::after {
     content: '';
     position: absolute;
     bottom: -30%;
@@ -144,10 +141,10 @@ section {
     height: 500px;
     background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
     border-radius: 50%;
-    animation: float 8s infinite reverse;
+    animation: home-float 8s infinite reverse;
 }
 
-.hero-content {
+.home-hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -156,45 +153,45 @@ section {
     z-index: 2;
 }
 
-.hero-text h1 {
+.home-hero-text h1 {
     font-size: 3rem;
-    color: var(--white);
+    color: var(--home-white);
     line-height: 1.2;
     margin-bottom: 20px;
     font-weight: 800;
     text-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.hero-text p {
+.home-hero-text p {
     font-size: 1.3rem;
     color: rgba(255,255,255,0.95);
     margin-bottom: 30px;
     line-height: 1.8;
 }
 
-.hero-cta {
+.home-hero-cta {
     display: inline-block;
     padding: 15px 40px;
-    background: var(--white);
-    color: var(--primary-dark);
+    background: var(--home-white);
+    color: var(--home-primary-dark);
     text-decoration: none;
     font-weight: 700;
     border-radius: 50px;
     font-size: 1.2rem;
     transition: all 0.3s;
-    border: 2px solid var(--white);
+    border: 2px solid var(--home-white);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    animation: pulse 2s infinite;
+    animation: home-pulse 2s infinite;
 }
 
-.hero-cta:hover {
+.home-hero-cta:hover {
     background: transparent;
-    color: var(--white);
+    color: var(--home-white);
     transform: translateY(-3px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-.hero-image {
+.home-hero-image {
     width: 100%;
     height: 400px;
     border-radius: 30px;
@@ -205,24 +202,24 @@ section {
     transition: all 0.5s;
 }
 
-.hero-image:hover {
+.home-hero-image:hover {
     transform: rotate(0deg) scale(1.02);
 }
 
-.hero-image img {
+.home-hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* ===== 2️⃣ خدمات اصلی با دیزاین کارتی جذاب ===== */
-.services-section {
-    background: var(--bg-light);
+/* ===== 2️⃣ خدمات اصلی ===== */
+.home-services-section {
+    background: var(--home-bg-light);
     position: relative;
     overflow: hidden;
 }
 
-.services-section::before {
+.home-services-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -232,7 +229,7 @@ section {
     background: linear-gradient(180deg, rgba(10,88,202,0.05), transparent);
 }
 
-.services-grid {
+.home-services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -240,83 +237,83 @@ section {
     z-index: 2;
 }
 
-.service-card {
-    background: var(--white);
+.home-service-card {
+    background: var(--home-white);
     border-radius: 30px;
     padding: 30px;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--home-shadow-md);
     transition: all 0.4s;
     border: 1px solid rgba(10,88,202,0.1);
     position: relative;
     overflow: hidden;
 }
 
-.service-card::before {
+.home-service-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 5px;
-    background: var(--gradient-1);
+    background: var(--home-gradient-1);
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
 
-.service-card:hover {
+.home-service-card:hover {
     transform: translateY(-15px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-light);
+    box-shadow: var(--home-shadow-lg);
+    border-color: var(--home-primary-light);
 }
 
-.service-card:hover::before {
+.home-service-card:hover::before {
     transform: translateX(0);
 }
 
-.service-icon {
+.home-service-icon {
     width: 70px;
     height: 70px;
-    background: var(--gradient-1);
+    background: var(--home-gradient-1);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    color: var(--white);
+    color: var(--home-white);
     font-size: 2rem;
     transition: all 0.4s;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--home-shadow-md);
 }
 
-.service-card:hover .service-icon {
+.home-service-card:hover .home-service-icon {
     border-radius: 50%;
     transform: rotate(360deg);
 }
 
-.service-card h3 {
+.home-service-card h3 {
     font-size: 1.6rem;
-    color: var(--primary-dark);
+    color: var(--home-primary-dark);
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-.service-card p {
-    color: var(--text-light);
+.home-service-card p {
+    color: var(--home-text-light);
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 0.95rem;
 }
 
-.service-links {
+.home-service-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-top: 20px;
 }
 
-.service-sub-link {
-    background: var(--primary-soft);
-    color: var(--primary-dark);
+.home-service-sub-link {
+    background: var(--home-primary-soft);
+    color: var(--home-primary-dark);
     text-decoration: none;
     font-size: 0.9rem;
     padding: 8px 12px;
@@ -328,31 +325,31 @@ section {
     border: 1px solid transparent;
 }
 
-.service-sub-link:hover {
-    background: var(--gradient-1);
-    color: var(--white);
+.home-service-sub-link:hover {
+    background: var(--home-gradient-1);
+    color: var(--home-white);
     transform: translateX(-5px);
-    border-color: var(--white);
+    border-color: var(--home-white);
 }
 
-.service-sub-link i {
+.home-service-sub-link i {
     font-size: 0.8rem;
     transition: transform 0.3s;
 }
 
-.service-sub-link:hover i {
+.home-service-sub-link:hover i {
     transform: translateX(-3px);
 }
 
 /* ===== 3️⃣ مزیت رقابتی ===== */
-.advantages {
+.home-advantages {
     background: linear-gradient(135deg, #0a58ca, #1e3a8a);
-    color: var(--white);
+    color: var(--home-white);
     position: relative;
     overflow: hidden;
 }
 
-.advantages::before {
+.home-advantages::before {
     content: '';
     position: absolute;
     top: 0;
@@ -363,7 +360,7 @@ section {
     background-size: 50px;
 }
 
-.advantages-grid {
+.home-advantages-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -371,7 +368,7 @@ section {
     z-index: 2;
 }
 
-.advantage-item {
+.home-advantage-item {
     text-align: center;
     padding: 30px;
     background: rgba(255,255,255,0.1);
@@ -381,164 +378,165 @@ section {
     transition: all 0.4s;
 }
 
-.advantage-item:hover {
+.home-advantage-item:hover {
     transform: translateY(-10px);
     background: rgba(255,255,255,0.2);
     border-color: rgba(255,255,255,0.4);
 }
 
-.advantage-icon {
+.home-advantage-icon {
     width: 80px;
     height: 80px;
-    background: var(--white);
+    background: var(--home-white);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    color: var(--primary);
+    color: var(--home-primary);
     font-size: 2rem;
     transition: all 0.4s;
 }
 
-.advantage-item:hover .advantage-icon {
+.home-advantage-item:hover .home-advantage-icon {
     border-radius: 50%;
     transform: rotate(360deg);
 }
 
-.advantage-item h4 {
+.home-advantage-item h4 {
     font-size: 1.4rem;
     margin-bottom: 10px;
-    color: var(--white);
+    color: var(--home-white);
 }
 
-.advantage-item p {
+.home-advantage-item p {
     color: rgba(255,255,255,0.9);
     font-size: 1rem;
 }
 
 /* ===== 4️⃣ نمونه کار ===== */
-.portfolio-grid {
+.home-portfolio-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.portfolio-item {
+.home-portfolio-item {
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--home-shadow-md);
     border: 1px solid rgba(10,88,202,0.1);
     transition: all 0.4s;
     position: relative;
 }
 
-.portfolio-item:hover {
+.home-portfolio-item:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--home-shadow-lg);
 }
 
-.portfolio-item a {
+.home-portfolio-item a {
     text-decoration: none;
+    display: block;
 }
 
-.portfolio-image {
+.home-portfolio-image {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     transition: all 0.6s;
 }
 
-.portfolio-item:hover .portfolio-image {
+.home-portfolio-item:hover .home-portfolio-image {
     transform: scale(1.1);
 }
 
-.portfolio-caption {
+.home-portfolio-caption {
     padding: 15px;
-    background: var(--white);
+    background: var(--home-white);
     position: relative;
 }
 
-.portfolio-caption h4 {
+.home-portfolio-caption h4 {
     font-size: 1.1rem;
-    color: var(--primary-dark);
+    color: var(--home-primary-dark);
     margin-bottom: 5px;
 }
 
-.portfolio-caption p {
+.home-portfolio-caption p {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--home-text-light);
 }
 
 /* ===== 5️⃣ فرآیند کار ===== */
-.process-section {
-    background: var(--bg-light);
+.home-process-section {
+    background: var(--home-bg-light);
 }
 
-.process-steps {
+.home-process-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 40px;
 }
 
-.process-step {
+.home-process-step {
     text-align: center;
     position: relative;
 }
 
-.process-step:not(:last-child)::after {
+.home-process-step:not(:last-child)::after {
     content: '→';
     position: absolute;
     top: 50px;
     left: -20px;
     font-size: 2rem;
-    color: var(--primary-light);
+    color: var(--home-primary-light);
     opacity: 0.5;
 }
 
-.step-number {
+.home-step-number {
     width: 90px;
     height: 90px;
-    background: var(--gradient-1);
+    background: var(--home-gradient-1);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    color: var(--white);
+    color: var(--home-white);
     font-size: 2.2rem;
     font-weight: 700;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--home-shadow-md);
     transition: all 0.4s;
 }
 
-.process-step:hover .step-number {
+.home-process-step:hover .home-step-number {
     border-radius: 50%;
     transform: rotate(360deg);
 }
 
-.process-step h4 {
+.home-process-step h4 {
     font-size: 1.5rem;
-    color: var(--primary-dark);
+    color: var(--home-primary-dark);
     margin-bottom: 10px;
 }
 
-.process-step p {
-    color: var(--text-light);
+.home-process-step p {
+    color: var(--home-text-light);
     font-size: 1.1rem;
 }
 
 /* ===== 6️⃣ اطلاعات تماس ===== */
-.contact-section {
+.home-contact-section {
     background: linear-gradient(135deg, #1e3a8a, #0a58ca);
-    color: var(--white);
+    color: var(--home-white);
     padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
 
-.contact-section::before {
+.home-contact-section::before {
     content: '📞';
     position: absolute;
     top: 20px;
@@ -548,7 +546,7 @@ section {
     transform: rotate(15deg);
 }
 
-.contact-section::after {
+.home-contact-section::after {
     content: '💬';
     position: absolute;
     bottom: 20px;
@@ -558,7 +556,7 @@ section {
     transform: rotate(-15deg);
 }
 
-.contact-grid {
+.home-contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -567,25 +565,25 @@ section {
     z-index: 2;
 }
 
-.contact-info h3 {
+.home-contact-info h3 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 800;
 }
 
-.contact-info p {
+.home-contact-info p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     opacity: 0.9;
     line-height: 1.8;
 }
 
-.contact-details {
+.home-contact-details {
     list-style: none;
     margin-bottom: 30px;
 }
 
-.contact-details li {
+.home-contact-details li {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -599,12 +597,12 @@ section {
     transition: all 0.3s;
 }
 
-.contact-details li:hover {
+.home-contact-details li:hover {
     background: rgba(255,255,255,0.2);
     transform: translateX(-5px);
 }
 
-.contact-details i {
+.home-contact-details i {
     width: 40px;
     height: 40px;
     background: rgba(255,255,255,0.2);
@@ -615,13 +613,13 @@ section {
     font-size: 1.2rem;
 }
 
-.contact-buttons {
+.home-contact-buttons {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.contact-btn {
+.home-contact-btn {
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
@@ -634,33 +632,33 @@ section {
     border: 2px solid transparent;
 }
 
-.contact-btn.primary {
-    background: var(--white);
-    color: var(--primary-dark);
+.home-contact-btn.primary {
+    background: var(--home-white);
+    color: var(--home-primary-dark);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.contact-btn.primary:hover {
+.home-contact-btn.primary:hover {
     background: transparent;
-    color: var(--white);
-    border-color: var(--white);
+    color: var(--home-white);
+    border-color: var(--home-white);
     transform: translateY(-3px);
 }
 
-.contact-btn.secondary {
+.home-contact-btn.secondary {
     background: rgba(255,255,255,0.15);
-    color: var(--white);
+    color: var(--home-white);
     border: 2px solid rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
 }
 
-.contact-btn.secondary:hover {
+.home-contact-btn.secondary:hover {
     background: rgba(255,255,255,0.3);
     transform: translateY(-3px);
-    border-color: var(--white);
+    border-color: var(--home-white);
 }
 
-.contact-map {
+.home-contact-map {
     width: 100%;
     height: 400px;
     border-radius: 30px;
@@ -669,195 +667,198 @@ section {
     border: 5px solid rgba(255,255,255,0.2);
 }
 
-.contact-map iframe {
+.home-contact-map iframe {
     width: 100%;
     height: 100%;
     border: 0;
 }
 
+/* ===== انیمیشن‌ها ===== */
+.home-animate-fade-up {
+    animation: home-fadeInUp 1s ease forwards;
+}
+
+.home-delay-1 { animation-delay: 0.2s; }
+.home-delay-2 { animation-delay: 0.4s; }
+.home-delay-3 { animation-delay: 0.6s; }
+
 /* ===== Responsive ===== */
 @media (max-width: 992px) {
-    .hero-content,
-    .contact-grid {
+    .home-hero-content,
+    .home-contact-grid {
         grid-template-columns: 1fr;
     }
     
-    .hero-text {
+    .home-hero-text {
         text-align: center;
     }
     
-    .services-grid,
-    .advantages-grid,
-    .portfolio-grid {
+    .home-services-grid,
+    .home-advantages-grid,
+    .home-portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .process-steps {
+    .home-process-steps {
         grid-template-columns: 1fr;
     }
     
-    .process-step:not(:last-child)::after {
+    .home-process-step:not(:last-child)::after {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-    section {
+    .home-section {
         padding: 60px 0;
     }
     
-    .hero {
+    .home-hero {
         min-height: auto;
         padding: 60px 0;
     }
     
-    .hero-text h1 {
+    .home-hero-text h1 {
         font-size: 2.2rem;
     }
     
-    .services-grid,
-    .advantages-grid,
-    .portfolio-grid {
+    .home-services-grid,
+    .home-advantages-grid,
+    .home-portfolio-grid {
         grid-template-columns: 1fr;
     }
     
-    .contact-buttons {
+    .home-contact-buttons {
         flex-direction: column;
     }
     
-    .contact-btn {
+    .home-contact-btn {
         width: 100%;
         justify-content: center;
     }
     
-    .service-links {
+    .home-service-links {
         grid-template-columns: 1fr;
     }
 }
-
-/* ===== انیمیشن‌ها ===== */
-.animate-fade-up {
-    animation: fadeInUp 1s ease forwards;
-}
-
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
 </style>
 
-<!-- 1️⃣ Hero Section جذاب -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-text animate-fade-up">
+<!-- محتوای صفحه اصلی با کلاس wrapper -->
+<div class="home-page">
+
+<!-- 1️⃣ Hero Section -->
+<section class="home-hero">
+    <div class="home-container">
+        <div class="home-hero-content">
+            <div class="home-hero-text home-animate-fade-up">
                 <h1>مرکز تخصصی چاپ، کتاب و لوازم تحریر در کابل</h1>
                 <p>خدمات چاپ، فروش کتاب‌های درسی و دانشگاهی، لوازم تحریر با کیفیت و آموزش دیجیتال - همه در یک مکان با قیمت منصفانه</p>
-                <a href="#services" class="hero-cta">✨ مشاهده همه خدمات</a>
+                <a href="#home-services" class="home-hero-cta">✨ مشاهده همه خدمات</a>
             </div>
-            <div class="hero-image animate-fade-up delay-1">
+            <div class="home-hero-image home-animate-fade-up home-delay-1">
                 <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="فروشگاه علی اکبری">
             </div>
         </div>
     </div>
 </section>
 
-<!-- 2️⃣ خدمات اصلی با دیزاین کارتی جذاب -->
-<section class="services-section" id="services">
-    <div class="container">
-        <div class="section-header animate-fade-up">
+<!-- 2️⃣ خدمات اصلی -->
+<section class="home-services-section" id="home-services">
+    <div class="home-container">
+        <div class="home-section-header home-animate-fade-up">
             <h2>خدمات ما</h2>
             <p>با کلیک روی هر مورد به صفحه اختصاصی آن بروید</p>
         </div>
         
-        <div class="services-grid">
+        <div class="home-services-grid">
             <!-- کتاب‌فروشی -->
-            <div class="service-card animate-fade-up delay-1">
-                <div class="service-icon">
+            <div class="home-service-card home-animate-fade-up home-delay-1">
+                <div class="home-service-icon">
                     <i class="bi bi-book"></i>
                 </div>
                 <h3>کتاب‌فروشی</h3>
                 <p>انواع کتاب‌های درسی، آموزشی و مطالعاتی با بهترین کیفیت</p>
-                <div class="service-links">
-                    <a href="/pages/school-books" class="service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های درسی مکتب</a>
-                    <a href="/pages/english-books" class="service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های انگلیسی</a>
-                    <a href="/pages/reading-books" class="service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های مطالعاتی</a>
-                    <a href="/pages/electronic-books" class="service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های الکترونیکی</a>
-                    <a href="/pages/konkoor-books" class="service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های کانکوری</a>
+                <div class="home-service-links">
+                    <a href="/pages/school-books" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های درسی مکتب</a>
+                    <a href="/pages/english-books" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های انگلیسی</a>
+                    <a href="/pages/reading-books" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های مطالعاتی</a>
+                    <a href="/pages/electronic-books" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های الکترونیکی</a>
+                    <a href="/pages/konkoor-books" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> کتاب‌های کانکوری</a>
                 </div>
             </div>
             
             <!-- مطبعه -->
-            <div class="service-card animate-fade-up delay-2">
-                <div class="service-icon">
+            <div class="home-service-card home-animate-fade-up home-delay-2">
+                <div class="home-service-icon">
                     <i class="bi bi-printer"></i>
                 </div>
                 <h3>مطبعه</h3>
                 <p>خدمات چاپ، کپی، اسکن و طراحی با بالاترین کیفیت</p>
-                <div class="service-links">
-                    <a href="/pages/copy-print-scan" class="service-sub-link"><i class="bi bi-chevron-left"></i> پرینت، کپی و اسکن</a>
-                    <a href="/pages/quran" class="service-sub-link"><i class="bi bi-chevron-left"></i> چاپ رقعه ختم قرآن</a>
-                    <a href="/pages/wedding-card" class="service-sub-link"><i class="bi bi-chevron-left"></i> چاپ کارت عروسی</a>
-                    <a href="/pages/pvc-card" class="service-sub-link"><i class="bi bi-chevron-left"></i> کاپی استخوانی (PVC)</a>
-                    <a href="/pages/translation" class="service-sub-link"><i class="bi bi-chevron-left"></i> ترجمه اسناد</a>
-                    <a href="/pages/lamination" class="service-sub-link"><i class="bi bi-chevron-left"></i> لمینت اسناد</a>
-                    <a href="/pages/online-registration" class="service-sub-link"><i class="bi bi-chevron-left"></i> ثبت‌نام خدمات آنلاین</a>
+                <div class="home-service-links">
+                    <a href="/pages/copy-print-scan" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> پرینت، کپی و اسکن</a>
+                    <a href="/pages/quran" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> چاپ رقعه ختم قرآن</a>
+                    <a href="/pages/wedding-card" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> چاپ کارت عروسی</a>
+                    <a href="/pages/pvc-card" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> کاپی استخوانی (PVC)</a>
+                    <a href="/pages/translation" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> ترجمه اسناد</a>
+                    <a href="/pages/lamination" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> لمینت اسناد</a>
+                    <a href="/pages/online-registration" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> ثبت‌نام خدمات آنلاین</a>
                 </div>
             </div>
             
             <!-- عکاسی -->
-            <div class="service-card animate-fade-up delay-3">
-                <div class="service-icon">
+            <div class="home-service-card home-animate-fade-up home-delay-3">
+                <div class="home-service-icon">
                     <i class="bi bi-camera"></i>
                 </div>
                 <h3>عکاسی</h3>
                 <p>خدمات عکاسی حرفه‌ای و ادیت تصاویر</p>
-                <div class="service-links">
-                    <a href="/pages/professional-photos" class="service-sub-link"><i class="bi bi-chevron-left"></i> عکس‌های حرفه‌ای</a>
-                    <a href="/pages/photo-restore" class="service-sub-link"><i class="bi bi-chevron-left"></i> بازسازی عکس کهنه</a>
-                    <a href="/pages/photo-edit" class="service-sub-link"><i class="bi bi-chevron-left"></i> ادیت عکس سفارشی</a>
+                <div class="home-service-links">
+                    <a href="/pages/professional-photos" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> عکس‌های حرفه‌ای</a>
+                    <a href="/pages/photo-restore" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> بازسازی عکس کهنه</a>
+                    <a href="/pages/photo-edit" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> ادیت عکس سفارشی</a>
                 </div>
             </div>
             
             <!-- قرطاسیه‌فروشی -->
-            <div class="service-card animate-fade-up delay-1">
-                <div class="service-icon">
+            <div class="home-service-card home-animate-fade-up home-delay-1">
+                <div class="home-service-icon">
                     <i class="bi bi-pencil"></i>
                 </div>
                 <h3>قرطاسیه‌فروشی</h3>
                 <p>لوازم تحریر، اداری و هنری با کیفیت</p>
-                <div class="service-links">
-                    <a href="/pages/writting-tools" class="service-sub-link"><i class="bi bi-chevron-left"></i> لوازم تحریر</a>
-                    <a href="/pages/office-supplies" class="service-sub-link"><i class="bi bi-chevron-left"></i> لوازم اداری</a>
-                    <a href="/pages/art-stationary" class="service-sub-link"><i class="bi bi-chevron-left"></i> لوازم هنری</a>
+                <div class="home-service-links">
+                    <a href="/pages/writting-tools" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> لوازم تحریر</a>
+                    <a href="/pages/office-supplies" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> لوازم اداری</a>
+                    <a href="/pages/art-stationary" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> لوازم هنری</a>
                 </div>
             </div>
             
             <!-- آموزش دیجیتال -->
-            <div class="service-card animate-fade-up delay-2">
-                <div class="service-icon">
+            <div class="home-service-card home-animate-fade-up home-delay-2">
+                <div class="home-service-icon">
                     <i class="bi bi-laptop"></i>
                 </div>
                 <h3>آموزش دیجیتال</h3>
                 <p>بسته‌های آموزشی روی فلش - یادگیری در هر زمان</p>
-                <div class="service-links">
-                    <a href="/pages/computer-lessons" class="service-sub-link"><i class="bi bi-chevron-left"></i> آموزش کامپیوتر</a>
-                    <a href="/pages/english-lessons" class="service-sub-link"><i class="bi bi-chevron-left"></i> آموزش زبان انگلیسی</a>
-                    <a href="/pages/ai-lessons" class="service-sub-link"><i class="bi bi-chevron-left"></i> آموزش هوش مصنوعی</a>
-                    <a href="/pages/entrepreneurship" class="service-sub-link"><i class="bi bi-chevron-left"></i> آموزش کارآفرینی</a>
+                <div class="home-service-links">
+                    <a href="/pages/computer-lessons" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> آموزش کامپیوتر</a>
+                    <a href="/pages/english-lessons" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> آموزش زبان انگلیسی</a>
+                    <a href="/pages/ai-lessons" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> آموزش هوش مصنوعی</a>
+                    <a href="/pages/entrepreneurship" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> آموزش کارآفرینی</a>
                 </div>
             </div>
             
             <!-- خدمات تخصصی -->
-            <div class="service-card animate-fade-up delay-3">
-                <div class="service-icon">
+            <div class="home-service-card home-animate-fade-up home-delay-3">
+                <div class="home-service-icon">
                     <i class="bi bi-gear"></i>
                 </div>
                 <h3>خدمات تخصصی</h3>
                 <p>خدمات ویژه و تخصصی با بالاترین کیفیت</p>
-                <div class="service-links">
-                    <a href="/pages/web-develob" class="service-sub-link"><i class="bi bi-chevron-left"></i> طراحی وب‌سایت</a>
-                    <a href="/pages/video-edit" class="service-sub-link"><i class="bi bi-chevron-left"></i> ویرایش ویدئو</a>
-                    <a href="/pages/software" class="service-sub-link"><i class="bi bi-chevron-left"></i> نصب نرم‌افزار</a>
+                <div class="home-service-links">
+                    <a href="/pages/web-develob" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> طراحی وب‌سایت</a>
+                    <a href="/pages/video-edit" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> ویرایش ویدئو</a>
+                    <a href="/pages/software" class="home-service-sub-link"><i class="bi bi-chevron-left"></i> نصب نرم‌افزار</a>
                 </div>
             </div>
         </div>
@@ -865,40 +866,40 @@ section {
 </section>
 
 <!-- 3️⃣ مزیت رقابتی -->
-<section class="advantages">
-    <div class="container">
-        <div class="section-header">
+<section class="home-advantages">
+    <div class="home-container">
+        <div class="home-section-header">
             <h2 style="color: white;">چرا علی اکبری؟</h2>
             <p style="color: rgba(255,255,255,0.9);">چهار دلیل برای انتخاب ما</p>
         </div>
         
-        <div class="advantages-grid">
-            <div class="advantage-item animate-fade-up">
-                <div class="advantage-icon">
+        <div class="home-advantages-grid">
+            <div class="home-advantage-item home-animate-fade-up">
+                <div class="home-advantage-icon">
                     <i class="bi bi-calendar-check"></i>
                 </div>
                 <h4>۲۰ سال تجربه</h4>
                 <p>از سال ۱۳۸۲ در خدمت شما هستیم</p>
             </div>
             
-            <div class="advantage-item animate-fade-up delay-1">
-                <div class="advantage-icon">
+            <div class="home-advantage-item home-animate-fade-up home-delay-1">
+                <div class="home-advantage-icon">
                     <i class="bi bi-lightning-charge"></i>
                 </div>
                 <h4>تحویل سریع</h4>
                 <p>اکثر خدمات در کمتر از ۲۴ ساعت</p>
             </div>
             
-            <div class="advantage-item animate-fade-up delay-2">
-                <div class="advantage-icon">
+            <div class="home-advantage-item home-animate-fade-up home-delay-2">
+                <div class="home-advantage-icon">
                     <i class="bi bi-trophy"></i>
                 </div>
                 <h4>کیفیت تضمینی</h4>
                 <p>با مدرن‌ترین دستگاه‌ها</p>
             </div>
             
-            <div class="advantage-item animate-fade-up delay-3">
-                <div class="advantage-icon">
+            <div class="home-advantage-item home-animate-fade-up home-delay-3">
+                <div class="home-advantage-icon">
                     <i class="bi bi-cash-stack"></i>
                 </div>
                 <h4>قیمت منصفانه</h4>
@@ -910,47 +911,47 @@ section {
 
 <!-- 4️⃣ نمونه کار -->
 <section style="padding: 80px 0;">
-    <div class="container">
-        <div class="section-header animate-fade-up">
+    <div class="home-container">
+        <div class="home-section-header home-animate-fade-up">
             <h2>نمونه کارها</h2>
             <p>تصاویری از خدمات و محصولات ما</p>
         </div>
         
-        <div class="portfolio-grid">
-            <div class="portfolio-item animate-fade-up">
+        <div class="home-portfolio-grid">
+            <div class="home-portfolio-item home-animate-fade-up">
                 <a href="/pages/copy-print-scan">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="خدمات چاپ" class="portfolio-image">
-                    <div class="portfolio-caption">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="خدمات چاپ" class="home-portfolio-image">
+                    <div class="home-portfolio-caption">
                         <h4>خدمات چاپ رنگی</h4>
                         <p>پرینت و کپی با کیفیت</p>
                     </div>
                 </a>
             </div>
             
-            <div class="portfolio-item animate-fade-up delay-1">
+            <div class="home-portfolio-item home-animate-fade-up home-delay-1">
                 <a href="/pages/writting-tools">
-                    <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="لوازم تحریر" class="portfolio-image">
-                    <div class="portfolio-caption">
+                    <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="لوازم تحریر" class="home-portfolio-image">
+                    <div class="home-portfolio-caption">
                         <h4>لوازم تحریر</h4>
                         <p>انواع خودکار و مداد</p>
                     </div>
                 </a>
             </div>
             
-            <div class="portfolio-item animate-fade-up delay-2">
+            <div class="home-portfolio-item home-animate-fade-up home-delay-2">
                 <a href="/pages/school-books">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="کتاب‌فروشی" class="portfolio-image">
-                    <div class="portfolio-caption">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="کتاب‌فروشی" class="home-portfolio-image">
+                    <div class="home-portfolio-caption">
                         <h4>کتاب‌های درسی</h4>
                         <p>کتاب‌های مکتب و دانشگاه</p>
                     </div>
                 </a>
             </div>
             
-            <div class="portfolio-item animate-fade-up delay-3">
+            <div class="home-portfolio-item home-animate-fade-up home-delay-3">
                 <a href="/pages/computer-lessons">
-                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="آموزش دیجیتال" class="portfolio-image">
-                    <div class="portfolio-caption">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="آموزش دیجیتال" class="home-portfolio-image">
+                    <div class="home-portfolio-caption">
                         <h4>بسته‌های آموزشی</h4>
                         <p>آموزش روی فلش</p>
                     </div>
@@ -961,28 +962,28 @@ section {
 </section>
 
 <!-- 5️⃣ فرآیند کار -->
-<section class="process-section">
-    <div class="container">
-        <div class="section-header animate-fade-up">
+<section class="home-process-section">
+    <div class="home-container">
+        <div class="home-section-header home-animate-fade-up">
             <h2>چگونه کار می‌کنیم؟</h2>
             <p>سه مرحله ساده برای دریافت خدمات</p>
         </div>
         
-        <div class="process-steps">
-            <div class="process-step animate-fade-up">
-                <div class="step-number">۱</div>
+        <div class="home-process-steps">
+            <div class="home-process-step home-animate-fade-up">
+                <div class="home-step-number">۱</div>
                 <h4>مراجعه یا تماس</h4>
                 <p>به فروشگاه ما بیایید یا با ما تماس بگیرید</p>
             </div>
             
-            <div class="process-step animate-fade-up delay-1">
-                <div class="step-number">۲</div>
+            <div class="home-process-step home-animate-fade-up home-delay-1">
+                <div class="home-step-number">۲</div>
                 <h4>توضیح نیاز</h4>
                 <p>خدمات مورد نظر خود را توضیح دهید</p>
             </div>
             
-            <div class="process-step animate-fade-up delay-2">
-                <div class="step-number">۳</div>
+            <div class="home-process-step home-animate-fade-up home-delay-2">
+                <div class="home-step-number">۳</div>
                 <h4>تحویل سریع</h4>
                 <p>کار شما در کوتاه‌ترین زمان آماده می‌شود</p>
             </div>
@@ -990,38 +991,38 @@ section {
     </div>
 </section>
 
-<!-- 6️⃣ اطلاعات تماس (بدون فوتر) -->
-<section class="contact-section" id="contact">
-    <div class="container">
-        <div class="contact-grid">
-            <div class="contact-info animate-fade-up">
+<!-- 6️⃣ اطلاعات تماس -->
+<section class="home-contact-section" id="home-contact">
+    <div class="home-container">
+        <div class="home-contact-grid">
+            <div class="home-contact-info home-animate-fade-up">
                 <h3>با ما در تماس باشید</h3>
                 <p>برای مشاوره، سفارش خدمات یا بازدید حضوری، از راه‌های زیر اقدام کنید. ما همیشه آماده پاسخگویی هستیم.</p>
                 
-                <ul class="contact-details">
+                <ul class="home-contact-details">
                     <li><i class="bi bi-telephone"></i> ۰۷۸۱۸۲۱۸۳۸</li>
                     <li><i class="bi bi-whatsapp"></i> ۰۷۸۱۸۲۱۸۳۸</li>
                     <li><i class="bi bi-geo-alt"></i> کابل، ناحیه ۶، شهرک ۱۲ امام، چهارراه اول، پلاک ۲۳</li>
                     <li><i class="bi bi-clock"></i> شنبه تا پنج‌شنبه ۸ صبح تا ۸ شب - جمعه‌ها تعطیل</li>
                 </ul>
                 
-                <div class="contact-buttons">
-                    <a href="tel:+93781821838" class="contact-btn primary">
+                <div class="home-contact-buttons">
+                    <a href="tel:+93781821838" class="home-contact-btn primary">
                         <i class="bi bi-telephone"></i>
                         تماس تلفنی
                     </a>
-                    <a href="https://wa.me/93781821838" class="contact-btn secondary" target="_blank">
+                    <a href="https://wa.me/93781821838" class="home-contact-btn secondary" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                         واتس‌اپ
                     </a>
-                    <a href="/contact/" class="contact-btn secondary">
+                    <a href="/contact/" class="home-contact-btn secondary">
                         <i class="bi bi-geo-alt"></i>
                         آدرس فروشگاه
                     </a>
                 </div>
             </div>
             
-            <div class="contact-map animate-fade-up delay-1">
+            <div class="home-contact-map home-animate-fade-up home-delay-1">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531590444!3d-37.81627974202167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b3f3f3f%3A0x5045675218ce7e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
                         allowfullscreen="" 
                         loading="lazy"
@@ -1030,3 +1031,5 @@ section {
         </div>
     </div>
 </section>
+
+</div> <!-- پایان home-page -->
