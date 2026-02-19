@@ -8,7 +8,14 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 <style>
 /* ===== استایل‌های اختصاصی صفحه اصلی ===== */
 /* تمام کلاس‌ها با پیشوند home- شروع می‌شوند تا با هدر تداخل نکنند */
+.site-top-banner .top-accent {
+    background-color: linear-gradient(279deg, #1169e9, #254ec4, #2164d3);
+}
 
+.home-hero {
+    margin-top: 9rem;
+}
+    
 .home-page * {
     margin: 0;
     padding: 0;
@@ -24,7 +31,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 }
 
 .home-container {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -339,6 +346,8 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     font-size: 2rem;
     transition: all 0.4s;
     box-shadow: var(--home-shadow-md);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .home-service-card:hover .home-service-icon {
@@ -351,6 +360,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     color: var(--home-primary-dark);
     margin-bottom: 15px;
     font-weight: 700;
+    text-align: center;
 }
 
 .home-service-card p {
@@ -358,6 +368,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     margin-bottom: 25px;
     line-height: 1.6;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 .home-service-links {
@@ -573,6 +584,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 800;
+    color: var(--myself);
 }
 
 .home-contact-info p {
@@ -580,6 +592,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     margin-bottom: 30px;
     opacity: 0.9;
     line-height: 1.8;
+    color: var(--myself);
 }
 
 .home-contact-details {
