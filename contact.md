@@ -134,15 +134,7 @@ permalink: /contact/
     
     <div class="map-container">
         <!-- Google Maps Embed -->
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.123456789012!2d69.123456!3d34.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA3JzI0LjQiTiA2OcKwMDcnMjQuNCJF!5e0!3m2!1sen!2saf!4v1234567890123!5m2!1sen!2saf" 
-            width="100%" 
-            height="400" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1162.7328810698248!2d69.09046626402966!3d34.4850015911398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d167ef31acce01%3A0x880c8d3d8eb0da98!2z2K7bjNin2LfbjCDYqtqpINis2KfZhdi52Yc!5e0!3m2!1sen!2s!4v1771505183416!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     
     <div style="background: #f8fafc; padding: 2rem; border-radius: 1rem; margin-top: 3rem;">
