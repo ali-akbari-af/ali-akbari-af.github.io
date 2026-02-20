@@ -835,21 +835,36 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
             </div>
             <div class="home-hero-slider home-animate-fade-up home-delay-1">
                 <div class="home-slider-container">
+                    
                     <div class="home-slide active">
-                        <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="فروشگاه علی اکبری">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/equipments.jpg" alt="تجهیزات حرفه ای">
                     </div>
+                    
                     <div class="home-slide">
-                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="کتاب‌فروشی">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/english-books.jpg" alt="کتاب های زبان انگلیسی">
                     </div>
+                    
                     <div class="home-slide">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="خدمات چاپ">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/school-books.jpg" alt="کتاب های درسی مکتب">
                     </div>
+                    
                     <div class="home-slide">
-                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="آموزش دیجیتال">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/writting-tools.jpg" alt="تنوع گسترده لوازم تحریر">
                     </div>
+                    
+                    <div class="home-slide">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/art-tools.jpg" alt="لوازم و اسباب هنری">
+                    </div>
+                    
+                    <div class="home-slide">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/office-supplies.jpg" alt="لوازم و اسباب اداری">
+                    </div>
+                    
                 </div>
                 <div class="home-slider-dots">
                     <span class="home-slider-dot active"></span>
+                    <span class="home-slider-dot"></span>
+                    <span class="home-slider-dot"></span>
                     <span class="home-slider-dot"></span>
                     <span class="home-slider-dot"></span>
                     <span class="home-slider-dot"></span>
