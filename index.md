@@ -235,18 +235,8 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 .home-slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
-    background-color: #0a58ca;
-}
-
-.home-slide.active img {
-    animation: home-scale 6s ease-out forwards;
-}
-
-@keyframes home-scale {
-    0% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+    object-fit: cover;
+    animation: home-slideFade 5s ease-in-out;
 }
 
 .home-slider-dots {
@@ -276,6 +266,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     width: 30px;
     border-radius: 6px;
 }
+
 /* ===== 2️⃣ خدمات اصلی ===== */
 .home-services-section {
     background: var(--home-bg-light);
