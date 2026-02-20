@@ -109,11 +109,11 @@ permalink: /contact/
             <div style="text-align: right; margin: 1rem 0;">
                 <p style="margin: 0.5rem 0;">
                     <strong>شنبه تا پنجشنبه:</strong><br>
-                    {{ site.work_hours_weekdays | default: '۸ صبح تا ۸ شب' }}
+                    {{ site.work_hours_weekdays | default: '7 صبح تا 7 شب' }}
                 </p>
                 <p style="margin: 0.5rem 0;">
                     <strong>جمعه:</strong><br>
-                    {{ site.work_hours_friday | default: '۹ صبح تا ۲ بعدازظهر' }}
+                    {{ site.work_hours_friday | default: '۹ صبح تا 7 شب' }}
                 </p>
             </div>
         </div>
@@ -121,7 +121,7 @@ permalink: /contact/
     
     <div class="info-box">
         <h2 style="color: white; text-align: center;">ارتباط سریع از طریق واتساپ</h2>
-        <p style="text-align: center; margin: 1rem 0 2rem;">
+        <p style="text-align: center; margin: 1rem 0 2rem; color: white; margin-top: ">
             برای ارسال فایل، دریافت قیمت فوری و مشاوره
         </p>
         <div style="text-align: center;">
@@ -145,20 +145,12 @@ permalink: /contact/
                 {{ site.email | default: 'tarjman.online@gmail.com' }}
             </a>
             
-            <a href="{{ site.social.facebook }}" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #1877F2; text-decoration: none;">
+            <a href="https://www.facebook.com/khdmat.kampywtry.ly.akbry/" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #1877F2; text-decoration: none;">
                 <i class="fab fa-facebook"></i>
                 فیسبوک
             </a>
-            
-            <a href="{{ site.social.instagram }}" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #E4405F; text-decoration: none;">
-                <i class="fab fa-instagram"></i>
-                اینستاگرام
-            </a>
-            
-            <a href="{{ site.social.telegram }}" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #0088cc; text-decoration: none;">
-                <i class="fab fa-telegram"></i>
-                تلگرام
-            </a>
+         
+    
         </div>
     </div>
 </div>
