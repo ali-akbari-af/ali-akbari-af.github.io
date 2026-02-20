@@ -204,7 +204,8 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
 /* اسلایدر */
 .home-hero-slider {
     width: 100%;
-    height: 450px;
+    aspect-ratio: 4 / 3;
+    max-height: 520px;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0,0,0,0.3);
@@ -236,6 +237,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     animation: home-slideFade 5s ease-in-out;
 }
 
@@ -743,10 +745,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
         font-size: 1.1rem;
     }
     
-    .home-hero-slider {
-        height: 350px;
-    }
-    
+  
     .home-services-grid,
     .home-advantages-grid {
         grid-template-columns: 1fr;
@@ -792,9 +791,6 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
         font-size: 1.8rem;
     }
     
-    .home-hero-slider {
-        height: 250px;
-    }
     
     .home-advantage-item {
         padding: 20px;
