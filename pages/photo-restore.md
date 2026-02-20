@@ -283,19 +283,14 @@ breadcrumb:
 
 .before-after-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1.5rem 2rem;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
 }
 
-.before-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.after-title {
+.after-before-title {
     font-size: 1.4rem;
     font-weight: 700;
 }
@@ -921,40 +916,21 @@ breadcrumb:
     <div class="before-after-container">
         <div class="before-after-item">
             <div class="before-after-header">
-                <div class="before-title">قبل از بازسازی</div>
-                <div class="after-title">بعد از بازسازی</div>
-            </div>
+                <div class="after-before-title">عکس های بازسازی شده</div>
+             </div>
             <div class="before-after-content">
                 <div class="before-image">
-                    <a href="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-lightbox="before-after" data-title="عکس قدیمی - قبل از بازسازی">
-                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="عکس قدیمی قبل از بازسازی">
+                    <a href="https://ali-akbari-af.github.io/assets/images/photo-restore/photo1.jpg" data-lightbox="before-after" data-title="عکس قدیمی بازسازی شده">
+                        <img src="https://ali-akbari-af.github.io/assets/images/photo-restore/photo1.jpg" alt="عکس های قدیمی بازسازی شده">
                     </a>
                 </div>
-                <div class="after-image">
-                    <a href="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&blur=0" data-lightbox="before-after" data-title="عکس قدیمی - بعد از بازسازی">
-                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&blur=0" alt="عکس قدیمی بعد از بازسازی">
+                <div class="before-image">
+                    <a href="https://ali-akbari-af.github.io/assets/images/photo-restore/photo2.jpg" data-lightbox="before-after" data-title="عکس قدیمی بازسازی شده">
+                        <img src="https://ali-akbari-af.github.io/assets/images/photo-restore/photo2.jpg" alt="عکس های قدیمی بازسازی شده">
                     </a>
                 </div>
-            </div>
         </div>
         
-        <div class="before-after-item">
-            <div class="before-after-header">
-                <div class="before-title">عکس سیاه و سفید قدیمی</div>
-                <div class="after-title">عکس رنگ‌آمیری شده</div>
-            </div>
-            <div class="before-after-content">
-                <div class="before-image">
-                    <a href="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-lightbox="before-after" data-title="عکس سیاه و سفید قدیمی">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="عکس سیاه و سفید قدیمی">
-                    </a>
-                </div>
-                <div class="after-image">
-                    <a href="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=100" data-lightbox="before-after" data-title="عکس رنگ‌آمیری شده">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=100" alt="عکس رنگ‌آمیری شده">
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
