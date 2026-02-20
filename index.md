@@ -74,10 +74,6 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     }
 }
 
-@keyframes home-slideFade {
-    0% { opacity: 0; transform: scale(1.1); }
-    100% { opacity: 1; transform: scale(1); }
-}
 
 /* ===== بخش‌بندی اصلی با فاصله مناسب ===== */
 .home-section {
