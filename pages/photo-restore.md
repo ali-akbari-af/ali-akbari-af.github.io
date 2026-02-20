@@ -828,6 +828,14 @@ breadcrumb:
         transform: none;
         margin: 0 auto 1rem;
     }
+  
+    .before-after-container {
+      padding: 0;
+    }
+
+    .before-image, .after-image {
+          padding: 0.5rem;
+    }
 }
 </style>
 
