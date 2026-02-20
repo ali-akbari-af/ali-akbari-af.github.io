@@ -1065,11 +1065,11 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
                     </a>
                     <a href="https://wa.me/93781821838" class="home-contact-btn secondary" target="_blank">
                         <i class="bi bi-whatsapp"></i>
-                        واتس‌اپ
+                        واتساپ
                     </a>
                     <a href="/contact/" class="home-contact-btn secondary">
                         <i class="bi bi-geo-alt"></i>
-                        آدرس فروشگاه
+                        آدرس
                     </a>
                 </div>
             </div>
