@@ -240,7 +240,19 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     animation: home-slideFade 5s ease-in-out;
+}
+
+@keyframes home-slideFade {
+    0% { 
+        opacity: 0.8; 
+        transform: scale(1.05);
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1);
+    }
 }
 
 .home-slider-dots {
