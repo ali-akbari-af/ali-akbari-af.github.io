@@ -982,16 +982,16 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
                 <div class="home-advantage-icon">
                     <i class="bi bi-calendar-check"></i>
                 </div>
-                <h4>۲۰ سال تجربه</h4>
-                <p>از سال ۱۳۸۲ در خدمت شما هستیم</p>
+                <h4>یک‌جا و کامل</h4>
+                <p>از کتاب و لوازم مکتب تا خدمات تخصصی</p>
             </div>
             
             <div class="home-advantage-item home-animate-fade-up home-delay-1">
                 <div class="home-advantage-icon">
                     <i class="bi bi-lightning-charge"></i>
                 </div>
-                <h4>تحویل سریع</h4>
-                <p>اکثر خدمات در کمتر از ۲۴ ساعت</p>
+                <h4>خدمات فوری</h4>
+                <p>کار شما با دقت و سرعت بالا</p>
             </div>
             
             <div class="home-advantage-item home-animate-fade-up home-delay-2">
