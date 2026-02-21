@@ -892,7 +892,7 @@ breadcrumb:
             <div class="feature-icon">
                 <i class="fas fa-clock"></i>
             </div>
-            <h3 class="feature-title">تحویل سریع</h3>
+            <h3 class="feature-title">سرعت پیشرفته</h3>
             <p class="feature-description">ارائه نتیجه در کوتاه‌ترین زمان ممکن بدون افت کیفیت</p>
         </div>
         
