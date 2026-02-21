@@ -23,7 +23,7 @@ breadcrumb:
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
-    background: linear-gradient(135deg, #0a2540, #1a3a5f, #0f4c75);
+    background: linear-gradient(135deg, #00b4ff, #0070ff);
     padding: 4rem 2rem;
     border: 1px solid rgba(0, 180, 255, 0.3);
     box-shadow: 0 30px 50px rgba(0, 120, 255, 0.3);
@@ -173,7 +173,7 @@ breadcrumb:
     max-width: 1000px;
     margin: 3rem auto 0;
     padding: 2.5rem;
-    background: rgba(10, 37, 64, 0.6);
+    background: linear-gradient(313deg, #00b4ff, #0070ff);
     border-radius: 1.5rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 180, 255, 0.3);
@@ -252,7 +252,7 @@ breadcrumb:
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -664,7 +664,7 @@ breadcrumb:
 }
 
 .whatsapp-btn {
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    background: #25D366;
 }
 
 .whatsapp-btn:hover {
@@ -675,7 +675,7 @@ breadcrumb:
 
 /* بخش تماس پایانی (مثل قبل) */
 .contact-footer {
-    background: linear-gradient(135deg, #0a2540, #1a3a5f, #0f4c75);
+    background: linear-gradient(135deg, #00b4ff, #0070ff);
     color: white;
     padding: 4rem 2rem;
     border-radius: 2rem;
@@ -765,9 +765,15 @@ breadcrumb:
         padding: 1.8rem;
         font-size: 1.1rem;
     }
+
+    .method-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.75rem;
+        width: 9rem;
+    }
     
     .software-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 </style>
