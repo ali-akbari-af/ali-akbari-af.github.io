@@ -742,14 +742,8 @@ breadcrumb:
             <h3 class="category-title">سیستم بایگانی</h3>
             <p class="category-description">دوسیه های بایگانی، دوسیه های دکمه دار، پلاستیک شیت های مخصوص</p>
         </div>
-                
-        <div class="category-card">
-            <div class="category-icon">
-                <i class="fas fa-pen"></i>
-            </div>
-            <h3 class="category-title">لوازم مصرفی اداری</h3>
-            <p class="category-description">کاغذ A4، ماشین حساب، منگنه، سوزن منگنه و دیگر لوازم مصرفی با کیفیت</p>
-        </div>
+             
+        
         <div class="category-card">
             <div class="category-icon">
                 <i class="fas fa-pen"></i>
