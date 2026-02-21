@@ -763,11 +763,11 @@ breadcrumb:
             </div>
         </a>
         
-        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/colors.jpg" class="gallery-item" data-lightbox="gallery" data-title="رنگ‌های هنری">
+        <a href="https://ali-akbari-af.github.io/assets/images/art-tools/colour.jpg" data-title="رنگ‌های هنری">
             <img src="https://ali-akbari-af.github.io/assets/images/art-tools/colors.jpg" alt="رنگ‌های هنری" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">رنگ‌های هنری</h4>
-                <p class="gallery-description">تنوع کامل رنگ‌های اکریلیک، روغن و آبرنگ</p>
+                <p class="gallery-description">تنوع کامل رنگ‌های روغنی و آبرنگ</p>
             </div>
         </a>
     </div>
