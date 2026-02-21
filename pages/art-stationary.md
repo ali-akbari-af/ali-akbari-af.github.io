@@ -797,14 +797,7 @@ breadcrumb:
             <p class="feature-description">تلاش می‌کنیم با حذف واسطه‌ها، محصولات را با مناسب‌ترین قیمت عرضه کنیم</p>
         </div>
         
-        <div class="feature-card">
-            <div class="feature-icon">
-                <i class="fas fa-user-check"></i>
-            </div>
-            <h3 class="feature-title">مشاوره تخصصی</h3>
-            <p class="feature-description">تیم ما آماده ارائه مشاوره برای انتخاب مناسب‌ترین ابزار هنری است</p>
-        </div>
-        
+            
         <div class="feature-card">
             <div class="feature-icon">
                 <i class="fas fa-award"></i>
