@@ -819,7 +819,7 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📞</div>
             <h3 class="method-title">تماس تلفنی</h3>
-            <p class="method-description">با ما تماس بگیرید، نیاز خود را توضیح دهید و مشاوره رایگان دریافت کنید.</p>
+            <p class="method-description">جهت اطلاعات بیشتر و قیمت با تماس بگیرید.</p>
             <a href="tel:+93781821838" class="method-btn">
                 تماس: ۰۷۸۱۸۲۱۸۳۸
             </a>
