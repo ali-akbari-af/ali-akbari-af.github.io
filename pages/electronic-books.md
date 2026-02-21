@@ -96,7 +96,7 @@ breadcrumb:
     border-radius: 3px;
 }
 
-.price-badge {
+/* .price-badge {
     display: inline-block;
     background: linear-gradient(135deg, var(--price-color), #f97316);
     color: white;
@@ -107,7 +107,7 @@ breadcrumb:
     margin: 1rem 0 2rem;
     box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3);
     border: 3px solid white;
-}
+} */
 
 .page-description {
     font-size: 1.3rem;
@@ -522,10 +522,10 @@ breadcrumb:
         font-size: 2.4rem;
     }
     
-    .price-badge {
+    /* .price-badge {
         font-size: 1.5rem;
         padding: 0.6rem 1.5rem;
-    }
+    } */
     
     .features-section,
     .contact-info-section {
@@ -601,10 +601,10 @@ breadcrumb:
         font-size: 1rem;
     }
     
-    .price-badge {
+    /* .price-badge {
         font-size: 1.3rem;
         padding: 0.5rem 1.2rem;
-    }
+    } */
     
     .category-card {
         padding: 1.5rem;
@@ -630,7 +630,7 @@ breadcrumb:
 <!-- بخش هیرو -->
 <section class="page-hero">
     <h1 class="page-title">کتاب‌های الکترونیکی</h1>
-    <div class="price-badge">هر کتاب تنها ۱۰ افغانی</div>
+    <!-- <div class="price-badge">هر کتاب تنها ۱۰ افغانی</div> -->
     <div class="page-description">
         <p>
             کتاب‌های الکترونیک – دسترسی آسان و قیمت نازل
