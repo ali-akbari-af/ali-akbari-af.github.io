@@ -927,7 +927,7 @@ breadcrumb:
         
         <div class="software-item">
             <div class="software-icon">
-                <i class="fas fa-browser"></i>
+                <i class="fas fa-globe"></i>
             </div>
             <div class="software-name">مرورگرها</div>
             <div class="software-desc">Chrome، Firefox</div>
