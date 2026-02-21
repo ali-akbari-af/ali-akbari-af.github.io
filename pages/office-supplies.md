@@ -208,6 +208,7 @@ breadcrumb:
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    margin-top: 2rem;
 }
 
 .category-card::before {
