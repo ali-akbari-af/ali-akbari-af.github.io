@@ -841,11 +841,11 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
             <div class="home-hero-slider home-animate-fade-up home-delay-1">
                 <div class="home-slider-container">
                     
-                    <div class="home-slide">
+                    <div class="home-slide active">
                         <img src="https://ali-akbari-af.github.io/assets/images/index/writting-tools.jpg" alt="تنوع گسترده لوازم تحریر">
                     </div>
                     
-                    <div class="home-slide active">
+                    <div class="home-slide">
                         <img src="https://ali-akbari-af.github.io/assets/images/index/equipments.jpg" alt="تجهیزات حرفه ای">
                     </div>
                     
