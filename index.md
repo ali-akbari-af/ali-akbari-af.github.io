@@ -845,9 +845,6 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
                         <img src="https://ali-akbari-af.github.io/assets/images/index/writting-tools.jpg" alt="تنوع گسترده لوازم تحریر">
                     </div>
                     
-                    <div class="home-slide">
-                        <img src="https://ali-akbari-af.github.io/assets/images/index/equipments.jpg" alt="تجهیزات حرفه ای">
-                    </div>
                     
                     <div class="home-slide">
                         <img src="https://ali-akbari-af.github.io/assets/images/index/english-books.jpg" alt="کتاب های زبان انگلیسی">
@@ -855,6 +852,10 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
                     
                     <div class="home-slide">
                         <img src="https://ali-akbari-af.github.io/assets/images/index/school-books.jpg" alt="کتاب های درسی مکتب">
+                    </div>
+                    
+                    <div class="home-slide">
+                        <img src="https://ali-akbari-af.github.io/assets/images/index/equipments.jpg" alt="تجهیزات حرفه ای">
                     </div>
                                         
                     <div class="home-slide">
