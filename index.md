@@ -834,7 +834,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     <div class="home-container">
         <div class="home-hero-content">
             <div class="home-hero-text home-animate-fade-up">
-                <h1>مرکز تخصصی چاپ، کتاب و لوازم تحریر در کابل</h1>
+                <h1>مرکز تخصصی خدمات چاپ، فروش کتاب و لوازم تحریر</h1>
                 <p>خدمات چاپ، فروش کتاب‌های درسی و دانشگاهی، لوازم تحریر با کیفیت و آموزش دیجیتال - همه در یک مکان با قیمت منصفانه</p>
                 <a href="#home-services" class="home-hero-cta">✨ مشاهده همه خدمات</a>
             </div>
