@@ -78,6 +78,7 @@ paginate_path: "/page:num/"
 collections:
   pages:
     output: true
+    permalink: /pages/:name/
 
 # =========================
 # Include / Exclude
