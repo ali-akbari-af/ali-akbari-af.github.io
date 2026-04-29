@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ali-akbari-af.github.io/sitemap.xml
