@@ -2,8 +2,9 @@
 <html lang="fa-IR" dir="rtl">
 <head>
     <script>
-    if (window.location.href.startsWith('https://www.ali-akbari-af.github.io')) {
-        window.location.href = 'https://ali-akbari-af.github.io' + window.location.pathname;
+    var host = window.location.hostname;
+    if (host === 'www.ali-akbari-af.github.io') {
+        window.location.href = 'https://ali-akbari-af.github.io' + window.location.pathname + window.location.search;
     }
     </script>
     <meta charset="UTF-8">
