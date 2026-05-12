@@ -703,6 +703,7 @@ breadcrumb:
     font-weight: 800;
     position: relative;
     z-index: 2;
+    color: white;
 }
 
 .contact-footer p {
@@ -711,6 +712,7 @@ breadcrumb:
     margin-bottom: 2rem;
     position: relative;
     z-index: 2;
+    color: white;
 }
 
 .contact-footer .address {
@@ -719,6 +721,7 @@ breadcrumb:
     margin-top: 2rem;
     position: relative;
     z-index: 2;
+    color: white;
 }
 
 /* Responsive */
