@@ -61,7 +61,7 @@
     "openingHoursSpecification": [
         {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+            "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
             "opens": "07:00",
             "closes": "19:00"
         }
@@ -85,10 +85,10 @@
     </script>
 
     {% if page.schema == "service" %}
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
     "@context": "https://schema.org",
-     "@type": "{{ page.service_type | default: 'Service' }}",
+    "@type": "{{ page.service_type | default: 'Service' }}",
     "name": "{{ page.title }}",
     "description": "{{ page.description }}",
     "provider": {
