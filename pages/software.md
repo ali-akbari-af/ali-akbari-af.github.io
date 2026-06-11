@@ -1016,7 +1016,7 @@ breadcrumb:
             <div class="method-icon">📱</div>
             <h3 class="method-title">درخواست در واتس‌اپ</h3>
             <p class="method-description">مشکل خود را توضیح دهید یا لیست نرم‌افزارهای مورد نیاز را ارسال کنید.</p>
-            <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
+            <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i> ارتباط در واتس‌اپ
             </a>
         </div>
@@ -1031,7 +1031,7 @@ breadcrumb:
         <a href="tel:+93781821838" class="btn" style="background: white; color: #0a2540; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
             <i class="fas fa-phone-alt"></i> تماس تلفنی
         </a>
-        <a href="https://wa.me/93781821838" class="btn" style="background: #25D366; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;" target="_blank">
+        <a href="https://wa.me/93774530372" class="btn" style="background: #25D366; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;" target="_blank">
             <i class="fab fa-whatsapp"></i> واتس‌اپ
         </a>
     </div>

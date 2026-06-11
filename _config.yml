@@ -42,7 +42,7 @@ apple_touch_icon: "/favicon.png"
 author:
   name: "قرطاسیه و خدمات کامپیوتری علی اکبری"
   phone: "+93781821838"
-  whatsapp: "+93781821838" # شماره واتساپ کسب‌وکار
+  whatsapp: "+93774530372" # شماره واتساپ کسب‌وکار
   address:
     street: "شهرک ۱۲ امام"
     city: "کابل"
@@ -97,4 +97,4 @@ exclude:
 # =========================
 social:
   google_maps: "https://maps.google.com/?q=34.5553,69.2075"
-  whatsapp: "https://wa.me/93781821838"
+  whatsapp: "https://wa.me/93774530372"

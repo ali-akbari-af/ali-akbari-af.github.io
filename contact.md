@@ -125,7 +125,7 @@ permalink: /contact/
             برای ارسال فایل، دریافت قیمت فوری و مشاوره
         </p>
         <div style="text-align: center;">
-            <a href="https://wa.me/93781821838" class="whatsapp-btn" target="_blank" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
+            <a href="https://wa.me/93774530372" class="whatsapp-btn" target="_blank" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
                 <i class="fab fa-whatsapp"></i>
                 شروع گفتگو در واتساپ
             </a>

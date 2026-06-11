@@ -960,7 +960,7 @@ p {
 </svg></div>
             <h3 class="method-title">تماس در واتساپ</h3>
             <p class="method-description">می توانید در واتساپ با ما تماس بگیرید و سوال های خود را بپرسید</p>
-            <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
+            <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارسال در واتس‌اپ
             </a>

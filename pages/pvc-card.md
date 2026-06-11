@@ -912,7 +912,7 @@ breadcrumb:
             <div class="method-icon">📱</div>
             <h3 class="method-title">دریافت از طریق واتس‌اپ</h3>
             <p class="method-description">برای تماس و دریافت معلومات بیشتر، لطفاً از طریق واتس‌اپ با ما در ارتباط شوید.</p>
-            <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
+            <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارتباط در واتس‌اپ
             </a>
@@ -935,7 +935,7 @@ breadcrumb:
             تماس تلفنی
         </a>
         
-        <a href="https://wa.me/93781821838" class="btn btn-secondary" target="_blank">
+        <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
             ارتباط در واتس‌اپ
         </a>

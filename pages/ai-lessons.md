@@ -842,7 +842,7 @@ breadcrumb:
             <div class="method-icon">📱</div>
             <h3 class="method-title">درخواست در واتس‌اپ</h3>
             <p class="method-description">نام بسته را در واتس‌اپ بفرستید تا راهنمایی و قیمت‌ها را دریافت کنید.</p>
-            <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
+            <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارتباط در واتس‌اپ
             </a>
@@ -865,7 +865,7 @@ breadcrumb:
             تماس تلفنی
         </a>
         
-        <a href="https://wa.me/93781821838" class="btn btn-secondary" target="_blank">
+        <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
             ارتباط در واتس‌اپ
         </a>

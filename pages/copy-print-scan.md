@@ -1040,7 +1040,7 @@ breadcrumb:
             <div class="method-icon">📱</div>
             <h3 class="method-title">ارسال فایل</h3>
             <p class="method-description">فایل‌های خود را از طریق واتس‌اپ ارسال کنید و خدمات را سفارش دهید.</p>
-            <a href="https://wa.me/93781821838" class="method-btn whatsapp-btn" target="_blank">
+            <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 ارسال فایل در واتس‌اپ
             </a>
@@ -1063,7 +1063,7 @@ breadcrumb:
             تماس تلفنی
         </a>
         
-        <a href="https://wa.me/93781821838?text=سلام، می‌خواهم خدمات پرینت/کپی/اسکن سفارش دهم" 
+        <a href="https://wa.me/93774530372?text=سلام، می‌خواهم خدمات پرینت/کپی/اسکن سفارش دهم" 
            class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
             ارتباط در واتس‌اپ

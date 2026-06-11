@@ -1059,7 +1059,7 @@ body {
             <div class="method-icon">📱</div>
             <h3 class="method-title">دریافت مشاوره</h3>
             <p class="method-description">از طریق واتس‌اپ با ما در ارتباط باشید و مشاوره رایگان دریافت کنید.</p>
-            <a href="https://wa.me/93781821838" class="method-btn" target="_blank">
+            <a href="https://wa.me/93774530372" class="method-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
                 مشاوره در واتس‌اپ
             </a>
@@ -1082,7 +1082,7 @@ body {
             تماس تلفنی
         </a>
         
-        <a href="https://wa.me/93781821838?text=سلام، می‌خواهم برای چاپ رقعه ختم قرآن/فاتحه مشاوره بگیرم" 
+        <a href="https://wa.me/93774530372?text=سلام، می‌خواهم برای چاپ رقعه ختم قرآن/فاتحه مشاوره بگیرم" 
            class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
             مشاوره در واتس‌اپ

@@ -879,7 +879,7 @@ breadcrumb:
             تماس تلفنی
         </a>
         
-        <a href="https://wa.me/93781821838" class="btn btn-secondary" target="_blank">
+        <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
             واتس‌اپ
         </a>

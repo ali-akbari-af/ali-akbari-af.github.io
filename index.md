@@ -1077,7 +1077,7 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
                         <i class="bi bi-telephone"></i>
                         تماس تلفنی
                     </a>
-                    <a href="https://wa.me/93781821838" class="home-contact-btn secondary" target="_blank">
+                    <a href="https://wa.me/93774530372" class="home-contact-btn secondary" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                         واتساپ
                     </a>
