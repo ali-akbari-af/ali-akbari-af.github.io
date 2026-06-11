@@ -1002,10 +1002,10 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📱</div>
             <h3 class="method-title">دریافت پیشنهاد</h3>
-            <p class="method-description">جزئیات پروژه خود را در واتس‌اپ ارسال کنید و پیشنهاد دریافت کنید</p>
+            <p class="method-description">جزئیات پروژه خود را در واتساپ ارسال کنید و پیشنهاد دریافت کنید</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارسال در واتس‌اپ
+                ارسال در واتساپ
             </a>
         </div>
     </div>

@@ -682,11 +682,11 @@ breadcrumb:
         
         <div class="method-card">
             <div class="method-icon">📱</div>
-            <h3 class="method-title">مشاهده نمونه‌ها در واتس‌اپ</h3>
-            <p class="method-description">برای مشاهده نمونه‌های بیشتر، در واتس‌اپ با ما در ارتباط باشید.</p>
+            <h3 class="method-title">مشاهده نمونه‌ها در واتساپ</h3>
+            <p class="method-description">برای مشاهده نمونه‌های بیشتر، در واتساپ با ما در ارتباط باشید.</p>
             <a href="https://wa.me/93774530372?text=سلام%20می‌خواستم%20درباره%20کارت‌های%20عروسی%20مشاهده%20نمونه‌کار%20بکنم" class="method-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارتباط در واتس‌اپ
+                ارتباط در واتساپ
             </a>
         </div>
     </div>
@@ -714,7 +714,7 @@ breadcrumb:
         
         <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
     </div>
     

@@ -1014,10 +1014,10 @@ breadcrumb:
         
         <div class="method-card">
             <div class="method-icon">📱</div>
-            <h3 class="method-title">درخواست در واتس‌اپ</h3>
+            <h3 class="method-title">درخواست در واتساپ</h3>
             <p class="method-description">مشکل خود را توضیح دهید یا لیست نرم‌افزارهای مورد نیاز را ارسال کنید.</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
-                <i class="fab fa-whatsapp"></i> ارتباط در واتس‌اپ
+                <i class="fab fa-whatsapp"></i> ارتباط در واتساپ
             </a>
         </div>
     </div>
@@ -1032,7 +1032,7 @@ breadcrumb:
             <i class="fas fa-phone-alt"></i> تماس تلفنی
         </a>
         <a href="https://wa.me/93774530372" class="btn" style="background: #25D366; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;" target="_blank">
-            <i class="fab fa-whatsapp"></i> واتس‌اپ
+            <i class="fab fa-whatsapp"></i> واتساپ
         </a>
     </div>
     <p class="address">📍 کابل، ناحیه ۶، شهرک ۱۲ امام | 🕗 ۸ صبح تا ۸ شب</p>

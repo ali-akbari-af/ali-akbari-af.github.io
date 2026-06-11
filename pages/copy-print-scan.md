@@ -1039,10 +1039,10 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📱</div>
             <h3 class="method-title">ارسال فایل</h3>
-            <p class="method-description">فایل‌های خود را از طریق واتس‌اپ ارسال کنید و خدمات را سفارش دهید.</p>
+            <p class="method-description">فایل‌های خود را از طریق واتساپ ارسال کنید و خدمات را سفارش دهید.</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارسال فایل در واتس‌اپ
+                ارسال فایل در واتساپ
             </a>
         </div>
     </div>
@@ -1066,7 +1066,7 @@ breadcrumb:
         <a href="https://wa.me/93774530372?text=سلام، می‌خواهم خدمات پرینت/کپی/اسکن سفارش دهم" 
            class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
         
         <a href="#footer" class="btn btn-secondary">

@@ -1095,11 +1095,11 @@ breadcrumb:
         
         <div class="method-card">
             <div class="method-icon">📱</div>
-            <h3 class="method-title">مشاوره در واتس‌اپ</h3>
-            <p class="method-description">برای دریافت مشاوره و راهنمایی بیشتر در واتس‌اپ با ما در ارتباط باشید.</p>
+            <h3 class="method-title">مشاوره در واتساپ</h3>
+            <p class="method-description">برای دریافت مشاوره و راهنمایی بیشتر در واتساپ با ما در ارتباط باشید.</p>
             <a href="https://wa.me/93774530372?text=سلام%20می‌خواستم%20درباره%20ثبت‌نام%20آنلاین%20مشاوره%20بگیرم" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارتباط در واتس‌اپ
+                ارتباط در واتساپ
             </a>
         </div>
     </div>
@@ -1127,7 +1127,7 @@ breadcrumb:
         
         <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
     </div>
     

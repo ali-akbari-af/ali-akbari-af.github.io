@@ -881,7 +881,7 @@ breadcrumb:
         
         <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            واتس‌اپ
+            واتساپ
         </a>
         
         <a href="#footer" class="btn btn-secondary">

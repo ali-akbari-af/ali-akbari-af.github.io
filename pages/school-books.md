@@ -962,7 +962,7 @@ p {
             <p class="method-description">می توانید در واتساپ با ما تماس بگیرید و سوال های خود را بپرسید</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارسال در واتس‌اپ
+                ارسال در واتساپ
             </a>
         </div>
     </div>

@@ -994,7 +994,7 @@ breadcrumb:
             <p class="method-description">متخصصان دیجیتال می‌توانند در تولید یا بازبینی محتوا همکاری کنند</p>
             <a href="https://wa.me/{{ site.phone_whatsapp }}" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارتباط در واتس‌اپ
+                ارتباط در واتساپ
             </a>
         </div>
     </div>
@@ -1017,7 +1017,7 @@ breadcrumb:
         
         <a href="https://wa.me/{{ site.phone_whatsapp }}" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
         
         <a href="mailto:{{ site.email_digital }}" class="btn btn-secondary">

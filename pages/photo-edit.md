@@ -916,11 +916,11 @@ breadcrumb:
     <div class="contact-methods">
         <div class="method-card">
             <div class="method-icon">📱</div>
-            <h3 class="method-title">ارسال در واتس‌اپ</h3>
-            <p class="method-description">عکس خود را در واتس‌اپ ارسال کنید، نظر و قیمت را دریافت نمایید.</p>
+            <h3 class="method-title">ارسال در واتساپ</h3>
+            <p class="method-description">عکس خود را در واتساپ ارسال کنید، نظر و قیمت را دریافت نمایید.</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارسال در واتس‌اپ
+                ارسال در واتساپ
             </a>
         </div>
         
@@ -963,7 +963,7 @@ breadcrumb:
         
         <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
         
         <a href="#footer" class="btn btn-secondary">

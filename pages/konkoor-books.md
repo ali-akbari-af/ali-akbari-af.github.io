@@ -678,7 +678,7 @@ breadcrumb:
             <p class="method-description">از طریق واتساپ می‌توانید پرسش‌ها و هماهنگی‌های خود را با ما انجام دهید.</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارتباط در واتس‌اپ
+                ارتباط در واتساپ
             </a>
         </div>
     </div>
@@ -702,7 +702,7 @@ breadcrumb:
         <a href="https://wa.me/93774530372?text=سلام، لطفا اطلاعات کتاب‌های کانکوری را بفرستید" 
            class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
         
         <a href="#footer" class="btn btn-secondary">

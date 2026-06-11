@@ -1081,10 +1081,10 @@ breadcrumb:
         <div class="method-card">
             <div class="method-icon">📱</div>
             <h3 class="method-title">ارسال دیجیتال</h3>
-            <p class="method-description">عکس را با موبایل اسکن کرده و در واتس‌اپ ارسال کنید، قیمت را دریافت کنید.</p>
+            <p class="method-description">عکس را با موبایل اسکن کرده و در واتساپ ارسال کنید، قیمت را دریافت کنید.</p>
             <a href="https://wa.me/93774530372" class="method-btn whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-                ارسال در واتس‌اپ
+                ارسال در واتساپ
             </a>
         </div>
         
@@ -1116,7 +1116,7 @@ breadcrumb:
         
         <a href="https://wa.me/93774530372" class="btn btn-secondary" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            ارتباط در واتس‌اپ
+            ارتباط در واتساپ
         </a>
         
         <a href="#footer" class="btn btn-secondary">
