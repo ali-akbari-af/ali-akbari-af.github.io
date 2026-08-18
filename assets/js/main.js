@@ -27,12 +27,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('nav');
     const navItems = document.querySelectorAll('.nav-item');
 
+    const resetSubmenus = () => {
+        navItems.forEach(item => {
+            item.classList.remove('active');
+            const link = item.querySelector('.nav-link');
+            const submenu = item.querySelector('.submenu');
+            if (link && submenu) {
+                link.setAttribute('aria-expanded', 'false');
+                submenu.setAttribute('aria-hidden', 'true');
+            }
+        });
+    };
+
     const toggleMenu = () => {
         const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
         mobileMenuBtn.classList.toggle('active');
         nav.classList.toggle('active');
         mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
         document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        if (!nav.classList.contains('active')) {
+            resetSubmenus();
+        }
     };
 
     mobileMenuBtn.addEventListener('click', toggleMenu);
@@ -125,9 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         });
                     }
                     
-                    // Scroll to target
+                    // Scroll to target (use getBoundingClientRect for correct document offset)
                     const headerHeight = header.offsetHeight;
-                    const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
                     
                     window.scrollTo({
                         top: targetPosition,

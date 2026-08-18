@@ -155,7 +155,7 @@ p {
 .breadcrumb {
     background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(139, 92, 246, 0.05));
     padding: 1.8rem 0;
-    margin-top: 140px;
+    margin-top: 150px;
     border-bottom: 1px solid rgba(226, 232, 240, 0.8);
     position: relative;
     overflow: hidden;
@@ -709,7 +709,7 @@ p {
 /* Tablet Portrait (768px - 991px) */
 @media (max-width: 991px) {
     .breadcrumb {
-        margin-top: 120px;
+        margin-top: 150px;
     }
     
     .page-title {
@@ -732,7 +732,7 @@ p {
     }
     
     .breadcrumb {
-        margin-top: 110px;
+        margin-top: 150px;
     }
     
     .page-content {
@@ -810,7 +810,7 @@ p {
     }
     
     .breadcrumb {
-        margin-top: 90px;
+        margin-top: 130px;
         padding: 1.5rem 0;
     }
     

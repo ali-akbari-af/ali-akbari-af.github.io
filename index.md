@@ -12,18 +12,17 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     background: linear-gradient(279deg, #1169e9, #254ec4, #2164d3);
 }
 
-.method-btn whatsapp-btn {
+.method-btn.whatsapp-btn {
     background: #25D366;
     border-color: #25D366;
     display: inline-block;
     padding: 1rem 2rem;
-    background: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #007bff;
+    border: 2px solid #25D366;
 }
     
 .home-page * {
@@ -251,7 +250,6 @@ keywords: "کتاب‌فروشی, مطبعه, خدمات کامپیوتری, چ�
     height: 100%;
     object-fit: cover;
     object-position: center;
-    animation: home-slideFade 5s ease-in-out;
 }
 
 .home-slider-dots {

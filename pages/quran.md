@@ -114,7 +114,7 @@ body {
 .breadcrumb {
     background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(13, 148, 136, 0.05));
     padding: 1.8rem 0;
-    margin-top: 140px;
+    margin-top: 150px;
     border-bottom: 1px solid rgba(226, 232, 240, 0.8);
     position: relative;
     overflow: hidden;

@@ -10,6 +10,13 @@ permalink: /contact/
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 150px;
+}
+
+@media (max-width: 575px) {
+    .contact-container {
+        padding-top: 130px;
+    }
 }
 
 .contact-grid {
@@ -121,7 +128,7 @@ permalink: /contact/
     
     <div class="info-box">
         <h2 style="color: white; text-align: center;">ارتباط سریع از طریق واتساپ</h2>
-        <p style="text-align: center; margin: 1rem 0 2rem; color: white; margin-top: ">
+        <p style="text-align: center; margin: 1rem 0 2rem; color: white;">
             برای ارسال فایل، دریافت قیمت فوری و مشاوره
         </p>
         <div style="text-align: center;">

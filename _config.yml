@@ -98,3 +98,17 @@ exclude:
 social:
   google_maps: "https://maps.google.com/?q=34.5553,69.2075"
   whatsapp: "https://wa.me/93774530372"
+
+# =========================
+# Contact / Business Info (used by pages)
+# =========================
+phone_primary: "+93781821838"
+phone_secondary: "+93774530372"
+email: "tarjman.online@gmail.com"
+email_digital: "tarjman.online@gmail.com"
+phone_whatsapp: "93774530372"
+youtube_channel: "https://ali-akbari-af.github.io"
+address: "کابل، ناحیه ۶، شهرک ۱۲ امام"
+work_hours: "7 صبح تا 7 شب"
+work_hours_weekdays: "7 صبح تا 7 شب"
+work_hours_friday: "۹ صبح تا 7 شب"

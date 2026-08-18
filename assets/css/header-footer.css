@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb {
     background: linear-gradient(135deg, rgba(14, 165, 164, 0.05), rgba(99, 102, 241, 0.05));
     padding: 1.8rem 0;
-    margin-top: 140px;
+    margin-top: 150px;
     border-bottom: 1px solid rgba(226, 232, 240, 0.8);
     position: relative;
     overflow: hidden;
@@ -586,10 +586,10 @@ h1, h2, h3, h4, h5, h6 {
     
     .nav {
         position: fixed;
-        top: 100px;
+        top: 140px;
         right: -100%;
         width: 320px;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 140px);
         background: white;
         transition: right var(--transition-base);
         overflow-y: auto;
@@ -696,14 +696,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav {
-        top: 90px;
+        top: 122px;
         width: 100%;
-        height: calc(100vh - 90px);
+        height: calc(100vh - 122px);
         padding: var(--spacing-md);
-    }
-    
-    .breadcrumb {
-        margin-top: 130px;
     }
 }
 
@@ -722,10 +718,6 @@ h1, h2, h3, h4, h5, h6 {
     .submenu-link {
         padding: var(--spacing-xs) var(--spacing-lg);
         font-size: var(--font-size-xs);
-    }
-    
-    .breadcrumb {
-        margin-top: 120px;
     }
 }
 
@@ -789,6 +781,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Responsive Adjustments ===== */
+/* Narrow desktop: keep the nav on one line so it doesn't overlap the breadcrumb */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .nav-menu {
+        gap: 2px;
+    }
+    
+    .nav-link {
+        padding: var(--spacing-sm) 10px;
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 1200px) {
     .header-container,
     .breadcrumb-content,
@@ -799,7 +803,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
     .breadcrumb {
-        margin-top: 130px;
+        margin-top: 150px;
     }
 }
 
@@ -811,14 +815,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .breadcrumb {
-        margin-top: 120px;
+        margin-top: 150px;
         padding: 1.5rem 0;
     }
 }
 
 @media (max-width: 480px) {
     .breadcrumb {
-        margin-top: 110px;
+        margin-top: 130px;
     }
 
 }

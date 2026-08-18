@@ -5,7 +5,7 @@ permalink: /under-construction/
 description: این صفحه در حال آماده‌سازی است - به زودی محتوای جدید اضافه خواهد شد
 ---
 
-<div style="text-align: center; direction: rtl; padding: 50px 20px;">
+<div style="text-align: center; direction: rtl; padding: 160px 20px 50px;">
 
     <h1>🚧 در حال آماده‌سازی 🚧</h1>
     

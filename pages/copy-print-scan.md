@@ -1000,7 +1000,7 @@ breadcrumb:
             </div>
         </a>
         
-        <a href="https://ali-akbari-af.github.io/assets/copy-print-scan/l850-scanner.jpg" class="gallery-item" data-lightbox="gallery" data-title="اسکنر l850">
+        <a href="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l850-scanner.jpg" class="gallery-item" data-lightbox="gallery" data-title="اسکنر l850">
             <img src="https://ali-akbari-af.github.io/assets/images/copy-print-scan/l850-scanner.jpg" alt="اسکنر حرفه ای L850" class="gallery-img">
             <div class="gallery-overlay">
                 <h4 class="gallery-title">اسکنر Epson L850</h4>
