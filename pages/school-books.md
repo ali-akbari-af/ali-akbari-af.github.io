@@ -852,7 +852,7 @@ p {
                 <i class="fas fa-award"></i>
             </div>
             <h3 class="feature-title">کیفیت تضمینی</h3>
-            <p class="feature-description">چاپ با کیفیت بالا و کاغذ مرغوب</p>
+            <p class="feature-description">کتاب‌های مستعمل و دست‌دوم در حد نو با کیفیت عالی</p>
         </div>
         
         <div class="feature-card">
@@ -868,7 +868,7 @@ p {
                 <i class="fas fa-school"></i>
             </div>
             <h3 class="feature-title">عمده و پرچون</h3>
-            <p class="feature-description">تأمین نیاز مکاتب و مؤسسات آموزشی</p>
+            <p class="feature-description">عرضه کتاب‌های مستعمل و دست‌دوم برای مکاتب و مؤسسات آموزشی</p>
         </div>
     </div>
 </section>
