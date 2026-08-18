@@ -952,16 +952,19 @@ breadcrumb:
 </section>
 
 <!-- JavaScript for Lightbox -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 <script>
-    // تنظیمات Lightbox
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true,
-        'albumLabel': 'تصویر %1 از %2',
-        'positionFromTop': 100,
-        'disableScrolling': true,
-        'fadeDuration': 300,
-        'imageFadeDuration': 300
+    window.addEventListener('load', function () {
+        if (typeof lightbox !== 'undefined') {
+            // تنظیمات Lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'تصویر %1 از %2',
+                'positionFromTop': 100,
+                'disableScrolling': true,
+                'fadeDuration': 300,
+                'imageFadeDuration': 300
+            });
+        }
     });
 </script>
